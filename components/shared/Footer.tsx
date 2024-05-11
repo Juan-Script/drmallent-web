@@ -111,6 +111,7 @@ export default function Footer() {
               color={"purewhite"}
               fontWeight="400"
               fontSize={{ base: "14px", md: "16px" }}
+              mb="10px"
             >
               {link?.label}
             </ChakraLink>

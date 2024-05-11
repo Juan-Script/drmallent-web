@@ -8,10 +8,8 @@ export default function Contacto() {
     <Flex
       direction="column"
     >
-      {/* TODO: NAVBAR  */}
-      <Box h="150px" />
-
       <Flex
+        pt={{ base: "100px", lg: "150px" }}
         direction="column"
         px={{ base: "0", lg: "318px" }}
       >
