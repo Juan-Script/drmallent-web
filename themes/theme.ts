@@ -1,5 +1,8 @@
 /* theme.ts */
 import { extendTheme } from "@chakra-ui/react";
+import { colors } from "./colors";
+import { checkboxTheme } from "./checkbox";
+import { inputTheme } from "./inputs";
 
 const breakpoints = {
     xs: '480px',
@@ -11,5 +14,10 @@ const breakpoints = {
 };
 
 export const theme = extendTheme({
-    breakpoints
+    breakpoints,
+    colors,
+    components: { 
+        Checkbox: checkboxTheme,
+        Input: inputTheme 
+    },
 });
