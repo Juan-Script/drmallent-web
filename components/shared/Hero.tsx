@@ -15,6 +15,7 @@ export const Hero = ({ title }: Props) => {
                 color={"pureblack"}
                 fontSize="90px"
                 fontWeight="700"
+                w="80%"
             >
                 {title}
             </Text>
