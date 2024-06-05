@@ -23,7 +23,7 @@ export default function Testimonials() {
 
   return (
     <Flex
-      px="200px"
+      px={{ xl: "300px", lg: "200px" }}
       py="100px"
       gap="40px"
     >

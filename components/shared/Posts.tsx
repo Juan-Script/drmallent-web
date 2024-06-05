@@ -26,6 +26,7 @@ export default function Posts() {
             align="center"
             gap="40px"
             py="100px"
+            px={{ xl: "300px", lg: "200px" }}
         >
             <Flex
                 align="center"
@@ -35,10 +36,9 @@ export default function Posts() {
                     fontSize="16px"
                     color="secondary_font"
                     letterSpacing={4}
-                    transform="capitalize"
                     fontWeight="400"
                 >
-                    Instagram
+                    INSTAGRAM
                 </Text>
                 <Text
                     fontSize="40px"
@@ -103,6 +103,14 @@ export default function Posts() {
 
                 ))}
             </Flex>
+
+            <Flex
+                bg="black"
+                h="1px"
+                w="full"
+                maxW="1440px"
+                mt="20px"
+            />
         </Flex>
     )
 }

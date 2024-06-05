@@ -5,7 +5,7 @@ export default function ContactHome() {
   return (
     <Flex
       bgColor="white"
-      px="200px"
+      px={{ xl: "300px", lg: "200px" }}
       alignItems="start"
       justifyContent="center"
       direction="column"

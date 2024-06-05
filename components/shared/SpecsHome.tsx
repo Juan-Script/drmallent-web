@@ -20,7 +20,7 @@ export default function SpecsHome() {
   ]
   return (
     <Flex
-      px="200px"
+      px={{ xl: "300px", lg: "200px" }}
       py="100px"
       direction="column"
       gap="70px"

@@ -1,13 +1,12 @@
-import { Button, Flex, Text } from '@chakra-ui/react'
+import { Flex, Text } from '@chakra-ui/react'
 import Image from 'next/image'
-import Link from 'next/link'
 
 export default function AboutUs() {
     return (
         <Flex
             direction="column"
             gap="30px"
-            px="200px"
+            px={{ xl: "300px", lg: "200px" }}
             py="100px"
         >
             <Flex
