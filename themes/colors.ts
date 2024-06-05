@@ -6,4 +6,5 @@ export const colors = {
     font: "#2A2A2C",
     secondary_font: "#6B6B6B",
     font_variant: "#6D7D7D",
+    bg_grey: "#DCDCDC"
 }
