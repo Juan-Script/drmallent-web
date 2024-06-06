@@ -11,6 +11,7 @@ export default function HeroHome() {
             w="full"
             h="100vh"
             pos="relative"
+            fontFamily="theinhardt"
         >
             <Flex
                 textColor="white"

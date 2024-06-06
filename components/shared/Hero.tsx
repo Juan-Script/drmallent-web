@@ -7,15 +7,17 @@ interface Props {
 export const Hero = ({ title }: Props) => {
     return (
         <Flex
-            py="250px"
+            pt="150px"
+            pb="50px"
             px="300px"
             direction="column"
         >
             <Text
-                color={"pureblack"}
+                color="pureblack"
                 fontSize="90px"
                 fontWeight="700"
                 w="80%"
+                lineHeight="95%"
             >
                 {title}
             </Text>

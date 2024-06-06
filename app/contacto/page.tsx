@@ -1,5 +1,6 @@
 import Footer from "@/components/shared/Footer";
 import Form from "@/components/shared/Form";
+import Navbar from "@/components/shared/Navbar";
 import { Box, Flex, Text } from "@chakra-ui/react";
 import Image from "next/image";
 
@@ -8,6 +9,8 @@ export default function Contacto() {
     <Flex
       direction="column"
     >
+      <Navbar />
+      
       <Flex
         pt={{ base: "100px", lg: "150px" }}
         direction="column"

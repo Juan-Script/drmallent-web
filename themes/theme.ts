@@ -16,8 +16,12 @@ const breakpoints = {
 export const theme = extendTheme({
     breakpoints,
     colors,
-    components: { 
+    components: {
         Checkbox: checkboxTheme,
-        Input: inputTheme 
+        Input: inputTheme
+    },
+    fonts: {
+        heading: `'Theinhardt', sans-serif`,
+        body: `'Theinhardt', sans-serif`,
     },
 });
