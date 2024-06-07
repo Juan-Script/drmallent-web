@@ -11,9 +11,10 @@ export default function Form() {
                 <Input
                     placeholder="Nombre"
                     border="none"
-                    borderBottom={"1px solid"}
+                    fontFamily="inherit"
+                    borderBottom="1px solid"
                     rounded={0}
-                    borderColor={"#CCCCCF"}
+                    borderColor="#CCCCCF"
                     py="14px"
                     px="10px"
                     _focus={{
@@ -24,11 +25,11 @@ export default function Form() {
                 />
 
                 <Input
-                    placeholder={"Apellido"}
+                    placeholder="Apellido"
                     border="none"
-                    borderBottom={"1px solid"}
+                    borderBottom="1px solid"
                     rounded={0}
-                    borderColor={"#CCCCCF"}
+                    borderColor="#CCCCCF"
                     py="14px"
                     px="10px"
                     _focus={{
@@ -44,12 +45,12 @@ export default function Form() {
                 mt="20px"
             >
                 <Input
-                    placeholder={"Email"}
+                    placeholder="Email"
                     border="none"
                     type="email"
-                    borderBottom={"1px solid"}
+                    borderBottom="1px solid"
                     rounded={0}
-                    borderColor={"#CCCCCF"}
+                    borderColor="#CCCCCF"
                     py="14px"
                     px="10px"
                     _focus={{
@@ -60,12 +61,12 @@ export default function Form() {
                 />
 
                 <Input
-                    placeholder={"Teléfono"}
+                    placeholder="Teléfono"
                     type="number"
                     border="none"
-                    borderBottom={"1px solid"}
+                    borderBottom="1px solid"
                     rounded={0}
-                    borderColor={"#CCCCCF"}
+                    borderColor="#CCCCCF"
                     py="14px"
                     px="10px"
                     _focus={{

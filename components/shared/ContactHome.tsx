@@ -5,12 +5,12 @@ export default function ContactHome() {
   return (
     <Flex
       bgColor="white"
-      px={{ xl: "300px", lg: "200px" }}
+      px={{ "2xl": "300px", xl: "200px", lg: "200px" }}
       alignItems="start"
       justifyContent="center"
       direction="column"
       py="100px"
-      gap=""
+      gap="10px"
     >
       <Text
         fontSize="23px"
@@ -22,18 +22,35 @@ export default function ContactHome() {
         gap="60px"
         align="center"
       >
-        <Form />
-        <Text
-          fontSize="16px"
-          maxW="550px"
-          mb="80px"
+        <Flex
+          w="50%"
+          direction="column"
+          gap="30px"
         >
-          En la Clínica Dr. Mallent solo queremos lo mejor para nuestros
-          pacientes, por eso realizamos una consulta previa a cualquier
-          tratamiento. Un diagnostico estético personalizado elaborado por
-          un cirujano referente y reconocido en Cirugía Plástica y
-          Reparadora.
-        </Text>
+          <Text
+            fontSize="12px"
+          >
+            Solicite una consulta y nos pondremos en contacto con usted
+          </Text>
+          <Form />
+        </Flex>
+
+        <Flex
+          w="50%"
+        >
+          <Text
+            fontSize="16px"
+            maxW="550px"
+            mb="80px"
+          >
+            En la Clínica Dr. Mallent solo queremos lo mejor para nuestros
+            pacientes, por eso realizamos una consulta previa a cualquier
+            tratamiento. Un diagnostico estético personalizado elaborado por
+            un cirujano referente y reconocido en Cirugía Plástica y
+            Reparadora.
+          </Text>
+        </Flex>
+
       </Flex>
     </Flex>
   )

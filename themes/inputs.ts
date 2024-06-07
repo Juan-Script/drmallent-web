@@ -7,13 +7,11 @@ const { definePartsStyle, defineMultiStyleConfig } =
 const baseStyle = definePartsStyle({
   field: {
     color: '#989898',
-    fontFamily: 'Inter',
     fontSize: '13px',
     fontWeight: '400',
     lineHeight: 'normal',
     _placeholder: {
         color: '#989898',
-        fontFamily: 'Inter',
         fontSize: '13px',
         fontWeight: '400',
         lineHeight: 'normal'

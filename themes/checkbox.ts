@@ -7,10 +7,9 @@ const { definePartsStyle, defineMultiStyleConfig } =
 const baseStyle = definePartsStyle({
     label: {
         color: "#6B6B6B",
-        fontFamily: "Inter",
-        fontSize: "13.375px",
+        fontSize: "10px",
         fontWeight: "400",
-        lineHeight: "20.8px"
+        lineHeight: "20px"
     },
     control: {
         marginTop: "3px",
