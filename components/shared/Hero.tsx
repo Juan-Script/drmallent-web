@@ -9,7 +9,7 @@ export const Hero = ({ title }: Props) => {
         <Flex
             pt="150px"
             pb="50px"
-            px="300px"
+            px={{ "2xl": "300px", xl: "200px", lg: "200px" }}
             direction="column"
         >
             <Text

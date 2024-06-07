@@ -1,6 +1,7 @@
 "use client"
 
 import { Button, Flex, Link } from '@chakra-ui/react'
+import { usePathname } from 'next/navigation'
 import Image from 'next/image'
 import { useEffect, useState } from 'react';
 
@@ -25,8 +26,8 @@ export default function Navbar() {
     ]
 
     const [isScrolled, setIsScrolled] = useState(false);
-
-    const isHome = location.pathname === '/';
+    const location = usePathname();
+    const isHome = location === '/';
 
     useEffect(() => {
         const detectScrolling = () => {

@@ -2,6 +2,7 @@ import CarruselEquipo from "@/components/shared/CarrouselEquipo/CarruselEquipo";
 import ContactUs from "@/components/shared/ContactUs";
 import Footer from "@/components/shared/Footer";
 import { Hero } from "@/components/shared/Hero";
+import Navbar from "@/components/shared/Navbar";
 import { Flex, Text } from "@chakra-ui/react";
 
 export default function page() {
@@ -9,6 +10,8 @@ export default function page() {
         <Flex
             direction="column"
         >
+            <Navbar />
+
             <Hero
                 title="Equipo profesional clínica Dr.Mallent"
             />
@@ -53,7 +56,7 @@ export default function page() {
             </Flex>
 
             <CarruselEquipo />
-            
+
             <ContactUs />
 
             <Footer />
