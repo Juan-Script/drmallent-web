@@ -18,8 +18,8 @@ interface Props {
 export default function AccordionComponent({ data }: Props) {
     return (
         <Flex
-            py="120px"
-            px="300px"
+            py="50px"
+            px={{"2xl":"300px", xl:"200px", lg:"200px"}}
             w="100%"
         >
             <Accordion
@@ -46,8 +46,8 @@ export default function AccordionComponent({ data }: Props) {
                                 color="black"
                                 fontSize="12px"
                                 fontWeight="400"
-                                lineHeight="20px"
-                                letterSpacing="0.267px"
+                                textTransform="uppercase"
+                                letterSpacing="0.666667px"
                             >
                                 {title}
                             </Text>
@@ -61,9 +61,8 @@ export default function AccordionComponent({ data }: Props) {
                                 <Text
                                     w="25%"
                                     color="black"
-                                    fontSize="20px"
+                                    fontSize="24px"
                                     fontWeight="400"
-                                    letterSpacing="0.667px"
                                 >
                                     {title}
                                 </Text>
@@ -71,10 +70,9 @@ export default function AccordionComponent({ data }: Props) {
                                 <Text
                                     w="60%"
                                     color="secondary_font"
-                                    fontSize="12px"
-                                    fontWeight="400"
-                                    lineHeight="20px"
-                                    letterSpacing="0.267px"
+                                    fontSize="14px"
+                                    fontWeight="300"
+                                
                                 >
                                     {text}
                                 </Text>

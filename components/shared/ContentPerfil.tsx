@@ -5,7 +5,7 @@ import React from 'react'
 export default function ContentPerfil() {
     return (
         <Flex
-            px="200px"
+            px={{ "2xl": "300px", xl: "200px", lg: "200px" }}
             direction="column"
             gap="100px"
         >

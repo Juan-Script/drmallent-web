@@ -25,8 +25,7 @@ export default function CarruselEquipo() {
     <Box 
       className="embla"
       pl="85px"
-      pt={"170px"}
-      pb="60px"
+      py="80px"
     >
       <Flex
         alignItems="center"

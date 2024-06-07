@@ -18,8 +18,9 @@ export default function page() {
 
             <Flex
                 py={{ base: "100px", lg: "100px" }}
-                px={{ base: "300px", lg: "300px" }}
-                gap="250px"
+                px={{ "2xl": "300px", xl: "200px", lg: "200px" }}
+                w="full"
+                justifyContent="space-between"
             >
                 <Text
                     color="pureblack"
@@ -39,7 +40,7 @@ export default function page() {
                     lineHeight="30px"
                     letterSpacing={"0.267px"}
                     textAlign="justify"
-                    w="70%"
+                    maxW="750px"
                 >
                     <Text>
                         Clínica Dr. Mallent es ante todo un equipo humano gran trayectoria profesional y sólidos valores éticos, especializado en tratamientos estéticos de última generación.

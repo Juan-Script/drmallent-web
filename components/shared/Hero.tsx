@@ -7,8 +7,7 @@ interface Props {
 export const Hero = ({ title }: Props) => {
     return (
         <Flex
-            pt="150px"
-            pb="50px"
+            py="150px"
             px={{ "2xl": "300px", xl: "200px", lg: "200px" }}
             direction="column"
         >
