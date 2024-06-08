@@ -39,7 +39,7 @@ export default function SpecsHome() {
           </Text>
 
           <Flex
-            maxW="410px"
+            maxW="700px"
             direction="column"
             gap="20px"
           >

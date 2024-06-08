@@ -25,11 +25,12 @@ export default function Galeria() {
             {posts?.map((post, index) => (
                 <Flex
                     key={index}
+                    w="full"
                 >
                     <Image
                         src={post.img}
                         alt="Post"
-                        width={480}
+                        width={680}
                         height={515}
                     />
                 </Flex>

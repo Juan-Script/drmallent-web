@@ -26,7 +26,7 @@ export default function Posts() {
             align="center"
             gap="40px"
             py="100px"
-            px={{ xl: "300px", lg: "200px" }}
+            px={{ "2xl": "300px", xl: "200px", lg: "200px" }}
         >
             <Flex
                 align="center"

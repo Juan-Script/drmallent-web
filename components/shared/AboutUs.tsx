@@ -42,6 +42,7 @@ export default function AboutUs() {
 
             <Flex
                 gap="20px"
+                mx="auto"
             >
                 <Image
                     src={'/imgAboutUs1.png'}

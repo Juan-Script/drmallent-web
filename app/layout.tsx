@@ -5,6 +5,10 @@ import localFont from 'next/font/local'
 export const metadata: Metadata = {
   title: "Clínica Estética Valencia",
   description: "Clínica Estética Valencia",
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/favicon.ico",
+  }
 };
 
 const myFont = localFont({

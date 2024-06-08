@@ -19,6 +19,7 @@ export default function AccordionComponent({ data }: Props) {
     return (
         <Flex
             py="50px"
+            pb="100px"
             px={{"2xl":"300px", xl:"200px", lg:"200px"}}
             w="100%"
         >

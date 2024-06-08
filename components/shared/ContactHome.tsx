@@ -6,15 +6,16 @@ export default function ContactHome() {
     <Flex
       bgColor="white"
       px={{ "2xl": "300px", xl: "200px", lg: "200px" }}
-      alignItems="start"
       justifyContent="center"
       direction="column"
       py="100px"
       gap="10px"
+      mx="auto"
     >
       <Text
         fontSize="23px"
         transform="uppercase"
+        mr="auto"
       >
         Solicite una consulta
       </Text>
@@ -40,7 +41,6 @@ export default function ContactHome() {
         >
           <Text
             fontSize="16px"
-            maxW="550px"
             mb="80px"
           >
             En la Clínica Dr. Mallent solo queremos lo mejor para nuestros
