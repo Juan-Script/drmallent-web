@@ -9,10 +9,13 @@ interface Porps {
 export default function Perfil({ profesional }: Porps) {
     return (
         <Flex
-            px="300px"
+            px={{ base: "30px", sm: "100px", md: "150px", lg: "200px", xl: "200px", "2xl": "300px" }}
+            direction={{ base: "column", lg: "row" }}
         >
             <Flex
-                direction={"column"}
+                direction="column"
+                alignItems={{ base: "center", lg: "flex-start" }}
+                mb={{ base: "40px", lg: "0" }}
             >
                 <Image
                     src={profesional?.imagen}
@@ -28,26 +31,29 @@ export default function Perfil({ profesional }: Porps) {
                     fontWeight="400"
                     lineHeight="13.2px"
                     letterSpacing="0.667px"
+                    textAlign={{ base: "center", md: "left" }}
                 >
                     {profesional?.nombre}
                 </Text>
 
                 <Text
-                    color={"secondary_font"}
+                    color="secondary_font"
                     fontSize="17px"
                     fontWeight="400"
                     lineHeight="20px"
                     letterSpacing="0.267px"
+                    textAlign={{ base: "center", md: "left" }}
                 >
                     {profesional?.especialidad}
                 </Text>
 
                 <Text
-                    color={"secondary_font"}
+                    color="secondary_font"
                     fontSize="14px"
                     fontWeight="400"
                     lineHeight="20px"
                     letterSpacing="0.267px"
+                    textAlign={{ base: "center", md: "left" }}
                 >
                     {profesional?.locacion}
                 </Text>
@@ -55,7 +61,7 @@ export default function Perfil({ profesional }: Porps) {
                 <UnorderedList
                     mt="35px"
                     styleType="'-'"
-                    color={"secondary_font"}
+                    color="secondary_font"
                     fontSize="14px"
                     fontWeight="400"
                     lineHeight="20px"
@@ -63,33 +69,32 @@ export default function Perfil({ profesional }: Porps) {
                     gap="5px"
                     display="flex"
                     flexDir="column"
+                    pl={{ base: "20px", md: "0" }}
                 >
                     {profesional?.items.map((item, index) => (
-                        <ListItem
-                            key={index}
-                        >
-                            {item}
-                        </ListItem>
-
+                        <ListItem key={index}>{item}</ListItem>
                     ))}
                 </UnorderedList>
             </Flex>
 
             <Box
-                ml="100px"
-                mr="65px"
-                w="1px"
-                bg={"pureblack"}
+                display="block"
+                ml={{ base: "0", lg: "50px" }}
+                mr={{ base: "0", lg: "30px" }}
+                my={{ base: "20px", lg: "0" }}
+                w={{ base: "100%", lg: "1px" }}
+                h={{ base: "1px", lg: "auto" }}
+                bg="pureblack"
             />
 
             <Flex
-                direction={"column"}
-                gap="70px"
+                direction="column"
+                gap={{ base: "40px", md: "70px" }}
             >
                 {profesional?.detalles.map(({ titulo, textos, list }, index) => (
                     <Flex
                         key={index}
-                        direction={"column"}
+                        direction="column"
                         gap="20px"
                     >
                         {titulo &&
@@ -120,7 +125,7 @@ export default function Perfil({ profesional }: Porps) {
                         {list &&
                             <UnorderedList
                                 styleType="'-'"
-                                color={"secondary_font"}
+                                color="secondary_font"
                                 fontSize="14px"
                                 fontWeight="400"
                                 lineHeight="20px"
@@ -128,13 +133,10 @@ export default function Perfil({ profesional }: Porps) {
                                 gap="5px"
                                 display="flex"
                                 flexDir="column"
+                                pl="20px"
                             >
                                 {list?.map((item, iList) => (
-                                    <ListItem
-                                        key={iList}
-                                    >
-                                        {item}
-                                    </ListItem>
+                                    <ListItem key={iList}>{item}</ListItem>
                                 ))}
                             </UnorderedList>
                         }

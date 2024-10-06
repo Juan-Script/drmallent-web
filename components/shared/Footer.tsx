@@ -15,6 +15,35 @@ export default function Footer() {
 
   const links = [
     {
+      label: "perfil",
+      href: "/",
+    },
+    {
+      label: "equipo",
+      href: "/",
+    },
+
+    {
+      label: "noticias",
+      href: "/",
+    },
+    {
+      label: "contacto",
+      href: "/",
+    },
+    {
+      label: "medicina estética",
+      href: "/",
+      childrens: [
+        { label: "rellenos de arrugas" },
+        { label: "mesoterapia facial" },
+        { label: "peelings" },
+        { label: "lifting con microcánulas" },
+        { label: "tratamiento para quitar manchas" },
+        { label: "plasma rico en plaquetas" },
+      ]
+    },
+    {
       label: "cirugía plástica",
       href: "/",
       childrens: [
@@ -37,35 +66,6 @@ export default function Footer() {
         { label: "lipofilling" },
         { label: "injerto capilar" },
       ]
-    },
-    {
-      label: "medicina estética",
-      href: "/",
-      childrens: [
-        { label: "rellenos de arrugas" },
-        { label: "mesoterapia facial" },
-        { label: "peelings" },
-        { label: "lifting con microcánulas" },
-        { label: "tratamiento para quitar manchas" },
-        { label: "plasma rico en plaquetas" },
-      ]
-    },
-    {
-      label: "perfil",
-      href: "/",
-    },
-    {
-      label: "equipo",
-      href: "/",
-    },
-
-    {
-      label: "noticias",
-      href: "/",
-    },
-    {
-      label: "contacto",
-      href: "/",
     },
   ]
 
@@ -90,59 +90,98 @@ export default function Footer() {
 
   return (
     <Flex
-      py={{ base: "20px", lg: "135px" }}
-      px={{ base: "0", lg: "318px" }}
+      py={{ base: "20px", sm: "40px", md: "80px", lg: "135px" }}
+      px={{ base: "20px", sm: "40px", md: "80px", lg: "200px", xl: "200px", "2xl": "300px" }}
       bg="black"
       w="100%"
       direction="column"
     >
       <Flex
-        gap="50px"
+        gap={{ base: "20px", sm: "30px", md: "40px" }}
+        flexWrap="wrap"
+        justifyContent={{ base: "flex-start", md: "space-between" }}
+        flexDirection={{ base: "column", md: "row" }}
       >
-        {links.map((link: Links, iLinks: number) => (
-          <Flex
-            key={iLinks}
-            direction="column"
-            p="20px"
-          >
-            <ChakraLink
-              as={Link}
-              href={link?.href}
-              color={"purewhite"}
-              fontWeight="400"
-              fontSize={{ base: "14px", md: "16px" }}
-              mb="10px"
+        <Flex
+          flexWrap="wrap"
+          gap={{ base: "20px", sm: "30px", md: "40px" }}
+          justifyContent={{ base: "flex-start", md: "center" }}
+          width={{ base: "100%", md: "auto" }}
+        >
+          {links.slice(0, 4).map((link: Links, iLinks: number) => (
+            <Flex
+              key={iLinks}
+              direction="column"
+              p={{ base: "10px", sm: "15px", md: "20px" }}
             >
-              {link?.label}
-            </ChakraLink>
-
-            {link?.childrens && link?.childrens.map((children, iChildrens) => (
-              <Text
-                key={iChildrens}
+              <ChakraLink
+                as={Link}
+                href={link?.href}
                 color={"purewhite"}
                 fontWeight="400"
-                fontSize={{ base: "12px", md: "14px" }}
+                fontSize={{ base: "14px", sm: "15px", md: "16px" }}
+                mb="10px"
               >
-                {children?.label}
-              </Text>
-            ))}
-          </Flex>
-        ))}
+                {link?.label}
+              </ChakraLink>
+            </Flex>
+          ))}
+        </Flex>
+
+        <Flex
+          flexWrap="wrap"
+          gap={{ base: "20px", sm: "30px", md: "40px" }}
+          justifyContent={{ base: "flex-start", md: "flex-start" }}
+          width={{ base: "100%", md: "auto" }}
+          mt={{ base: "20px", md: "0" }}
+        >
+          {links.slice(4).map((link: Links, iLinks: number) => (
+            <Flex
+              key={iLinks + 4}
+              direction="column"
+              p={{ base: "10px", sm: "15px", md: "20px" }}
+            >
+              <ChakraLink
+                as={Link}
+                href={link?.href}
+                color={"purewhite"}
+                fontWeight="400"
+                fontSize={{ base: "14px", sm: "15px", md: "16px" }}
+                mb="10px"
+              >
+                {link?.label}
+              </ChakraLink>
+
+              {link?.childrens && link?.childrens.map((children, iChildrens) => (
+                <Text
+                  key={iChildrens}
+                  color={"purewhite"}
+                  fontWeight="400"
+                  fontSize={{ base: "12px", sm: "13px", md: "14px" }}
+                >
+                  {children?.label}
+                </Text>
+              ))}
+            </Flex>
+          ))}
+        </Flex>
       </Flex>
 
       <Box
         h="1px"
         bg={"black_variant"}
         w="100%"
-        mt={{ base: "63px" }}
-        mb={{ base: "100px" }}
+        mt={{ base: "30px", sm: "40px", md: "50px", lg: "63px" }}
+        mb={{ base: "50px", sm: "70px", md: "85px", lg: "100px" }}
       />
 
       <Flex
         alignItems="center"
+        flexDirection={{ base: "column", md: "row" }}
+        gap={{ base: "30px", md: "0" }}
       >
         <Flex
-          gap="20px"
+          gap={{ base: "15px", sm: "20px" }}
           h="fit-content"
           w="fit-content"
         >
@@ -155,7 +194,7 @@ export default function Footer() {
               fill="rgba(217, 217, 217, 0.00)"
               borderColor={"font_variant"}
               border="2px solid"
-              p="11px"
+              p={{ base: "8px", sm: "10px", md: "11px" }}
             >
               {social?.icon}
             </ChakraLink>
@@ -163,19 +202,19 @@ export default function Footer() {
         </Flex>
 
         <Box
-          w="1px"
-          h="62px"
+          w={{ base: "100%", md: "1px" }}
+          h={{ base: "1px", md: "62px" }}
           bg={"black_variant"}
-          ml={{ base: "165px" }}
+          my={{ base: "20px", md: "0" }}
+          mx={{ base: "0", md: "30px", lg: "165px" }}
         />
 
         <Text
           color={"purewhite"}
           fontWeight="400"
-          fontSize={{ base: "14px", md: "16px" }}
-          ml="auto"
-          w={"45%"}
-          textAlign="right"
+          fontSize={{ base: "14px", sm: "15px", md: "16px" }}
+          textAlign={{ base: "center", md: "right" }}
+          w={{ base: "100%", md: "45%" }}
         >
           Posuere urna nec tincidunt praesent egestas maecenas pharetra convallis posuere ipsum nunc.
         </Text>
@@ -183,22 +222,25 @@ export default function Footer() {
 
       <Flex
         align="center"
-        mt="200px"
+        mt={{ base: "100px", sm: "150px", md: "175px", lg: "200px" }}
         justifyContent="space-between"
+        flexDirection={{ base: "column", md: "row" }}
+        gap={{ base: "20px", md: "0" }}
       >
         <Text
           color={"purewhite"}
           fontWeight="400"
-          fontSize={{ base: "14px", md: "16px" }}
+          fontSize={{ base: "14px", sm: "15px", md: "16px" }}
+          textAlign={{ base: "center", md: "left" }}
         >
           © Copyright by Miso Labs – Derechos reservados.
         </Text>
 
         <Flex
-          gap={"50px"}
+          gap={{ base: "30px", sm: "40px", md: "50px" }}
           color={"font_variant"}
-          fontSize={{ base: "14px", md: "16px" }}
-          letterSpacing={"6.88px"}
+          fontSize={{ base: "12px", sm: "13px", md: "14px", lg: "16px" }}
+          letterSpacing={{ base: "4px", sm: "5px", md: "6px", lg: "6.88px" }}
           fontWeight={"400"}
         >
           <Text>

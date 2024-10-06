@@ -18,9 +18,9 @@ interface Props {
 export default function AccordionComponent({ data }: Props) {
     return (
         <Flex
-            py="50px"
-            pb="100px"
-            px={{"2xl":"300px", xl:"200px", lg:"200px"}}
+            py={{ base: "30px", md: "50px" }}
+            pb={{ base: "50px", md: "100px" }}
+            px={{ base: "30px", sm: "100px", md: "150px", lg: "200px", xl: "200px", "2xl": "300px" }}
             w="100%"
         >
             <Accordion
@@ -39,13 +39,14 @@ export default function AccordionComponent({ data }: Props) {
                             display="flex"
                             w="100%"
                             alignItems="center"
-                            gap="20px"
+                            gap={{ base: "10px", md: "20px" }}
+                            py={{ base: "10px", md: "15px" }}
                         >
                             <AccordionIcon />
 
                             <Text
                                 color="black"
-                                fontSize="12px"
+                                fontSize={{ base: "10px", md: "12px" }}
                                 fontWeight="400"
                                 textTransform="uppercase"
                                 letterSpacing="0.666667px"
@@ -56,27 +57,28 @@ export default function AccordionComponent({ data }: Props) {
 
                         <AccordionPanel
                             display={"flex"}
-                            gap="140px"
-                            p="20px"
+                            flexDirection={{ base: "column", md: "row" }}
+                            gap={{ base: "20px", md: "60px", lg: "140px" }}
+                            p={{ base: "15px", md: "20px" }}
                         >
-                                <Text
-                                    w="25%"
-                                    color="black"
-                                    fontSize="24px"
-                                    fontWeight="400"
-                                >
-                                    {title}
-                                </Text>
+                            <Text
+                                w={{ base: "100%", md: "50%", lg: "30%" }}
+                                color="black"
+                                fontSize={{ base: "18px", md: "24px" }}
+                                fontWeight="400"
+                                mb={{ base: "10px", md: "0" }}
+                            >
+                                {title}
+                            </Text>
 
-                                <Text
-                                    w="60%"
-                                    color="secondary_font"
-                                    fontSize="14px"
-                                    fontWeight="300"
-                                
-                                >
-                                    {text}
-                                </Text>
+                            <Text
+                                w={{ base: "100%", md: "60%" }}
+                                color="secondary_font"
+                                fontSize={{ base: "12px", md: "14px" }}
+                                fontWeight="300"
+                            >
+                                {text}
+                            </Text>
                         </AccordionPanel>
                     </AccordionItem>
                 ))}

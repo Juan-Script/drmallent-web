@@ -12,36 +12,39 @@ export default function Contacto() {
       <Navbar />
       
       <Flex
-        pt={{ base: "100px", lg: "150px" }}
+        pt={{ base: "100px", sm: "120px", md: "130px", lg: "150px" }}
         direction="column"
-        px={{ base: "0", lg: "318px" }}
+        px={{ base: "30px", sm: "100px", md: "150px", lg: "200px", xl: "200px", "2xl": "300px" }}
       >
         <Image
           src="/mapa.png"
           alt="mapa"
           width={1139}
           height={532}
+          style={{ width: '100%', height: 'auto' }}
         />
 
         <Text
           as="h1"
           color="black"
-          fontSize="40px"
+          fontSize={{ base: "28px", sm: "32px", md: "36px", lg: "40px" }}
           fontWeight="500"
-          lineHeight="52.8px"
+          lineHeight={{ base: "36.4px", sm: "41.6px", md: "46.8px", lg: "52.8px" }}
           letterSpacing="0.667px"
-          mt="35px"
-          mb="50px"
+          mt={{ base: "25px", sm: "30px", md: "35px" }}
+          mb={{ base: "30px", sm: "40px", md: "50px" }}
         >
           Contacta con nosotros
         </Text>
 
         <Flex
-          mb="60px"
+          mb={{ base: "40px", sm: "50px", md: "60px" }}
+          direction={{ base: "column", md: "row" }}
         >
           <Flex
             flex="1"
             direction="column"
+            mb={{ base: "40px", md: "0" }}
           >
             <Text
               color="black"
@@ -76,7 +79,8 @@ export default function Contacto() {
             flex="1"
             direction="column"
             gap="10px"
-            ml="175px"
+            ml={{ base: "0", md: "50px", lg: "175px" }}
+            mt={{ base: "40px", md: "0" }}
           >
             <Text
               color="black"

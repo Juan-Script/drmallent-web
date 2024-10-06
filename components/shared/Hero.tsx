@@ -7,14 +7,14 @@ interface Props {
 export const Hero = ({ title }: Props) => {
     return (
         <Flex
-            py="150px"
-            px={{ "2xl": "300px", xl: "200px", lg: "200px" }}
+            py={{ base: "100px", sm: "150px" }}
+            px={{ base: "30px", sm: "100px", md: "150px", lg: "200px", xl: "200px", "2xl": "300px" }}
             direction="column"
         >
             <Text
                 color="pureblack"
-                fontSize="90px"
                 fontWeight="700"
+                fontSize={{ base: "40px", sm: "50px", md: "70px", lg: "90px" }}
                 w="80%"
                 lineHeight="95%"
             >

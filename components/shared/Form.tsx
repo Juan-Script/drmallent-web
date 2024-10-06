@@ -1,15 +1,18 @@
-import { Button, Checkbox, Flex, Input, Text } from "@chakra-ui/react";
+import { Button, Checkbox, Flex, Input, Text, useBreakpointValue } from "@chakra-ui/react";
 
 export default function Form() {
+
     return (
         <Flex
             direction="column"
         >
             <Flex
+                direction={{ base: "column", sm: "row" }}
                 gap="20px"
             >
                 <Input
                     placeholder="Nombre"
+                    width={{ base: "100%", sm: "50%" }}
                     border="none"
                     fontFamily="inherit"
                     borderBottom="1px solid"
@@ -26,6 +29,7 @@ export default function Form() {
 
                 <Input
                     placeholder="Apellido"
+                    width={{ base: "100%", sm: "50%" }}
                     border="none"
                     borderBottom="1px solid"
                     rounded={0}
@@ -41,13 +45,15 @@ export default function Form() {
             </Flex>
 
             <Flex
+                direction={{ base: "column", sm: "row" }}
                 gap="20px"
                 mt="20px"
             >
                 <Input
                     placeholder="Email"
-                    border="none"
                     type="email"
+                    width={{ base: "100%", sm: "50%" }}
+                    border="none"
                     borderBottom="1px solid"
                     rounded={0}
                     borderColor="#CCCCCF"
@@ -63,6 +69,7 @@ export default function Form() {
                 <Input
                     placeholder="Teléfono"
                     type="number"
+                    width={{ base: "100%", sm: "50%" }}
                     border="none"
                     borderBottom="1px solid"
                     rounded={0}

@@ -1,9 +1,12 @@
 "use client"
 
-import { Button, Flex, Link } from '@chakra-ui/react'
+import { Button, Flex, Link, IconButton, Drawer, DrawerBody, DrawerHeader, DrawerOverlay, DrawerContent, DrawerCloseButton, useDisclosure, VStack } from '@chakra-ui/react'
 import { usePathname } from 'next/navigation'
 import Image from 'next/image'
 import { useEffect, useState } from 'react';
+import { IoMenu } from "react-icons/io5";
+import { MenuDrawer } from './MenuDrawer';
+
 
 export default function Navbar() {
     const Links = [
@@ -28,6 +31,7 @@ export default function Navbar() {
     const [isScrolled, setIsScrolled] = useState(false);
     const location = usePathname();
     const isHome = location === '/';
+    const { isOpen, onOpen, onClose } = useDisclosure();
 
     useEffect(() => {
         const detectScrolling = () => {
@@ -55,7 +59,7 @@ export default function Navbar() {
             top="0"
             w="100%"
             p="4"
-            px="50px"
+            px={{ base: "20px", md: "50px" }}
             bg={isScrolled ? "white" : "transparent"}
             zIndex="10"
             align="center"
@@ -73,6 +77,7 @@ export default function Navbar() {
 
             <Flex
                 gap="40px"
+                display={{ base: "none", md: "flex" }}
             >
                 {
                     Links.map((link, index) => (
@@ -86,8 +91,10 @@ export default function Navbar() {
                 }
             </Flex>
 
+            {/* Botón de contacto para pantallas grandes */}
             <Link
                 href="/contacto"
+                display={{ base: "none", md: "block" }}
             >
                 <Button
                     border="1px"
@@ -101,6 +108,20 @@ export default function Navbar() {
                 </Button>
             </Link>
 
+            <IconButton
+                aria-label="Abrir menú"
+                icon={<IoMenu />}
+                onClick={onOpen}
+                display={{ base: "flex", md: "none" }}
+                bg="transparent"
+                color={isHome ? (isScrolled ? "black" : "white") : "black"}
+            />
+
+            <MenuDrawer
+                isOpen={isOpen}
+                onClose={onClose}
+                Links={Links}
+            />
         </Flex>
     )
 }

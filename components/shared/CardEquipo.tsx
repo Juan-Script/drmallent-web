@@ -1,4 +1,4 @@
-import { Button, Flex, ListItem, Text, UnorderedList } from "@chakra-ui/react";
+import { Button, Flex, ListItem, Text, UnorderedList, useBreakpointValue } from "@chakra-ui/react";
 import Image from "next/image";
 
 interface Props {
@@ -17,6 +17,13 @@ export default function CardEquipo({
     locacion,
     items
 }: Props) {
+    const imagenSize = useBreakpointValue({
+        base: { width: 340, height: 370 },
+        sm: { width: 485, height: 565 },
+        md: { width: 485, height: 565 },
+        lg: { width: 485, height: 565 }
+    })
+
     return (
         <Flex
             direction="column"
@@ -26,8 +33,10 @@ export default function CardEquipo({
             <Image
                 src={src}
                 alt={nombre}
-                width={485}
-                height={565}
+                width={imagenSize?.width}
+                height={imagenSize?.height}
+                objectFit="cover"
+                priority={0 < 2} 
             />
 
             <Flex

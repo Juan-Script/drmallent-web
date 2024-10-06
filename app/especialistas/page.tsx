@@ -17,16 +17,19 @@ export default function page() {
             />
 
             <Flex
-                py={{ base: "100px", lg: "100px" }}
-                px={{ "2xl": "300px", xl: "200px", lg: "200px" }}
+                direction={{ base: "column", md: "row" }}
+                py={{ base: "50px", md: "75px", lg: "100px" }}
+                px={{ base: "30px", sm: "100px", md: "150px", lg: "200px", xl: "200px", "2xl": "300px" }}
                 w="full"
-                justifyContent="space-between"
+                justifyContent={{ base: "flex-start", md: "space-between" }}
+                gap={{ base: "30px", md: "0" }}
             >
                 <Text
                     color="pureblack"
-                    fontSize="32px"
+                    fontSize={{ base: "24px", sm: "28px", md: "32px" }}
                     fontWeight="400"
-                    w="30%"
+                    w={{ base: "100%", md: "30%" }}
+                    mb={{ base: "20px", md: "0" }}
                 >
                     UN EQUIPO EXPERTO
                 </Text>
@@ -35,12 +38,12 @@ export default function page() {
                     direction="column"
                     gap="20px"
                     color="secondary_font"
-                    fontSize="17px"
+                    fontSize={{ base: "15px", sm: "16px", md: "17px" }}
                     fontWeight="400"
                     lineHeight="30px"
                     letterSpacing={"0.267px"}
                     textAlign="justify"
-                    maxW="750px"
+                    maxW={{ base: "100%", md: "65%", lg: "750px" }}
                 >
                     <Text>
                         Clínica Dr. Mallent es ante todo un equipo humano gran trayectoria profesional y sólidos valores éticos, especializado en tratamientos estéticos de última generación.
