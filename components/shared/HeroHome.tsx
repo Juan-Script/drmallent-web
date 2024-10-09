@@ -4,17 +4,16 @@ import React from 'react'
 export default function HeroHome() {
     return (
         <Flex
-            bgImage={'url(/BGHero.png)'}
+            bgImage={'url(/img/Despacho1.jpg)'}
             bgSize="cover"
             bgPosition="left center"
             maxH="700px"
             w="full"
             h="100vh"
             pos="relative"
-            fontFamily="theinhardt"
         >
             <Flex
-                textColor="white"
+                textColor="black"
                 direction="column"
                 gap="40px"
                 pos="absolute"

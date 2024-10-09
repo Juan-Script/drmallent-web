@@ -54,7 +54,7 @@ export default function Navbar() {
     return (
         <Flex
             justifyContent="space-between"
-            textColor={isHome ? (isScrolled ? "black" : "white") : "black"}
+            textColor="black"
             pos="fixed"
             top="0"
             w="100%"
@@ -68,7 +68,7 @@ export default function Navbar() {
                 href='/'
             >
                 <Image
-                    src={isHome ? (isScrolled ? "/DRJMlogoBlack.svg" : "/DRJMlogo.svg") : "/DRJMlogoBlack.svg"}
+                    src={"/DRJMlogoBlack.svg"}
                     alt="Logo"
                     width={96}
                     height={19}
@@ -98,9 +98,9 @@ export default function Navbar() {
             >
                 <Button
                     border="1px"
-                    borderColor={isHome ? (isScrolled ? "black" : "white") : "black"}
+                    borderColor="black"
                     bg="transparent"
-                    textColor={isHome ? (isScrolled ? "black" : "white") : "black"}
+                    textColor="black"
                     fontWeight={300}
                     rounded={0}
                 >

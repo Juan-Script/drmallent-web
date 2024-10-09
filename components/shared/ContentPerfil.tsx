@@ -8,21 +8,29 @@ export default function ContentPerfil() {
             px={{ "2xl": "300px", xl: "200px", lg: "200px" }}
             direction="column"
             gap="100px"
+            w="full"
         >
             <Flex
                 gap="80px"
             >
-                <Image
-                    src="/imgDrMallent.png"
-                    alt='imgDrMallent'
-                    width={600}
-                    height={360}
-                />
+                <Flex
+                    h="367px"
+                    w="622px"
+                    position="relative"
+                >
+                    <Image
+                        src="/img/FotoPepe2.jpg"
+                        alt='imgDrMallent'
+                        fill
+                        objectFit="cover"
+                    />
+                </Flex>
 
                 <Flex
                     direction="column"
                     justifyContent="space-between"
                     gap="20px"
+                    maxW="450px"
                 >
                     <Text
                         fontSize="16px"

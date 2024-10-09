@@ -5,17 +5,17 @@ import Link from 'next/link'
 export default function Posts() {
     const posts = [
         {
-            image: "/imgInsta1.png",
+            image: "/img/FotoCristal.jpg",
             text: "Posuere urna nec tincidunt praesent egestas maecenas.",
             href: ""
         },
         {
-            image: "/imgInsta2.png",
+            image: "/img/FotoPlanta.jpg",
             text: "Posuere urna nec tincidunt praesent egestas maecenas.",
             href: ""
         },
         {
-            image: "/imgInsta3.png",
+            image: "/img/FotoEstanteria1.jpg",
             text: "Posuere urna nec tincidunt praesent egestas maecenas.",
             href: ""
         },
@@ -59,13 +59,12 @@ export default function Posts() {
                         maxW="360px"
                     >
                         <Flex
-                            maxH="260px"
                         >
                             <Image
                                 src={post.image}
                                 alt="Post"
-                                width={480}
-                                height={515}
+                                width={363}
+                                height={268}
                             />
                         </Flex>
 

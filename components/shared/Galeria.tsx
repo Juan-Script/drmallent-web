@@ -5,16 +5,16 @@ import Image from "next/image"
 export default function Galeria() {
     const posts = [
         {
-            img: "/imgPost1.png"
+            img: "/img/DespachoPrincipal3.jpg"
         },
         {
-            img: "/imgPost2.png"
+            img: "/img/SalaCuras3.jpg"
         },
         {
-            img: "/imgPost3.png"
+            img: "/img/Despacho1.jpg"
         },
         {
-            img: "/imgPost4.png"
+            img: "/img/SalaEspera1.jpg"
         },
     ]
     return (

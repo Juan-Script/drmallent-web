@@ -45,14 +45,14 @@ export default function AboutUs() {
                 mx="auto"
             >
                 <Image
-                    src={'/imgAboutUs1.png'}
+                    src={'/img/Recibidor2.jpg'}
                     alt='imgAboutUs'
                     height={440}
                     width={240}
                 />
 
                 <Image
-                    src={'/imgAboutUs2.png'}
+                    src={'/img/DespachoPrincipal1.jpg'}
                     alt='imgAboutUs'
                     height={440}
                     width={240}
@@ -65,7 +65,7 @@ export default function AboutUs() {
 
 
                     <Image
-                        src={'/imgAboutUs3.png'}
+                        src={'/img/Pasillo3.jpg'}
                         alt='imgAboutUs'
                         objectFit='cover'
                         height={240}
