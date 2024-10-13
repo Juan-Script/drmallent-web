@@ -8,7 +8,7 @@ export interface CardEquipoInt {
 
 export const cardEquipo: CardEquipoInt[] = [
     {
-        src: "/img/FotoPepe.jpg",
+        src: "/img/PerfilPepe.png",
         nombre: "Dr. José Mallent",
         especialidad: "Cirugía plástica, estética y reparadora",
         locacion: "Valencia y Denia",
@@ -21,7 +21,7 @@ export const cardEquipo: CardEquipoInt[] = [
         ]
     },
     {
-        src: "/img/FotoAna.jpg",
+        src: "/img/PerfilAna.jpg",
         nombre: "Dr. José Mallent",
         especialidad: "Cirugía plástica, estética y reparadora",
         locacion: "Valencia y Denia",
@@ -34,7 +34,7 @@ export const cardEquipo: CardEquipoInt[] = [
         ]
     },
     {
-        src: "/img/FotoAfrica.jpg",
+        src: "/img/PerfilAfrica.jpg",
         nombre: "Dr. José Mallent",
         especialidad: "Cirugía plástica, estética y reparadora",
         locacion: "Valencia y Denia",
@@ -47,7 +47,7 @@ export const cardEquipo: CardEquipoInt[] = [
         ]
     },
     {
-        src: "/img/FotoPepeSantamaria.jpg",
+        src: "/img/PerfilPepeSanta.png",
         nombre: "Dr. José Mallent",
         especialidad: "Cirugía plástica, estética y reparadora",
         locacion: "Valencia y Denia",
@@ -60,7 +60,7 @@ export const cardEquipo: CardEquipoInt[] = [
         ]
     },
     {
-        src: "/img/FotoPilar.jpg",
+        src: "/img/PerfilPilar.jpg",
         nombre: "Dr. José Mallent",
         especialidad: "Cirugía plástica, estética y reparadora",
         locacion: "Valencia y Denia",
@@ -73,7 +73,7 @@ export const cardEquipo: CardEquipoInt[] = [
         ]
     },
     {
-        src: "/img/FotoVicky.jpg",
+        src: "/img/PerfilVicky.jpg",
         nombre: "Dr. José Mallent",
         especialidad: "Cirugía plástica, estética y reparadora",
         locacion: "Valencia y Denia",

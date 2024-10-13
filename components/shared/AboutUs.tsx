@@ -44,33 +44,48 @@ export default function AboutUs() {
                 gap="20px"
                 mx="auto"
             >
-                <Image
-                    src={'/img/Recibidor2.jpg'}
-                    alt='imgAboutUs'
-                    height={440}
-                    width={240}
-                />
+                <Flex
+                    h="442px"
+                    w="243px"
+                >
+                    <Image
+                        src={'/img/AboutUs1.jpg'}
+                        alt='imgAboutUs'
+                        height={442}
+                        width={243}
+                        objectFit="cover"
+                    />
+                </Flex>
 
-                <Image
-                    src={'/img/DespachoPrincipal1.jpg'}
-                    alt='imgAboutUs'
-                    height={440}
-                    width={240}
-                />
+                <Flex
+                    h="442px"
+                    w="243px"
+                >
+                    <Image
+                        src={'/img/AboutUs2.jpg'}
+                        alt='imgAboutUs'
+                        height={440}
+                        width={240}
+                        objectFit="cover"
+                    />
+                </Flex>
 
                 <Flex
                     maxH="240px"
                     direction="column"
                 >
-
-
-                    <Image
-                        src={'/img/Pasillo3.jpg'}
-                        alt='imgAboutUs'
-                        objectFit='cover'
-                        height={240}
-                        width={240}
-                    />
+                    <Flex
+                        h="243px"
+                        w="243px"
+                    >
+                        <Image
+                            src={'/img/AboutUs3.jpg'}
+                            alt='imgAboutUs'
+                            height={240}
+                            width={240}
+                            objectFit='cover'
+                        />
+                    </Flex>
 
                     <Flex
                         mt="50px"

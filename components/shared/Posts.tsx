@@ -5,17 +5,17 @@ import Link from 'next/link'
 export default function Posts() {
     const posts = [
         {
-            image: "/img/FotoCristal.jpg",
+            image: "/img/Instagram1.png",
             text: "Posuere urna nec tincidunt praesent egestas maecenas.",
             href: ""
         },
         {
-            image: "/img/FotoPlanta.jpg",
+            image: "/img/Instagram2.png",
             text: "Posuere urna nec tincidunt praesent egestas maecenas.",
             href: ""
         },
         {
-            image: "/img/FotoEstanteria1.jpg",
+            image: "/img/Instagram3.png",
             text: "Posuere urna nec tincidunt praesent egestas maecenas.",
             href: ""
         },
