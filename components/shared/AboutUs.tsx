@@ -1,48 +1,66 @@
+"use client"
+
 import { Flex, Text } from '@chakra-ui/react'
+import { motion } from 'framer-motion'
 import Image from 'next/image'
+
+// Definimos motion para Flex y Text
+const MotionFlex = motion(Flex)
+const MotionText = motion(Text)
 
 export default function AboutUs() {
     return (
-        <Flex
+        <MotionFlex
             direction="column"
             gap="30px"
             px={{ xl: "300px", lg: "200px" }}
             py="100px"
+            initial={{ opacity: 0 }} // Inicialmente invisible
+            animate={{ opacity: 1 }}  // Animación completa
+            transition={{ duration: 0.8 }} // Duración de la animación
         >
-            <Flex
+            {/* Animamos los textos de la sección de arriba */}
+            <MotionFlex
                 direction="column"
                 gap="20px"
+                initial={{ opacity: 0, x: -100 }} // Sale desde la izquierda
+                animate={{ opacity: 1, x: 0 }}    // Termina centrado y visible
+                transition={{ duration: 1 }}
             >
-                <Flex
+                <MotionFlex
                     direction="column"
                     gap="5px"
                 >
-                    <Text
+                    <MotionText
                         fontSize="16px"
                         textColor="font_variant"
                     >
                         SOBRE NOSOTROS
-                    </Text>
+                    </MotionText>
 
-                    <Text
+                    <MotionText
                         fontSize="40px"
                         textColor="black"
                     >
                         CLÍNICA DR. MALLENT – CIRUGÍA ESTÉTICA EN VALENCIA
-                    </Text>
-                </Flex>
+                    </MotionText>
+                </MotionFlex>
 
-                <Text
-                    fontSize="16px"
+                <MotionText
+                    fontSize="14px"
                     textColor="black"
                 >
                     En nuestra Clínica de Estética Plástica, tanto en Valencia como en Dénia contamos con una larga trayectoria y un equipo de especialistas con amplia formación en todo tipo de tratamientos estéticos, tanto quirúrgicos como no quirúrgicos. Las excelentes opiniones de nuestros pacientes son nuestra mejor carta de presentación y nos ha posicionado como una de las clínicas de cirugía estética de referencia.
-                </Text>
-            </Flex>
+                </MotionText>
+            </MotionFlex>
 
-            <Flex
+            {/* Animamos la galería de imágenes */}
+            <MotionFlex
                 gap="20px"
                 mx="auto"
+                initial={{ opacity: 0, y: 100 }} // Sale desde abajo
+                animate={{ opacity: 1, y: 0 }}  // Llega a su posición original
+                transition={{ duration: 1.2 }}
             >
                 <Flex
                     h="442px"
@@ -87,14 +105,21 @@ export default function AboutUs() {
                         />
                     </Flex>
 
-                    <Flex
+                    {/* Animamos los números y el texto */}
+                    <MotionFlex
                         mt="50px"
                         ml="30px"
                         gap="60px"
+                        initial={{ opacity: 0 }} // Inicialmente invisible
+                        animate={{ opacity: 1 }}  // Aparece con opacidad completa
+                        transition={{ duration: 1, delay: 0.3 }} // Ligero retraso
                     >
-                        <Flex
+                        <MotionFlex
                             direction="column"
                             maxW="163px"
+                            initial={{ opacity: 0, y: -50 }} // Empieza desde arriba
+                            animate={{ opacity: 1, y: 0 }}   // Llega a su lugar
+                            transition={{ duration: 1, delay: 0.6 }}
                         >
                             <Text
                                 fontSize="40px"
@@ -109,11 +134,14 @@ export default function AboutUs() {
                             >
                                 CIRUGÍAS CON ÉXITO
                             </Text>
-                        </Flex>
+                        </MotionFlex>
 
-                        <Flex
+                        <MotionFlex
                             direction="column"
                             maxW="163px"
+                            initial={{ opacity: 0, y: -50 }} // Empieza desde arriba
+                            animate={{ opacity: 1, y: 0 }}   // Llega a su lugar
+                            transition={{ duration: 1, delay: 0.9 }}
                         >
                             <Text
                                 fontSize="40px"
@@ -128,11 +156,14 @@ export default function AboutUs() {
                             >
                                 TRABAJADORES
                             </Text>
-                        </Flex>
+                        </MotionFlex>
 
-                        <Flex
+                        <MotionFlex
                             direction="column"
                             maxW="163px"
+                            initial={{ opacity: 0, y: -50 }} // Empieza desde arriba
+                            animate={{ opacity: 1, y: 0 }}   // Llega a su lugar
+                            transition={{ duration: 1, delay: 1.2 }}
                         >
                             <Text
                                 fontSize="40px"
@@ -147,29 +178,12 @@ export default function AboutUs() {
                             >
                                 CLIENTES
                             </Text>
-                        </Flex>
+                        </MotionFlex>
 
-                        {/* <Link
-                            href="/galeria"
-                        >
-                            <Button
-                                rounded="full"
-                                color="font"
-                                bg="transparent"
-                                border="1px"
-                                borderColor="font"
-                                p="10px"
-                                px="20px"
-                                letterSpacing={4}
-                                maxW="230px"
-                            >
-                                DESCUBRE MÁS
-                            </Button>
-                        </Link> */}
-                    </Flex>
+                    </MotionFlex>
                 </Flex>
 
-            </Flex>
-        </Flex>
+            </MotionFlex>
+        </MotionFlex>
     )
 }

@@ -87,6 +87,10 @@ export default function Navbar() {
                             as={Link}
                             key={index}
                             href={link.href}
+                            fontSize="14px"
+                            _hover={{
+                                color: "#878787",
+                            }}
                         >
                             {link.text}
                         </ChakraLink>

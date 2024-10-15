@@ -71,18 +71,6 @@ export default function Footer() {
 
   const socials = [
     {
-      icon: <Facebook />,
-      href: "/",
-    },
-    {
-      icon: <Twitter />,
-      href: "/",
-    },
-    {
-      icon: <Linkedin />,
-      href: "/",
-    },
-    {
       icon: <Instagram />,
       href: "/",
     },
@@ -214,9 +202,12 @@ export default function Footer() {
           fontWeight="400"
           fontSize={{ base: "14px", sm: "15px", md: "16px" }}
           textAlign={{ base: "center", md: "right" }}
-          w={{ base: "100%", md: "45%" }}
+          w={{ base: "100%", md: "100%" }}
         >
-          Posuere urna nec tincidunt praesent egestas maecenas pharetra convallis posuere ipsum nunc.
+          info@drmallent.com
+          <br/> +34 646 66 78 00
+          <br/>Calle de Sorní, 4 <br/>
+          Valencia, 46004
         </Text>
       </Flex>
 

@@ -5,19 +5,16 @@ export default function Testimonials() {
 
   const testimonios = [
     {
-      text: "La experiencia en esta clínica ha sido excepcional. Desde la consulta inicial hasta el seguimiento postoperatorio, el equipo ha sido profesional y atento.",
-      person: "María López",
-      img: "/testimonio1.png"
+      text: "Dos intervenciones con el Dr. Mallent y encantada con el resultado. Atención de 10, y el postoperatorio sin ningún dolor. El pecho esta acertado con la talla y muy natural, exactamente como lo quería…",
+      person: "Estefanía",
     },
     {
-      text: "Decidí realizarme una rinoplastia en esta clínica y no podría estar más contento con mi decisión. Los doctores son muy experimentados y se aseguraron de que entendiera cada paso del proceso.",
+      text: "Desde la primera consulta me transmitió profesionalidad, seguridad pero sobretodo una gran humanidad y cercanía.",
       person: "Carlos Fernández",
-      img: "/testimonio2.png"
     },
     {
-      text: "Recomiendo esta clínica a cualquiera que esté considerando una cirugía estética. El personal es increíblemente amable y profesional, y el ambiente es acogedor.",
+      text: "Estoy encantada con el Dr.Mallent. Desde la primera consulta me transmitió profesionalidad, seguridad pero sobretodo una gran humanidad y cercanía. ¡Mi complejo ha quedado resuelto y estoy feliz!",
       person: "Ana Martínez",
-      img: "/testimonio3.png"
     }
   ]
 
@@ -33,9 +30,10 @@ export default function Testimonials() {
             key={index}
             direction="column"
             gap="20px"
+            w="300px"
           >
             <Text
-              fontSize="18px"
+              fontSize="14px"
               fontStyle="italic"
             >
               {testimonio.text}
@@ -44,14 +42,8 @@ export default function Testimonials() {
               gap="20px"
               align="center"
             >
-              <Image
-                src={testimonio.img}
-                alt={testimonio.person}
-                width={50}
-                height={50}
-              />
               <Text
-                fontSize="18px"
+                fontSize="12px"
               >
                 {testimonio.person}
               </Text>

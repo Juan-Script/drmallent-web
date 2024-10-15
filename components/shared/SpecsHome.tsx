@@ -34,6 +34,7 @@ export default function SpecsHome() {
           <Text
             fontSize="40px"
             fontWeight={700}
+            w="full"
           >
             {spec.number} {spec.titulo}
           </Text>

@@ -53,53 +53,57 @@ export default function Posts() {
                 gap="30px"
             >
                 {posts?.map((post, index) => (
-                    <Flex
+                    <Link
                         key={index}
-                        direction="column"
-                        maxW="360px"
+                        href="https://www.instagram.com/dr.mallent?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                        target='_blank'
                     >
                         <Flex
-                        >
-                            <Image
-                                src={post.image}
-                                alt="Post"
-                                width={363}
-                                height={268}
-                            />
-                        </Flex>
-
-                        <Text
-                            fontSize="16px"
-                            color="secondary_font"
-                            mt="30px"
-                        >
-                            {post.text}
-                        </Text>
-                        <Link
-                            href={post.href}
+                            direction="column"
+                            maxW="360px"
                         >
                             <Flex
-                                gap="5px"
-                                mt="20px"
                             >
-                                <Text
-                                    fontSize="16px"
-                                    letterSpacing={4}
-                                    fontWeight={600}
-                                >
-                                    VER MÁS
-                                </Text>
-
                                 <Image
-                                    src="/rightArrow.svg"
-                                    alt="arrow"
-                                    width={14}
-                                    height={14}
+                                    src={post.image}
+                                    alt="Post"
+                                    width={363}
+                                    height={268}
                                 />
                             </Flex>
-                        </Link>
-                    </Flex>
 
+                            <Text
+                                fontSize="16px"
+                                color="secondary_font"
+                                mt="30px"
+                            >
+                                {post.text}
+                            </Text>
+                            <Link
+                                href={post.href}
+                            >
+                                <Flex
+                                    gap="5px"
+                                    mt="20px"
+                                >
+                                    <Text
+                                        fontSize="16px"
+                                        letterSpacing={4}
+                                        fontWeight={600}
+                                    >
+                                        VER MÁS
+                                    </Text>
+
+                                    <Image
+                                        src="/rightArrow.svg"
+                                        alt="arrow"
+                                        width={14}
+                                        height={14}
+                                    />
+                                </Flex>
+                            </Link>
+                        </Flex>
+                    </Link>
                 ))}
             </Flex>
 

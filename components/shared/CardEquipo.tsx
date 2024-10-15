@@ -36,7 +36,8 @@ export default function CardEquipo({
                 width={imagenSize?.width}
                 height={imagenSize?.height}
                 objectFit="cover"
-                priority={0 < 2} 
+                priority={0 < 2}
+                quality={100}
             />
 
             <Flex
