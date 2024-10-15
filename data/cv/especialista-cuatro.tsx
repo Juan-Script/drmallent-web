@@ -1,9 +1,9 @@
 import { cvInt } from ".";
 
 
-export const joseSantamariaCv: cvInt = {
-    slug: "jose-santamaria",
-    imagen: "/profile2.png",
+export const especialistaCuatro: cvInt = {
+    slug: "especialista-cuatro",
+    imagen: "/img/PerfilPepeSanta.png",
     nombre: "Dr. José Santamaría",
     especialidad: "Anestesiología ",
     locacion: "Valencia",

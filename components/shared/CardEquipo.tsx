@@ -1,5 +1,6 @@
-import { Button, Flex, ListItem, Text, UnorderedList, useBreakpointValue } from "@chakra-ui/react";
+import { Button, Flex, ListItem, Text, UnorderedList, useBreakpointValue, Link as ChakraLink } from "@chakra-ui/react";
 import Image from "next/image";
+import Link from "next/link";
 
 interface Props {
     src: string;
@@ -7,15 +8,16 @@ interface Props {
     especialidad: string;
     locacion: string;
     items: string[];
-
+    slug: string;
 }
 
 export default function CardEquipo({
     src,
-    nombre, 
+    nombre,
     especialidad,
     locacion,
-    items
+    items,
+    slug
 }: Props) {
     const imagenSize = useBreakpointValue({
         base: { width: 340, height: 370 },
@@ -25,8 +27,11 @@ export default function CardEquipo({
     })
 
     return (
-        <Flex
-            direction="column"
+        <ChakraLink
+            href={`/cv/${slug}`}
+            as={Link}
+            display={"flex"}
+            flexDirection="column"
             gap="30px"
             minW={"485px"}
         >
@@ -36,7 +41,7 @@ export default function CardEquipo({
                 width={imagenSize?.width}
                 height={imagenSize?.height}
                 objectFit="cover"
-                priority={0 < 2} 
+                priority={0 < 2}
             />
 
             <Flex
@@ -83,12 +88,12 @@ export default function CardEquipo({
                 letterSpacing="0.267px"
             >
                 {items.map((item, index) => (
-                    <ListItem 
+                    <ListItem
                         key={index}
                     >
                         {item}
                     </ListItem>
-                
+
                 ))}
             </UnorderedList>
 
@@ -109,6 +114,6 @@ export default function CardEquipo({
             >
                 Leer Más
             </Button>
-        </Flex>
+        </ChakraLink>
     )
 }

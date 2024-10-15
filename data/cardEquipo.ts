@@ -1,5 +1,6 @@
 export interface CardEquipoInt {
     src: string;
+    slug: string;
     nombre: string;
     especialidad: string;
     locacion: string;
@@ -9,6 +10,7 @@ export interface CardEquipoInt {
 export const cardEquipo: CardEquipoInt[] = [
     {
         src: "/img/PerfilPepe.png",
+        slug: "especialista-uno",
         nombre: "Dr. José Mallent",
         especialidad: "Cirugía plástica, estética y reparadora",
         locacion: "Valencia y Denia",
@@ -22,6 +24,7 @@ export const cardEquipo: CardEquipoInt[] = [
     },
     {
         src: "/img/PerfilAna.jpg",
+        slug: "especialista-dos",
         nombre: "Dr. José Mallent",
         especialidad: "Cirugía plástica, estética y reparadora",
         locacion: "Valencia y Denia",
@@ -35,6 +38,7 @@ export const cardEquipo: CardEquipoInt[] = [
     },
     {
         src: "/img/PerfilAfrica.jpg",
+        slug: "especialista-tres",
         nombre: "Dr. José Mallent",
         especialidad: "Cirugía plástica, estética y reparadora",
         locacion: "Valencia y Denia",
@@ -48,6 +52,7 @@ export const cardEquipo: CardEquipoInt[] = [
     },
     {
         src: "/img/PerfilPepeSanta.png",
+        slug: "especialista-cuatro",
         nombre: "Dr. José Mallent",
         especialidad: "Cirugía plástica, estética y reparadora",
         locacion: "Valencia y Denia",
@@ -61,6 +66,7 @@ export const cardEquipo: CardEquipoInt[] = [
     },
     {
         src: "/img/PerfilPilar.jpg",
+        slug: "especialista-cinco",
         nombre: "Dr. José Mallent",
         especialidad: "Cirugía plástica, estética y reparadora",
         locacion: "Valencia y Denia",
@@ -74,6 +80,7 @@ export const cardEquipo: CardEquipoInt[] = [
     },
     {
         src: "/img/PerfilVicky.jpg",
+        slug: "especialista-seis",
         nombre: "Dr. José Mallent",
         especialidad: "Cirugía plástica, estética y reparadora",
         locacion: "Valencia y Denia",
@@ -87,6 +94,7 @@ export const cardEquipo: CardEquipoInt[] = [
     },
     // {
     //     src: "/img/FotoCarlos.jpg",
+    //     slug: "especialista-siete",
     //     nombre: "Dr. José Mallent",
     //     especialidad: "Cirugía plástica, estética y reparadora",
     //     locacion: "Valencia y Denia",
