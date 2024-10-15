@@ -1,11 +1,12 @@
 "use client"
 
-import { Button, Flex, Link, IconButton, Drawer, DrawerBody, DrawerHeader, DrawerOverlay, DrawerContent, DrawerCloseButton, useDisclosure, VStack } from '@chakra-ui/react'
+import { Button, Flex, IconButton, Drawer, DrawerBody, DrawerHeader, DrawerOverlay, DrawerContent, DrawerCloseButton, useDisclosure, Link as ChakraLink } from '@chakra-ui/react'
 import { usePathname } from 'next/navigation'
 import Image from 'next/image'
 import { useEffect, useState } from 'react';
 import { IoMenu } from "react-icons/io5";
 import { MenuDrawer } from './MenuDrawer';
+import Link from 'next/link';
 
 
 export default function Navbar() {
@@ -64,7 +65,8 @@ export default function Navbar() {
             zIndex="10"
             align="center"
         >
-            <Link
+            <ChakraLink
+                as={Link}
                 href='/'
             >
                 <Image
@@ -73,7 +75,7 @@ export default function Navbar() {
                     width={96}
                     height={19}
                 />
-            </Link>
+            </ChakraLink>
 
             <Flex
                 gap="40px"
@@ -81,18 +83,20 @@ export default function Navbar() {
             >
                 {
                     Links.map((link, index) => (
-                        <Link
+                        <ChakraLink
+                            as={Link}
                             key={index}
                             href={link.href}
                         >
                             {link.text}
-                        </Link>
+                        </ChakraLink>
                     ))
                 }
             </Flex>
 
             {/* Botón de contacto para pantallas grandes */}
-            <Link
+            <ChakraLink
+                as={Link}
                 href="/contacto"
                 display={{ base: "none", md: "block" }}
             >
@@ -106,7 +110,7 @@ export default function Navbar() {
                 >
                     Contacto
                 </Button>
-            </Link>
+            </ChakraLink>
 
             <IconButton
                 aria-label="Abrir menú"
