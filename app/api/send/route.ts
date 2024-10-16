@@ -1,6 +1,6 @@
 import { FormularioTemplate } from "@/components/templates/FormularioTemplate";
 import { Resend } from 'resend';
-import { NextRequest } from 'next/server';
+import { NextRequest, NextResponse } from 'next/server';
 
 const resend = new Resend("re_MKCqKfEM_MkUmCkYKRzNsAs8KMx3ZZJ4s");
 
@@ -12,20 +12,23 @@ export async function POST(request: NextRequest) {
         console.log('Datos recibidos:', body);
 
         const { data, error } = await resend.emails.send({
-            from: 'Tu Empresa <noreply@tuempresa.com>',
-            to: [email],
+            from: 'Dr Mallent <dr.mallent@mail.juan-reig.com>',
+            to: ["agustinalonsocantoli@gmail.com"],
             subject: 'Confirmación de formulario',
             react: FormularioTemplate({ nombre, apellido, email, telefono }),
         });
 
         if (error) {
             console.error('Error al enviar el correo:', error);
-            return Response.json({ error: error.message }, { status: 500 });
+            return NextResponse.json({ error: error.message }, { status: 500 });
         }
 
-        return Response.json({ message: 'Correo enviado con éxito', data }, { status: 200 });
+        return NextResponse.json(
+            { message: "Email enviado con éxito", data: data },
+            { status: 200 }
+        );
     } catch (error) {
-        console.error('Error al procesar la solicitud:', error);
-        return Response.json({ error: 'Error al procesar la solicitud' }, { status: 500 });
+        console.error(error);
+        return NextResponse.json({ error }, { status: 500 });
     }
 }
