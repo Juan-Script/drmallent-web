@@ -1,45 +1,113 @@
 "use client"
 
-import { Button, Checkbox, Flex, Input, Text } from "@chakra-ui/react";
+import { Button, Checkbox, Flex, Input, Text, useToast } from "@chakra-ui/react";
 import { useState } from "react";
+import { z } from "zod";
 
 export default function Form() {
-    const [formData, setFormData] = useState({
-        nombre: '',
-        apellido: '',
-        email: '',
-        telefono: ''
+    const toast = useToast();
+
+    const [loading, setLoading] = useState<boolean>(false)
+    const [formData, setFormData] = useState<{
+        nombre: string;
+        apellido: string;
+        email: string;
+        telefono: string;
+        consentimientoDatos: boolean;
+        consentimientoPublicidad: boolean;
+    }>({
+        nombre: "",
+        apellido: "",
+        email: "",
+        telefono: "",
+        consentimientoDatos: false,
+        consentimientoPublicidad: false
+    });
+
+    const [errors, setErrors] = useState<string[]>([]);
+
+    const formSchema = z.object({
+        nombre: z.string().min(1, "El nombre es obligatorio."),
+        apellido: z.string().min(1, "El apellido es obligatorio."),
+        email: z.string().email("El email debe ser válido.").min(1, "El email es obligatorio."),
+        telefono: z.string().min(9, "El teléfono debe ser válido.").min(1, "El teléfono es obligatorio."),
+        consentimientoDatos: z.boolean().refine(val => val === true, "Debes aceptar el uso de tus datos."),
+        consentimientoPublicidad: z.boolean().refine(val => val === true, "Debes aceptar recibir publicidad")
     });
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        const { name, value } = e.target;
+        const { name, value, type, checked } = e.target;
+
         setFormData(prevData => ({
             ...prevData,
-            [name]: value
+            [name]: type === 'checkbox' ? checked : value
         }));
     };
 
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
+
         try {
-            const response = await fetch('/api/send', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(formData),
-            });
+            setLoading(true)
+            formSchema.parse(formData);
+            setErrors([]);
 
-            const data = await response.json();
+            try {
+                const [clinica, cliente] = await Promise.all([
+                    fetch('/api/send', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify(formData),
+                    }),
+                    fetch('/api/cliente', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({ email: formData.email }),
+                    })
+                ]);
 
-            if (response.ok) {
-                console.log('Formulario enviado con éxito');
-                setFormData({ nombre: '', apellido: '', email: '', telefono: '' });
-            } else {
-                console.error(`Error: ${data.error}`);
+                const response = await clinica.json();
+
+                if (clinica.ok) {
+                    toast({
+                        title: 'Formulario enviado.',
+                        description: "Nos pondremos en contacto.",
+                        status: 'success',
+                        duration: 5000,
+                        isClosable: true,
+                        position: "top"
+                    });
+
+                    setFormData({
+                        nombre: "",
+                        apellido: "",
+                        email: "",
+                        telefono: "",
+                        consentimientoDatos: false,
+                        consentimientoPublicidad: false
+                    });
+                } else {
+                    console.error(`Error: ${response.error}`);
+                    setErrors([`Error al enviar el formulario: ${response.error}`]);
+                }
+
+                if (!cliente.ok) {
+                    console.error('Error al enviar el correo secundario');
+                }
+            } catch (error) {
+                console.error('Error al enviar el formulario', error);
+                setErrors(['Error al enviar el formulario. Por favor, inténtalo de nuevo.']);
             }
         } catch (error) {
-            console.error('Error al enviar el formulario', error);
+            if (error instanceof z.ZodError) {
+                setErrors(error.errors.map(err => err.message));
+            }
+        } finally {
+            setLoading(false)
         }
     };
 
@@ -140,14 +208,36 @@ export default function Form() {
 
                 <Checkbox
                     mt="20px"
+                    name="consentimientoDatos"
+                    alignItems="start"
+                    isChecked={formData.consentimientoDatos}
+                    onChange={handleChange}
                 >
-                    Consiento el uso de mis datos para los fines indicados en la política de privacidad “SUS DATOS SEGUROS”.
+                    <Text
+                        color="secondary_font"
+                        fontSize="14px"
+                        fontWeight="500"
+                        lineHeight="16.9px"
+                    >
+                        Consiento el uso de mis datos para los fines indicados en la política de privacidad &quot;SUS DATOS SEGUROS&quot;.
+                    </Text>
                 </Checkbox>
 
                 <Checkbox
                     mt="5px"
+                    name="consentimientoPublicidad"
+                    alignItems="start"
+                    isChecked={formData.consentimientoPublicidad}
+                    onChange={handleChange}
                 >
-                    Consiento el uso de mis datos personales para recibir publicidad de su entidad.
+                    <Text
+                        color="secondary_font"
+                        fontSize="14px"
+                        fontWeight="500"
+                        lineHeight="16.9px"
+                    >
+                        Consiento el uso de mis datos personales para recibir publicidad de su entidad.
+                    </Text>
                 </Checkbox>
 
                 <Text
@@ -159,6 +249,22 @@ export default function Form() {
                 >
                     *Lee nuestra política de privacidad.
                 </Text>
+
+                <Flex
+                    direction="column"
+                    mt="10px"
+                >
+                    {errors.length > 0 &&
+                        errors?.map((e: string, i: number) => (
+                            <Text
+                                key={i}
+                                color="red"
+                                fontSize="12px"
+                            >
+                                * {e}
+                            </Text>
+                        ))}
+                </Flex>
 
                 <Button
                     mt="50px"
@@ -176,6 +282,7 @@ export default function Form() {
                     lineHeight={"20px"}
                     textTransform={"uppercase"}
                     type="submit"
+                    isLoading={loading}
                 >
                     Enviar
                 </Button>

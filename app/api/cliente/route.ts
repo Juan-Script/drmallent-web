@@ -1,4 +1,4 @@
-import { FormularioTemplate } from "@/components/templates/FormularioTemplate";
+import ClienteTemplate from "@/components/templates/ClienteTemplate";
 import { Resend } from 'resend';
 import { NextRequest, NextResponse } from 'next/server';
 
@@ -7,26 +7,31 @@ const resend = new Resend("re_MKCqKfEM_MkUmCkYKRzNsAs8KMx3ZZJ4s");
 export async function POST(request: NextRequest) {
     try {
         const body = await request.json();
-        const { nombre, apellido, email, telefono } = body;
+        const { email } = body;
+
+        if (!email || typeof email !== 'string') {
+            console.error('Email inválido recibido:', email);
+            return NextResponse.json({ error: 'Email inválido' }, { status: 400 });
+        }
 
         const { data, error } = await resend.emails.send({
             from: 'Dr Mallent <dr.mallent@mail.juan-reig.com>',
             to: [email],
             subject: 'Confirmación de formulario',
-            react: FormularioTemplate({ nombre, apellido, email, telefono }),
+            react: ClienteTemplate(),
         });
 
         if (error) {
-            console.error('Error al enviar el correo:', error);
+            console.error('Error detallado de Resend:', error);
             return NextResponse.json({ error: error.message }, { status: 500 });
         }
 
         return NextResponse.json(
-            { message: "Email enviado con éxito", data: data },
+            { message: "Email enviado con éxito", data },
             { status: 200 }
         );
     } catch (error) {
-        console.error(error);
-        return NextResponse.json({ error }, { status: 500 });
+        console.error('Error detallado en la ruta del cliente:', error);
+        return NextResponse.json({ error: 'Error interno del servidor' }, { status: 500 });
     }
 }
