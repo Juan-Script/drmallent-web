@@ -13,9 +13,10 @@ export default function Perfil({ profesional }: Porps) {
             direction={{ base: "column", lg: "row" }}
         >
             <Flex
-                direction="column"
+                direction={{ base: "column", sm: "row", xl: "column" }}
                 alignItems={{ base: "center", lg: "flex-start" }}
                 mb={{ base: "40px", lg: "0" }}
+                gap={{ base: "0px", sm: "20px", lg: "0px"}}
             >
                 <Image
                     src={profesional?.imagen}
@@ -24,57 +25,65 @@ export default function Perfil({ profesional }: Porps) {
                     height={450}
                 />
 
-                <Text
-                    mt="35px"
-                    mb="30px"
-                    fontSize="12px"
-                    fontWeight="400"
-                    lineHeight="13.2px"
-                    letterSpacing="0.667px"
-                    textAlign={{ base: "center", md: "left" }}
+                <Flex
+                    direction="column"
+                    alignItems={{ base: "center", sm: "flex-start" }}
                 >
-                    {profesional?.nombre}
-                </Text>
+                    <Text
+                        mt="35px"
+                        mb="30px"
+                        fontSize={{ base: "14px", lg: "12px"}}
+                        fontWeight="400"
+                        lineHeight="13.2px"
+                        letterSpacing="0.667px"
+                        textAlign={{ base: "center", md: "left" }}
+                        pl={{ base: "0px", sm: "10px"}}
+                    >
+                        {profesional?.nombre}
+                    </Text>
 
-                <Text
-                    color="secondary_font"
-                    fontSize="17px"
-                    fontWeight="400"
-                    lineHeight="20px"
-                    letterSpacing="0.267px"
-                    textAlign={{ base: "center", md: "left" }}
-                >
-                    {profesional?.especialidad}
-                </Text>
+                    <Text
+                        color="secondary_font"
+                        fontSize="17px"
+                        fontWeight="400"
+                        lineHeight="20px"
+                        letterSpacing="0.267px"
+                        textAlign={{ base: "center", md: "left" }}
+                        pl={{ base: "0px", sm: "10px"}}
+                    >
+                        {profesional?.especialidad}
+                    </Text>
 
-                <Text
-                    color="secondary_font"
-                    fontSize="14px"
-                    fontWeight="400"
-                    lineHeight="20px"
-                    letterSpacing="0.267px"
-                    textAlign={{ base: "center", md: "left" }}
-                >
-                    {profesional?.locacion}
-                </Text>
+                    <Text
+                        color="secondary_font"
+                        fontSize="14px"
+                        fontWeight="400"
+                        lineHeight="20px"
+                        letterSpacing="0.267px"
+                        textAlign={{ base: "center", md: "left" }}
+                        pl={{ base: "0px", sm: "10px"}}
+                    >
+                        {profesional?.locacion}
+                    </Text>
 
-                <UnorderedList
-                    mt="35px"
-                    styleType="'-'"
-                    color="secondary_font"
-                    fontSize="14px"
-                    fontWeight="400"
-                    lineHeight="20px"
-                    letterSpacing="0.267px"
-                    gap="5px"
-                    display="flex"
-                    flexDir="column"
-                    pl={{ base: "20px", md: "0" }}
-                >
-                    {profesional?.items.map((item, index) => (
-                        <ListItem key={index}>{item}</ListItem>
-                    ))}
-                </UnorderedList>
+                    <UnorderedList
+                        mt="35px"
+                        styleType="'-'"
+                        color="secondary_font"
+                        fontSize="14px"
+                        fontWeight="400"
+                        lineHeight="20px"
+                        letterSpacing="0.267px"
+                        gap="5px"
+                        display="flex"
+                        flexDir="column"
+                        pl={{ base: "20px", sm: "0" }}
+                    >
+                        {profesional?.items.map((item, index) => (
+                            <ListItem key={index}>{item}</ListItem>
+                        ))}
+                    </UnorderedList>
+                </Flex>
             </Flex>
 
             <Box

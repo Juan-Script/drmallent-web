@@ -1,4 +1,4 @@
-import { Flex, Text } from '@chakra-ui/react'
+import { Flex, Text, SimpleGrid } from '@chakra-ui/react'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -24,16 +24,17 @@ export default function Posts() {
         <Flex
             direction="column"
             align="center"
-            gap="40px"
-            py="100px"
-            px={{ "2xl": "300px", xl: "200px", lg: "200px" }}
+            gap={{ base: "20px", md: "40px" }}
+            py={{ base: "50px", md: "100px" }}
+            px={{ base: "30px", sm: "100px", md: "150px", lg: "200px", xl: "200px", "2xl": "300px" }}
         >
             <Flex
                 align="center"
                 direction="column"
+                textAlign="center"
             >
                 <Text
-                    fontSize="16px"
+                    fontSize={{ base: "14px", md: "16px" }}
                     color="secondary_font"
                     letterSpacing={4}
                     fontWeight="400"
@@ -41,7 +42,7 @@ export default function Posts() {
                     INSTAGRAM
                 </Text>
                 <Text
-                    fontSize="40px"
+                    fontSize={{ base: "32px", md: "40px" }}
                     fontWeight={700}
                     color="font"
                 >
@@ -49,8 +50,11 @@ export default function Posts() {
                 </Text>
             </Flex>
 
-            <Flex
-                gap="30px"
+            <SimpleGrid
+                columns={{ base: 1, lg: 3 }}
+                spacing={{ base: "30px", md: "30px" }}
+                w="100%"
+                maxW="1200px"
             >
                 {posts?.map((post, index) => (
                     <Link
@@ -60,22 +64,22 @@ export default function Posts() {
                     >
                         <Flex
                             direction="column"
-                            maxW="360px"
+                            maxW="100%"
                         >
-                            <Flex
-                            >
+                            <Flex>
                                 <Image
                                     src={post.image}
                                     alt="Post"
                                     width={363}
                                     height={268}
+                                    style={{ width: '100%', height: 'auto', objectFit: 'cover' }}
                                 />
                             </Flex>
 
                             <Text
-                                fontSize="16px"
+                                fontSize={{ base: "14px", md: "16px" }}
                                 color="secondary_font"
-                                mt="30px"
+                                mt="20px"
                             >
                                 {post.text}
                             </Text>
@@ -84,10 +88,11 @@ export default function Posts() {
                             >
                                 <Flex
                                     gap="5px"
-                                    mt="20px"
+                                    mt="10px"
+                                    alignItems="center"
                                 >
                                     <Text
-                                        fontSize="16px"
+                                        fontSize={{ base: "14px", md: "16px" }}
                                         letterSpacing={4}
                                         fontWeight={600}
                                     >
@@ -105,14 +110,14 @@ export default function Posts() {
                         </Flex>
                     </Link>
                 ))}
-            </Flex>
+            </SimpleGrid>
 
             <Flex
                 bg="black"
                 h="1px"
                 w="full"
                 maxW="1440px"
-                mt="20px"
+                mt={{ base: "30px", md: "40px" }}
             />
         </Flex>
     )

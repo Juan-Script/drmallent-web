@@ -20,32 +20,35 @@ export default function SpecsHome() {
   ]
   return (
     <Flex
-      px={{ xl: "300px", lg: "200px" }}
-      py="100px"
+      px={{ base: "30px", sm: "100px", md: "150px", lg: "200px", xl: "200px", "2xl": "300px" }}
+      py={{ base: "50px", md: "100px" }}
       direction="column"
-      gap="70px"
+      gap={{ base: "40px", md: "70px" }}
     >
       {specs.map((spec, index) => (
         <Flex
           key={index}
           w="full"
+          direction={{ base: "column", md: "row" }}
           justifyContent="space-between"
+          gap={{ base: "20px", md: "0" }}
         >
           <Text
-            fontSize="40px"
+            fontSize={{ base: "24px", sm: "32px", md: "40px" }}
             fontWeight={700}
-            w="full"
+            w={{ base: "full", md: "auto" }}
+            mb={{ base: "10px", md: "0" }}
           >
             {spec.number} {spec.titulo}
           </Text>
 
           <Flex
-            maxW="700px"
+            maxW={{ base: "100%", md: "700px" }}
             direction="column"
             gap="20px"
           >
             <Text
-              fontSize="16px"
+              fontSize={{ base: "14px", sm: "16px" }}
               fontWeight={400}
               color="secondary_font"
             >
@@ -57,9 +60,10 @@ export default function SpecsHome() {
             >
               <Flex
                 gap="5px"
+                alignItems="center"
               >
                 <Text
-                  fontSize="16px"
+                  fontSize={{ base: "14px", sm: "16px" }}
                   letterSpacing={4}
                   fontWeight={600}
                 >

@@ -20,9 +20,11 @@ export default function Testimonials() {
 
   return (
     <Flex
-      px={{ xl: "300px", lg: "200px" }}
-      py="100px"
-      gap="40px"
+      px={{ base: "30px", sm: "100px", md: "150px", lg: "200px", xl: "200px", "2xl": "300px" }}
+      py={{ base: "50px", md: "100px" }}
+      gap={{ base: "60px" }}
+      direction={{ base: "column", md: "row" }}
+      align={{ base: "center", md: "flex-start" }}
     >
       {
         testimonios.map((testimonio, index) => (
@@ -30,10 +32,11 @@ export default function Testimonials() {
             key={index}
             direction="column"
             gap="20px"
-            w="300px"
+            w={{ base: "100%", md: "300px" }}
+            maxW="400px"
           >
             <Text
-              fontSize="14px"
+              fontSize={{ base: "16px", md: "14px" }}
               fontStyle="italic"
             >
               {testimonio.text}
@@ -43,12 +46,11 @@ export default function Testimonials() {
               align="center"
             >
               <Text
-                fontSize="12px"
+                fontSize={{ base: "14px", md: "12px" }}
               >
                 {testimonio.person}
               </Text>
             </Flex>
-
           </Flex>
         ))
       }

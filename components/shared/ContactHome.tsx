@@ -12,10 +12,10 @@ export default function ContactHome() {
   return (
     <MotionFlex
       bgColor="white"
-      px={{ "2xl": "300px", xl: "200px", lg: "200px" }}
+      px={{ base: "30px", sm: "100px", md: "150px", lg: "200px", xl: "200px", "2xl": "300px" }}
       justifyContent="center"
       direction="column"
-      py="100px"
+      py={{ base: "50px", md: "100px" }}
       gap="10px"
       mx="auto"
       initial={{ opacity: 0 }} // Empieza con opacidad 0
@@ -23,8 +23,8 @@ export default function ContactHome() {
       transition={{ duration: 1 }} // La animación durará 1 segundo
     >
       <MotionText
-        fontSize="23px"
-        transform="uppercase"
+        fontSize={{ base: "18px", md: "23px" }}
+        textTransform="uppercase"
         mr="auto"
         initial={{ opacity: 0, x: -100 }} // Sale desde la izquierda
         animate={{ opacity: 1, x: 0 }}  // Llega a la posición original
@@ -34,15 +34,16 @@ export default function ContactHome() {
       </MotionText>
 
       <MotionFlex
-        gap="60px"
+        gap={{ base: "30px", md: "60px" }}
         align="center"
+        direction={{ base: "column", lg: "row" }}
         initial={{ opacity: 0 }}  // Inicia con opacidad 0
         animate={{ opacity: 1 }}   // Aumenta a opacidad 1
         transition={{ duration: 1.2 }} // Un poco más lenta
       >
         {/* Columna izquierda con el formulario */}
         <MotionFlex
-          w="50%"
+          w={{ base: "100%", lg: "50%" }}
           direction="column"
           gap="30px"
           initial={{ opacity: 0, x: -100 }}  // Empieza desde la izquierda
@@ -67,14 +68,14 @@ export default function ContactHome() {
 
         {/* Columna derecha con el texto */}
         <MotionFlex
-          w="50%"
+          w={{ base: "100%", lg: "50%" }}
           initial={{ opacity: 0, x: 100 }}  // Sale desde la derecha
           animate={{ opacity: 1, x: 0 }}    // Se mueve hacia el centro
           transition={{ duration: 1.2 }}  // Duración de la animación
         >
           <Text
-            fontSize="16px"
-            mb="80px"
+            fontSize={{ base: "14px", md: "16px" }}
+            mb={{ base: "40px", md: "80px" }}
           >
             En la Clínica Dr. Mallent solo queremos lo mejor para nuestros
             pacientes, por eso realizamos una consulta previa a cualquier
