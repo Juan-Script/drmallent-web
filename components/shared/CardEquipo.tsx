@@ -1,5 +1,5 @@
-import { Button, Flex, ListItem, Text, UnorderedList, useBreakpointValue, Link as ChakraLink } from "@chakra-ui/react";
-import Image from "next/image";
+import { Button, Flex, ListItem, Text, UnorderedList, useBreakpointValue, Link as ChakraLink, Image as ImageChakra } from "@chakra-ui/react";
+// import Image from "next/image";
 import Link from "next/link";
 
 interface Props {
@@ -35,13 +35,12 @@ export default function CardEquipo({
             gap="30px"
             minW={"485px"}
         >
-            <Image
+            <ImageChakra
                 src={src}
                 alt={nombre}
                 width={imagenSize?.width}
                 height={imagenSize?.height}
                 objectFit="cover"
-                priority={0 < 2}
             />
 
             <Flex

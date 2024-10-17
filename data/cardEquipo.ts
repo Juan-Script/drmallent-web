@@ -9,7 +9,7 @@ export interface CardEquipoInt {
 
 export const cardEquipo: CardEquipoInt[] = [
     {
-        src: "/img/PerfilPepe.png",
+        src: "/FotoPepex2.jpg",
         slug: "especialista-uno",
         nombre: "Dr. José Mallent",
         especialidad: "Cirugía plástica, estética y reparadora",
@@ -23,7 +23,7 @@ export const cardEquipo: CardEquipoInt[] = [
         ]
     },
     {
-        src: "/img/PerfilAna.jpg",
+        src: "/FotoAnax2.jpg",
         slug: "especialista-dos",
         nombre: "Dr. José Mallent",
         especialidad: "Cirugía plástica, estética y reparadora",
