@@ -34,6 +34,7 @@ export default function CardEquipo({
             flexDirection="column"
             gap="30px"
             minW={"485px"}
+            _hover={{}}
         >
             <ImageChakra
                 src={src}

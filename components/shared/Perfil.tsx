@@ -13,7 +13,7 @@ export default function Perfil({ profesional }: Porps) {
             direction={{ base: "column", lg: "row" }}
         >
             <Flex
-                direction={{ base: "column", sm: "row", xl: "column" }}
+                direction={{ base: "column", sm: "row",lg: "column", xl: "column" }}
                 alignItems={{ base: "center", lg: "flex-start" }}
                 mb={{ base: "40px", lg: "0" }}
                 gap={{ base: "0px", sm: "20px", lg: "0px"}}

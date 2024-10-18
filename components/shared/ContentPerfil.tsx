@@ -3,6 +3,7 @@
 import { Button, Flex, Text } from '@chakra-ui/react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 // Definimos los motion components
 const MotionFlex = motion(Flex);
@@ -70,24 +71,28 @@ export default function ContentPerfil() {
                         Para cualquier tratamiento de cirugía plástica y estética en Valencia, es posible solicitar una cita previa para consultar toda la información respecto a las intervenciones,
                         tratamientos, precios o modalidades de pago.
                     </Text>
-
-                    <MotionButton
-                        bgColor="transparent"
-                        color="font"
-                        border="1px"
-                        borderColor="font"
-                        px={{ base: "40px", md: "80px" }}
-                        py="18px"
-                        maxW={{ base: "100%", sm: "350px" }}
-                        rounded="none"
-                        fontWeight="500"
-                        variants={{
-                            hidden: { opacity: 0, y: 20 },
-                            visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
-                        }}
+                    <Link
+                        href="/contacto"
+                        style={{ textDecoration: "none" }}
                     >
-                        Más información
-                    </MotionButton>
+                        <MotionButton
+                            bgColor="transparent"
+                            color="font"
+                            border="1px"
+                            borderColor="font"
+                            px={{ base: "40px", md: "80px" }}
+                            py="18px"
+                            maxW={{ base: "100%", sm: "350px" }}
+                            rounded="none"
+                            fontWeight="500"
+                            variants={{
+                                hidden: { opacity: 0, y: 20 },
+                                visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
+                            }}
+                        >
+                            Más información
+                        </MotionButton>
+                    </Link>
                 </MotionFlex>
             </MotionFlex>
 

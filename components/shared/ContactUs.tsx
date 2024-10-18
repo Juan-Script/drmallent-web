@@ -1,4 +1,5 @@
 import { Button, Flex, Text } from "@chakra-ui/react";
+import Link from "next/link";
 
 export default function ContactUs() {
   return (
@@ -22,21 +23,26 @@ export default function ContactUs() {
         No dudes en contactar con nosotros
       </Text>
 
-      <Button
-        w="fit-content"
-        h="fit-content"
-        py={{ base: "14px", md: "16px", lg: "18px" }}
-        px={{ base: "60px", md: "90px", lg: "120px" }}
-        bg="black"
-        color="purewhite"
-        fontSize={{ base: "14px", md: "14px", lg: "15px" }}
-        fontWeight="700"
-        lineHeight="28px"
-        letterSpacing="0.267px"
-        rounded="none"
+      <Link
+        href="/contacto"
+        style={{ textDecoration: "none" }}
       >
-        Más información
-      </Button>
+        <Button
+          w="fit-content"
+          h="fit-content"
+          py={{ base: "14px", md: "16px", lg: "18px" }}
+          px={{ base: "60px", md: "90px", lg: "120px" }}
+          bg="black"
+          color="purewhite"
+          fontSize={{ base: "14px", md: "14px", lg: "15px" }}
+          fontWeight="700"
+          lineHeight="28px"
+          letterSpacing="0.267px"
+          rounded="none"
+        >
+          Más información
+        </Button>
+      </Link>
     </Flex>
   )
 }

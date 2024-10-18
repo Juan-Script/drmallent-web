@@ -1,4 +1,5 @@
-import { Flex, SimpleGrid, Box } from "@chakra-ui/react"
+import { Flex } from "@chakra-ui/react"
+import { Column } from "@react-email/components"
 import Image from "next/image"
 
 
@@ -17,25 +18,26 @@ export default function Galeria() {
             img: "/img/Carrusel4.png"
         },
     ]
-
     return (
-        <Flex py="50px" w="full">
-            <SimpleGrid
-                columns={{ base: 1, sm: 2, lg: 4 }}
-                spacing={{ base: 4, sm: 6, lg: 8 }}
-                w="full"
-            >
-                {posts?.map((post, index) => (
-                    <Box key={index} position="relative" paddingTop="75%">
-                        <Image
-                            src={post.img}
-                            alt={`Imagen ${index + 1}`}
-                            fill
-                            style={{ objectFit: 'cover' }}
-                        />
-                    </Box>
-                ))}
-            </SimpleGrid>
+        <Flex
+            py="100px"
+            w="full"
+            direction={{base: "column", xs: "row"}}
+        >
+            {posts?.map((post, index) => (
+                <Flex
+                    key={index}
+                    w="full"
+                >
+                    <Image
+                        src={post.img}
+                        alt="Post"
+                        width={680}
+                        height={515}
+                        objectFit="cover"
+                    />
+                </Flex>
+            ))}
         </Flex>
     )
 }
