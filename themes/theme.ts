@@ -5,6 +5,7 @@ import { checkboxTheme } from "./checkbox";
 import { inputTheme } from "./inputs";
 
 const breakpoints = {
+    '2xs': '300px',
     xs: '480px',
     sm: '768px',
     md: '1024px',

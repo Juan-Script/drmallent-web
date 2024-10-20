@@ -87,10 +87,8 @@ export default function page() {
                 </MotionFlex>
             </MotionFlex>
 
-            {/* Animación para el Carrusel del Equipo */}
             <CarruselEquipo />
 
-            {/* Animaciones de ContactUs y Footer */}
             <MotionFlex
                 initial="hidden"
                 animate="visible"

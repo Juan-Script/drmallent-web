@@ -1,4 +1,3 @@
-
 import AboutUs from "@/components/shared/AboutUs";
 import ContactHome from "@/components/shared/ContactHome";
 import Footer from "@/components/shared/Footer";
@@ -14,7 +13,7 @@ export default function Home() {
     <>
       <Navbar />
       <HeroHome />
-      {/* <AboutUs /> */}
+      <AboutUs />
       <ContactHome />
       <Testimonials />
       <SpecsHome />

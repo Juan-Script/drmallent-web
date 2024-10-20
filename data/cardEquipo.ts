@@ -92,18 +92,18 @@ export const cardEquipo: CardEquipoInt[] = [
             "Plástica, Reconstructiva y Estética de la Comunidad Valenciana"
         ]
     },
-    // {
-    //     src: "/img/FotoCarlos.jpg",
-    //     slug: "especialista-siete",
-    //     nombre: "Dr. José Mallent",
-    //     especialidad: "Cirugía plástica, estética y reparadora",
-    //     locacion: "Valencia y Denia",
-    //     items: [
-    //         "Especialista en Cirugía Plástica, Estética y Reparadora",
-    //         "Jefe del Servicio de Cirugía Plástica y Reparadora del Hospital La Ribera",
-    //         "Jefe del Servicio de Cirugía Plástica y Reparadora del Hospital Marina Salud",
-    //         "Presidente de la Sociedad de Cirugía",
-    //         "Plástica, Reconstructiva y Estética de la Comunidad Valenciana"
-    //     ]
-    // },
+    {
+        src: "/img/FotoCampos.jpg",
+        slug: "especialista-siete",
+        nombre: "Dr. José Mallent",
+        especialidad: "Cirugía plástica, estética y reparadora",
+        locacion: "Valencia y Denia",
+        items: [
+            "Especialista en Cirugía Plástica, Estética y Reparadora",
+            "Jefe del Servicio de Cirugía Plástica y Reparadora del Hospital La Ribera",
+            "Jefe del Servicio de Cirugía Plástica y Reparadora del Hospital Marina Salud",
+            "Presidente de la Sociedad de Cirugía",
+            "Plástica, Reconstructiva y Estética de la Comunidad Valenciana"
+        ]
+    },
 ]

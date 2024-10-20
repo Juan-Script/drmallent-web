@@ -13,7 +13,7 @@ export default function AboutUs() {
         <MotionFlex
             direction="column"
             gap="30px"
-            px={{ xl: "300px", lg: "200px" }}
+            px={{ xl: "300px", lg: "200px", md: "200px", sm: "100px", base: "40px" }}
             py="100px"
             initial={{ opacity: 0 }} // Inicialmente invisible
             animate={{ opacity: 1 }}  // Animación completa
@@ -63,8 +63,10 @@ export default function AboutUs() {
                 transition={{ duration: 1.2 }}
             >
                 <Flex
-                    h="442px"
-                    w="243px"
+                    h="full"
+                    w="full"
+                    maxH="442px"
+                    maxW="243px"
                 >
                     <Image
                         src={'/img/AboutUs1.jpg'}
@@ -76,8 +78,10 @@ export default function AboutUs() {
                 </Flex>
 
                 <Flex
-                    h="442px"
-                    w="243px"
+                    h="full"
+                    w="full"
+                    maxH="442px"
+                    maxW="243px"
                 >
                     <Image
                         src={'/img/AboutUs2.jpg'}
@@ -95,6 +99,7 @@ export default function AboutUs() {
                     <Flex
                         h="243px"
                         w="243px"
+                        display={{ md: "flex", base: "none" }}
                     >
                         <Image
                             src={'/img/AboutUs3.jpg'}
@@ -113,6 +118,7 @@ export default function AboutUs() {
                         initial={{ opacity: 0 }} // Inicialmente invisible
                         animate={{ opacity: 1 }}  // Aparece con opacidad completa
                         transition={{ duration: 1, delay: 0.3 }} // Ligero retraso
+                        display={{ md: "flex", base: "none" }}
                     >
                         <MotionFlex
                             direction="column"
