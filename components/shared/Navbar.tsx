@@ -73,7 +73,6 @@ export default function Navbar() {
                 />
             </ChakraLink>
 
-            {/* Links con menú desplegable */}
             <Flex gap="40px" display={{ base: "none", md: "flex" }} position="relative">
                 {Links.map((link, index) => (
                     (link.href === '/cirugia-plastica' || link.href === '/medicina-estetica') ? (
@@ -91,7 +90,6 @@ export default function Navbar() {
                                 {link.text}
                             </ChakraLink>
 
-                            {/* Menú desplegable con animación */}
                             <Box
                                 className="dropdown"
                                 position="absolute"
@@ -149,7 +147,6 @@ export default function Navbar() {
                 ))}
             </Flex>
 
-            {/* Botón de contacto */}
             <ChakraLink as={Link} href="/contacto" display={{ base: "none", md: "block" }}>
                 <Button
                     border="1px"
@@ -164,7 +161,6 @@ export default function Navbar() {
                 </Button>
             </ChakraLink>
 
-            {/* Menú móvil */}
             <IconButton
                 aria-label="Abrir menú"
                 icon={<IoMenu />}
