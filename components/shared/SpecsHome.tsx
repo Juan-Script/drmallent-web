@@ -31,7 +31,7 @@ export default function SpecsHome() {
           w="full"
           direction={{ base: "column", md: "row" }}
           justifyContent="space-between"
-          gap={{ base: "20px", md: "0" }}
+          gap={{ base: "20px", md: "20px" }}
         >
           <Text
             fontSize={{ base: "24px", sm: "32px", md: "40px" }}
