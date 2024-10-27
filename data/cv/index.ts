@@ -1,9 +1,9 @@
-import { especialistaCinco } from "./especialista-cinco";
+import { AlvaroCamposData } from "./AlvaroCamposData";
 import { especialistaCuatro } from "./especialista-cuatro";
 import { especialistaDos } from "./especialista-dos";
 import { especialistaSeis } from "./especialista-seis";
 import { especialistaTres } from "./especialista-tres";
-import { especialistaUno } from "./especialista-uno";
+import { PepeMallentData } from "./PepeMallentData";
 
 export interface cvInt {
     slug: string;
@@ -20,10 +20,10 @@ export interface cvInt {
 }
 
 export const cvData: cvInt[] = [
-    especialistaUno,
+    PepeMallentData,
     especialistaDos,
     especialistaTres,
     especialistaCuatro,
-    especialistaCinco,
+    AlvaroCamposData,
     especialistaSeis,
 ]

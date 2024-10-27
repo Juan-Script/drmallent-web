@@ -75,11 +75,11 @@ export default function Navbar() {
 
             <Flex gap="40px" display={{ base: "none", md: "flex" }} position="relative">
                 {Links.map((link, index) => (
-                    (link.href === '/cirugia-plastica' || link.href === '/medicina-estetica') ? (
-                        <Box 
-                            key={index} 
-                            position="relative" 
-                            _hover={{ '.dropdown': { visibility: 'visible', opacity: 1, maxHeight: '500px' } }} // Actualizamos con la animación
+                    (link.href === '/cirugia-plastica' || link.href === '/medicina-estetica' || link.href === '/especialistas') ? (
+                        <Box
+                            key={index}
+                            position="relative"
+                            _hover={{ '.dropdown': { visibility: 'visible', opacity: 1, maxHeight: '500px' } }}
                         >
                             <ChakraLink
                                 as={Link}
@@ -99,36 +99,65 @@ export default function Navbar() {
                                 shadow="lg"
                                 visibility="hidden"
                                 opacity={0}
-                                minWidth="200px"
                                 zIndex="10"
+                                w={link.href === '/cirugia-plastica' ? "900px" : "300px"}
                                 fontSize="12px"
                                 transition="all 0.4s ease"
                                 transform="translateY(0)"
-                                maxHeight="0"
-                                overflow="hidden"
+                                overflow="visible"
                                 mt="10px"
+                                display="grid"
+                                gridTemplateColumns={link.href === '/cirugia-plastica' ? "repeat(3, minmax(0, 1fr))" : "repeat(1, minmax(0, 1fr))"}
+                                gap="5px"
                             >
                                 {link.href === '/cirugia-plastica' && (
                                     <>
+                                        <Box fontWeight="bold">CIRUGÍA MAMARIA</Box>
+                                        <Box as="a" href="#" display="block" p="5px" _hover={{ color: "#878787" }}>Aumento de mamas. Prótesis. Injertos de grasa</Box>
+                                        <Box as="a" href="#" display="block" p="5px" _hover={{ color: "#878787" }}>Reducción de mamas</Box>
+                                        <Box as="a" href="#" display="block" p="5px" _hover={{ color: "#878787" }}>Elevación de mamas</Box>
+                                        <Box as="a" href="#" display="block" p="5px" _hover={{ color: "#878787" }}>Reconstrucción de mamas</Box>
+                                        <Box as="a" href="#" display="block" p="5px" _hover={{ color: "#878787" }}>Cirugía de mamas en el varón. Ginecomastia</Box>
+                                        <Box as="a" href="#" display="block" p="5px" _hover={{ color: "#878787" }}>Cirugía de reasignación de género</Box>
+
+                                        <Box fontWeight="bold" mt="10px">CIRUGÍA CONTORNO CORPORAL</Box>
+                                        <Box as="a" href="#" display="block" p="5px" _hover={{ color: "#878787" }}>Abdominoplastia. Tummy Tuck</Box>
+                                        <Box as="a" href="#" display="block" p="5px" _hover={{ color: "#878787" }}>Brazos (braquioplastia). Muslos (cruroplastia)</Box>
+                                        <Box as="a" href="#" display="block" p="5px" _hover={{ color: "#878787" }}>Liposucción. Lipedema</Box>
+                                        <Box as="a" href="#" display="block" p="5px" _hover={{ color: "#878787" }}>Gluteoplastia</Box>
+
+                                        <Box fontWeight="bold" mt="10px">CIRUGÍA FACIAL</Box>
+                                        <Box as="a" href="#" display="block" p="5px" _hover={{ color: "#878787" }}>Blefaroplastia (superior e inferior)</Box>
+                                        <Box as="a" href="#" display="block" p="5px" _hover={{ color: "#878787" }}>Otoplastia. Orejas en soplillo. Lóbulos rasgados.</Box>
                                         <Box as="a" href="#" display="block" p="5px" _hover={{ color: "#878787" }}>Rinoplastia</Box>
                                         <Box as="a" href="#" display="block" p="5px" _hover={{ color: "#878787" }}>Mentoplastia</Box>
-                                        <Box as="a" href="#" display="block" p="5px" _hover={{ color: "#878787" }}>Pómulos</Box>
-                                        <Box as="a" href="#" display="block" p="5px" _hover={{ color: "#878787" }}>Orejas</Box>
-                                        <Box as="a" href="#" display="block" p="5px" _hover={{ color: "#878787" }}>Párpados</Box>
-                                        <Box as="a" href="#" display="block" p="5px" _hover={{ color: "#878787" }}>Estiramiento facial</Box>
-                                        <Box as="a" href="#" display="block" p="5px" _hover={{ color: "#878787" }}>Aumento de mamas</Box>
-                                        <Box as="a" href="#" display="block" p="5px" _hover={{ color: "#878787" }}>Reconstrucción de mamas</Box>
-                                        <Box as="a" href="#" display="block" p="5px" _hover={{ color: "#878787" }}>Reducción de mamas</Box>
-                                        <Box as="a" href="#" display="block" p="5px" _hover={{ color: "#878787" }}>Lipofilling</Box>
+                                        <Box as="a" href="#" display="block" p="5px" _hover={{ color: "#878787" }}>Lifting cervicofacial</Box>
+                                        <Box as="a" href="#" display="block" p="5px" _hover={{ color: "#878787" }}>Bichectomía</Box>
+                                        <Box as="a" href="#" display="block" p="5px" _hover={{ color: "#878787" }}>Cirugía de labios. Lip lift</Box>
+
+                                        <Box fontWeight="bold" mt="10px">CIRUGÍA GENITAL</Box>
+                                        <Box as="a" href="#" display="block" p="5px" _hover={{ color: "#878787" }}>Ninfoplastia</Box>
+
+                                        <Box fontWeight="bold" mt="10px">CIRUGÍA RECONSTRUCTIVA</Box>
+
+                                        <Box fontWeight="bold" mt="10px">CIRUGÍA DE LA PIEL</Box>
+                                        <Box as="a" href="#" display="block" p="5px" _hover={{ color: "#878787" }}>Extirpación de lesiones cutáneas</Box>
                                     </>
                                 )}
                                 {link.href === '/medicina-estetica' && (
                                     <>
-                                        <Box as="a" href="#" display="block" p="5px" _hover={{ color: "#878787" }}>Brazos y muslos</Box>
-                                        <Box as="a" href="#" display="block" p="5px" _hover={{ color: "#878787" }}>Liposucción</Box>
-                                        <Box as="a" href="#" display="block" p="5px" _hover={{ color: "#878787" }}>Injerto capilar</Box>
-                                        <Box as="a" href="#" display="block" p="5px" _hover={{ color: "#878787" }}>Abdominoplastia</Box>
-                                        <Box as="a" href="#" display="block" p="5px" _hover={{ color: "#878787" }}>Cirugía post bariátrica</Box>
+                                        <Box as="a" href="#" display="block" p="5px" _hover={{ color: "#878787" }}>Rellenos</Box>
+                                        <Box as="a" href="#" display="block" p="5px" _hover={{ color: "#878787" }}>Injerto Capilar</Box>
+                                        <Box as="a" href="#" display="block" p="5px" _hover={{ color: "#878787" }}>Mesoterapia</Box>
+                                        <Box as="a" href="#" display="block" p="5px" _hover={{ color: "#878787" }}>Peelings</Box>
+                                        <Box as="a" href="#" display="block" p="5px" _hover={{ color: "#878787" }}>Lifting Microcánulas</Box>
+                                        <Box as="a" href="#" display="block" p="5px" _hover={{ color: "#878787" }}>Tratamiento para quitar manchas</Box>
+                                    </>
+                                )}
+                                {link.href === '/especialistas' && (
+                                    <>
+                                        <Box as="a" href="/especialistas" display="block" p="5px" _hover={{ color: "#878787" }}>Equipo</Box>
+                                        <Box as="a" href="/instalaciones" display="block" p="5px" _hover={{ color: "#878787" }}>Instalaciones</Box>
                                     </>
                                 )}
                             </Box>
