@@ -41,7 +41,7 @@ export default function ContentInstalaciones() {
         >
           <Flex flex={1}>
             <Image
-              src="/imgInstalaciones1.png"
+              src="/img/Instalaciones1.png"
               alt='imgInstalaciones'
               width={446}
               height={600}
@@ -51,7 +51,7 @@ export default function ContentInstalaciones() {
 
           <Flex flex={2}>
             <Image
-              src="/imgInstalaciones2.png"
+              src="/img/ImgInstalaciones2.png"
               alt='imgInstalaciones'
               width={833}
               height={600}
@@ -66,7 +66,7 @@ export default function ContentInstalaciones() {
         >
           <Flex flex={2}>
             <Image
-              src="/imgInstalaciones3.png"
+              src="/img/ImgInstalaciones3.png"
               alt='imgInstalaciones'
               width={833}
               height={600}
@@ -76,7 +76,7 @@ export default function ContentInstalaciones() {
 
           <Flex flex={1}>
             <Image
-              src="/imgInstalaciones4.png"
+              src="/img/ImgInstalaciones4.png"
               alt='imgInstalaciones'
               width={446}
               height={600}

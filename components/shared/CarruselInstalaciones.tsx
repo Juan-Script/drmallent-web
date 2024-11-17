@@ -23,7 +23,7 @@ export default function CarruselInstalaciones() {
 
       <Flex justifyContent="center" width="100%">
         <Image
-          src="/imgCarrusel.png"
+          src="/img/ImgInstalaciones5.jpg"
           alt='imgCarrusel'
           width={1380}
           height={695}
