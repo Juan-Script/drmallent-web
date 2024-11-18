@@ -1,0 +1,15 @@
+export enum CirugiaPlastica {
+    Rinoplastia = "rinoplastia",
+    Mentoplastia = "mentoplastia",
+    Otoplastia = "otoplastia",
+    Pomulos = "pomulos",
+    Parpados = "parpados",
+    EstiramientoFacial = "estiramiento_facial",
+    BrazosMuslos = "brazos_muslos",
+    Liposuccion = "liposuccion",
+    Abdominoplastia = "abdominoplastia",
+    CirugiaPostBariatrica = "cirugia_post_bariatrica",
+    AumentoMamas = "aumento_mamas",
+    ReconstruccionMamas = "reconstruccion_mamas",
+    ReduccionMamas = "reduccion_mamas",
+}

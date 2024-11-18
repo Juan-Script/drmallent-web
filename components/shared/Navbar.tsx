@@ -1,6 +1,6 @@
 "use client";
 
-import { Button, Flex, IconButton, Drawer, DrawerBody, DrawerHeader, DrawerOverlay, DrawerContent, DrawerCloseButton, useDisclosure, Link as ChakraLink, Box } from '@chakra-ui/react';
+import { Button, Flex, IconButton, useDisclosure, Link as ChakraLink, Box } from '@chakra-ui/react';
 import { usePathname } from 'next/navigation';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
@@ -63,7 +63,6 @@ export default function Navbar() {
             zIndex="10"
             align="center"
         >
-            {/* Logo */}
             <ChakraLink as={Link} href='/'>
                 <Image
                     src={"/DRJMlogoBlack.svg"}
@@ -112,46 +111,61 @@ export default function Navbar() {
                             >
                                 {link.href === '/cirugia-plastica' && (
                                     <>
-                                        <Box fontWeight="bold">CIRUGÍA MAMARIA</Box>
-                                        <Box as="a" href="#" display="block" p="5px" _hover={{ color: "#878787" }}>Aumento de mamas. Prótesis. Injertos de grasa</Box>
-                                        <Box as="a" href="#" display="block" p="5px" _hover={{ color: "#878787" }}>Reducción de mamas</Box>
-                                        <Box as="a" href="#" display="block" p="5px" _hover={{ color: "#878787" }}>Elevación de mamas</Box>
-                                        <Box as="a" href="#" display="block" p="5px" _hover={{ color: "#878787" }}>Reconstrucción de mamas</Box>
-                                        <Box as="a" href="#" display="block" p="5px" _hover={{ color: "#878787" }}>Cirugía de mamas en el varón. Ginecomastia</Box>
-                                        <Box as="a" href="#" display="block" p="5px" _hover={{ color: "#878787" }}>Cirugía de reasignación de género</Box>
-
-                                        <Box fontWeight="bold" mt="10px">CIRUGÍA CONTORNO CORPORAL</Box>
-                                        <Box as="a" href="#" display="block" p="5px" _hover={{ color: "#878787" }}>Abdominoplastia. Tummy Tuck</Box>
-                                        <Box as="a" href="#" display="block" p="5px" _hover={{ color: "#878787" }}>Brazos (braquioplastia). Muslos (cruroplastia)</Box>
-                                        <Box as="a" href="#" display="block" p="5px" _hover={{ color: "#878787" }}>Liposucción. Lipedema</Box>
-                                        <Box as="a" href="#" display="block" p="5px" _hover={{ color: "#878787" }}>Gluteoplastia</Box>
-
-                                        <Box fontWeight="bold" mt="10px">CIRUGÍA FACIAL</Box>
-                                        <Box as="a" href="#" display="block" p="5px" _hover={{ color: "#878787" }}>Blefaroplastia (superior e inferior)</Box>
-                                        <Box as="a" href="#" display="block" p="5px" _hover={{ color: "#878787" }}>Otoplastia. Orejas en soplillo. Lóbulos rasgados.</Box>
-                                        <Box as="a" href="#" display="block" p="5px" _hover={{ color: "#878787" }}>Rinoplastia</Box>
-                                        <Box as="a" href="#" display="block" p="5px" _hover={{ color: "#878787" }}>Mentoplastia</Box>
-                                        <Box as="a" href="#" display="block" p="5px" _hover={{ color: "#878787" }}>Lifting cervicofacial</Box>
-                                        <Box as="a" href="#" display="block" p="5px" _hover={{ color: "#878787" }}>Bichectomía</Box>
-                                        <Box as="a" href="#" display="block" p="5px" _hover={{ color: "#878787" }}>Cirugía de labios. Lip lift</Box>
-
-                                        <Box fontWeight="bold" mt="10px">CIRUGÍA GENITAL</Box>
-                                        <Box as="a" href="#" display="block" p="5px" _hover={{ color: "#878787" }}>Ninfoplastia</Box>
-
+                                        <Flex
+                                            direction="column"
+                                        >
+                                            <Box fontWeight="bold">CIRUGÍA MAMARIA</Box>
+                                            <Box as="a" href="/cirugia-plastica/aumento-mamas" display="block" p="5px" _hover={{ color: "#878787" }}>Aumento de mamas. Prótesis. Injertos de grasa</Box>
+                                            <Box as="a" href="/cirugia-plastica/reduccion-mamas" display="block" p="5px" _hover={{ color: "#878787" }}>Reducción de mamas</Box>
+                                            <Box as="a" href="/cirugia-plastica/elevacion-mamas" display="block" p="5px" _hover={{ color: "#878787" }}>Elevación de mamas</Box>
+                                            <Box as="a" href="/cirugia-plastica/reconstruccion-mamas" display="block" p="5px" _hover={{ color: "#878787" }}>Reconstrucción de mamas</Box>
+                                            <Box as="a" href="/cirugia-plastica/ginecomastia" display="block" p="5px" _hover={{ color: "#878787" }}>Cirugía de mamas en el varón. Ginecomastia</Box>
+                                            <Box as="a" href="/cirugia-plastica/reasignacion-genero" display="block" p="5px" _hover={{ color: "#878787" }}>Cirugía de reasignación de género</Box>
+                                        </Flex>
+                                        <Flex
+                                            direction="column"
+                                        >
+                                            <Box fontWeight="bold" mt="10px">CIRUGÍA CONTORNO CORPORAL</Box>
+                                            <Box as="a" href="/cirugia-plastica/abdominoplastia" display="block" p="5px" _hover={{ color: "#878787" }}>Abdominoplastia. Tummy Tuck</Box>
+                                            <Box as="a" href="/cirugia-plastica/braquioplastia" display="block" p="5px" _hover={{ color: "#878787" }}>Brazos (braquioplastia). Muslos (cruroplastia)</Box>
+                                            <Box as="a" href="/cirugia-plastica/liposuccion" display="block" p="5px" _hover={{ color: "#878787" }}>Liposucción. Lipedema</Box>
+                                            <Box as="a" href="/cirugia-plastica/gluteoplastia" display="block" p="5px" _hover={{ color: "#878787" }}>Gluteoplastia</Box>
+                                        </Flex>
+                                        <Flex
+                                            direction="column"
+                                        >
+                                            <Box fontWeight="bold" mt="10px">CIRUGÍA FACIAL</Box>
+                                            <Box as="a" href="/cirugia-plastica/blefaroplastia" display="block" p="5px" _hover={{ color: "#878787" }}>Blefaroplastia (superior e inferior)</Box>
+                                            <Box as="a" href="/cirugia-plastica/otoplastia" display="block" p="5px" _hover={{ color: "#878787" }}>Otoplastia. Orejas en soplillo. Lóbulos rasgados.</Box>
+                                            <Box as="a" href="/cirugia-plastica/rinoplastia" display="block" p="5px" _hover={{ color: "#878787" }}>Rinoplastia</Box>
+                                            <Box as="a" href="/cirugia-plastica/mentoplastia" display="block" p="5px" _hover={{ color: "#878787" }}>Mentoplastia</Box>
+                                            <Box as="a" href="/cirugia-plastica/lifting-facial" display="block" p="5px" _hover={{ color: "#878787" }}>Lifting cervicofacial</Box>
+                                            <Box as="a" href="/cirugia-plastica/bichectomia" display="block" p="5px" _hover={{ color: "#878787" }}>Bichectomía</Box>
+                                            <Box as="a" href="/cirugia-plastica/lip-lift" display="block" p="5px" _hover={{ color: "#878787" }}>Cirugía de labios. Lip lift</Box>
+                                        </Flex>
+                                        <Flex
+                                            direction="column"
+                                        >
+                                            <Box fontWeight="bold" mt="10px">CIRUGÍA GENITAL</Box>
+                                            <Box as="a" href="#" display="block" p="5px" _hover={{ color: "#878787" }}>Ninfoplastia</Box>
+                                        </Flex>
                                         <Box fontWeight="bold" mt="10px">CIRUGÍA RECONSTRUCTIVA</Box>
-
-                                        <Box fontWeight="bold" mt="10px">CIRUGÍA DE LA PIEL</Box>
-                                        <Box as="a" href="#" display="block" p="5px" _hover={{ color: "#878787" }}>Extirpación de lesiones cutáneas</Box>
+                                        <Flex
+                                            direction="column"
+                                        >
+                                            <Box fontWeight="bold" mt="10px">CIRUGÍA DE LA PIEL</Box>
+                                            <Box as="a" href="#" display="block" p="5px" _hover={{ color: "#878787" }}>Extirpación de lesiones cutáneas</Box>
+                                        </Flex>
                                     </>
                                 )}
                                 {link.href === '/medicina-estetica' && (
                                     <>
-                                        <Box as="a" href="#" display="block" p="5px" _hover={{ color: "#878787" }}>Rellenos</Box>
-                                        <Box as="a" href="#" display="block" p="5px" _hover={{ color: "#878787" }}>Injerto Capilar</Box>
-                                        <Box as="a" href="#" display="block" p="5px" _hover={{ color: "#878787" }}>Mesoterapia</Box>
-                                        <Box as="a" href="#" display="block" p="5px" _hover={{ color: "#878787" }}>Peelings</Box>
-                                        <Box as="a" href="#" display="block" p="5px" _hover={{ color: "#878787" }}>Lifting Microcánulas</Box>
-                                        <Box as="a" href="#" display="block" p="5px" _hover={{ color: "#878787" }}>Tratamiento para quitar manchas</Box>
+                                        <Box as="a" href="/medicina-estetica/rellenos" display="block" p="5px" _hover={{ color: "#878787" }}>Rellenos</Box>
+                                        <Box as="a" href="/medicina-estetica/injerto-capilar" display="block" p="5px" _hover={{ color: "#878787" }}>Injerto Capilar</Box>
+                                        <Box as="a" href="/medicina-estetica/mesoterapia" display="block" p="5px" _hover={{ color: "#878787" }}>Mesoterapia</Box>
+                                        <Box as="a" href="/medicina-estetica/peelings" display="block" p="5px" _hover={{ color: "#878787" }}>Peelings</Box>
+                                        <Box as="a" href="/medicina-estetica/lifting-microcanulas" display="block" p="5px" _hover={{ color: "#878787" }}>Lifting Microcánulas</Box>
+                                        <Box as="a" href="/medicina-estetica/tratamiento-manchas" display="block" p="5px" _hover={{ color: "#878787" }}>Tratamiento para quitar manchas</Box>
                                     </>
                                 )}
                                 {link.href === '/especialistas' && (
@@ -169,6 +183,7 @@ export default function Navbar() {
                             href={link.href}
                             fontSize="14px"
                             _hover={{ color: "#878787" }}
+                            mt="2px"
                         >
                             {link.text}
                         </ChakraLink>
