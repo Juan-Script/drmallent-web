@@ -7,8 +7,8 @@ import { BiChevronDown } from 'react-icons/bi';
 
 interface Props {
     data: {
-        title: string;
-        text: string;
+        pregunta: string;
+        respuesta: string;
     }[]
 }
 
@@ -31,7 +31,7 @@ export default function AccordionComponent({ data }: Props) {
             w="100%"
             flexDirection="column"
         >
-            {data?.map(({ text, title }, index) => (
+            {data?.map(({ pregunta, respuesta }, index) => (
                 <Box key={index} mb={4}>
                     <Flex
                         as="button"
@@ -56,7 +56,7 @@ export default function AccordionComponent({ data }: Props) {
                             textTransform="uppercase"
                             letterSpacing="0.666667px"
                         >
-                            {title}
+                            {pregunta}
                         </Text>
                     </Flex>
 
@@ -80,7 +80,7 @@ export default function AccordionComponent({ data }: Props) {
                                         fontWeight="400"
                                         mb={{ base: "10px", md: "0" }}
                                     >
-                                        {title}
+                                        {pregunta}
                                     </Text>
 
                                     <Text
@@ -89,7 +89,7 @@ export default function AccordionComponent({ data }: Props) {
                                         fontSize={{ base: "12px", md: "14px" }}
                                         fontWeight="300"
                                     >
-                                        {text}
+                                        {respuesta}
                                     </Text>
                                 </Flex>
                             </motion.div>

@@ -13,7 +13,7 @@ export default function AboutUs() {
         <MotionFlex
             direction="column"
             gap="30px"
-            px={{ xl: "300px", lg: "200px", md: "200px", sm: "100px", base: "40px" }}
+            px={{ base: "30px", sm: "100px", md: "150px", lg: "200px", xl: "200px", "2xl": "300px" }}
             py="100px"
             initial={{ opacity: 0 }} // Inicialmente invisible
             animate={{ opacity: 1 }}  // Animación completa
@@ -153,12 +153,13 @@ export default function AboutUs() {
                                 fontSize="40px"
                                 color="font_variant"
                             >
-                                20+
+                                8+
                             </Text>
 
                             <Text
                                 fontSize="16px"
                                 letterSpacing={4}
+                                whiteSpace="nowrap"
                             >
                                 TRABAJADORES
                             </Text>
