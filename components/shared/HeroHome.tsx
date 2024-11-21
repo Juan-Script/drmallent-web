@@ -11,12 +11,16 @@ const MotionText = motion(Text)
 export default function HeroHome() {
     return (
         <Flex
-            bgImage={'url(/img/Despacho1.jpg)'}
+            // bgImage={'url(/img/Despacho1.jpg)'}
+            // bgImage={'url(/img/Bg1.png)'}
+            // bgImage={'url(/img/Bg2.png)'}
+            // bgImage={'url(/img/Bg3.png)'}
+            bgImage={'url(/img/Bg4.jpg)'}
             bgSize="cover"
             bgPosition={{ base: "center", md: "left center" }}
             maxH={{ base: "500px", md: "600px", lg: "700px" }}
             w="full"
-            h={{ base: "70vh", md: "100vh" }}
+            h={{ base: "120vh", md: "150vh" }}
             pos="relative"
         >
             <MotionFlex

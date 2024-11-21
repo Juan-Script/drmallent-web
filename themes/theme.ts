@@ -21,8 +21,4 @@ export const theme = extendTheme({
         Checkbox: checkboxTheme,
         Input: inputTheme
     },
-    fonts: {
-        heading: `'Theinhardt', sans-serif`,
-        body: `'Theinhardt', sans-serif`,
-    },
 });

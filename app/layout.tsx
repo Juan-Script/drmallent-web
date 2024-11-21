@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Providers } from "./providers";
-import localFont from 'next/font/local'
+import { Kanit } from 'next/font/google'
 
 export const metadata: Metadata = {
   title: "Clínica Estética Valencia",
@@ -11,24 +11,10 @@ export const metadata: Metadata = {
   }
 };
 
-const myFont = localFont({
-  src: [
-    {
-      path: '../themes/font/theinhardt-bold-webfont.woff',
-      weight: '700',
-      style: 'bold',
-    },
-    {
-      path: '../themes/font/theinhardt-light-webfont.woff',
-      weight: '400',
-      style: 'light',
-    },
-    {
-      path: '../themes/font/theinhardt-regular-webfont.woff',
-      weight: '500',
-      style: 'regular',
-    },
-  ],
+const kanit = Kanit({
+  weight: '400',
+  subsets: ['latin'],
+  display: 'swap',
 })
 
 export default function RootLayout({
@@ -37,7 +23,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={myFont.className}>
+    <html lang="en" className={kanit.className}>
       <body>
         <Providers>
           {children}
