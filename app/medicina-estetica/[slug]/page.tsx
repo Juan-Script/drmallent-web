@@ -22,7 +22,7 @@ export default function EspecialidadPage({ params }: Props) {
             <Navbar />
 
             <Hero
-                title={tratamientoData.titulo}
+                title={tratamientoData?.titulo}
             />
 
             <AccordionComponent data={tratamientoData?.preguntas} />

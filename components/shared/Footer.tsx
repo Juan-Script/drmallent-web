@@ -1,14 +1,14 @@
 import { Flex, Link as ChakraLink, Text, Box } from "@chakra-ui/react";
 import Link from "next/link";
-import Facebook from "../svg/Facebook";
-import Twitter from "../svg/Twitter";
-import Linkedin from "../svg/Linkedin";
 import Instagram from "../svg/Instagram";
 
 interface Links {
   label: string;
   href: string;
-  childrens?: { label: string; }[];
+  childrens?: { 
+    label: string;
+    href?: string;
+  }[];
 }
 
 export default function Footer() {
@@ -22,7 +22,6 @@ export default function Footer() {
       label: "equipo",
       href: "/",
     },
-
     {
       label: "noticias",
       href: "/",
@@ -33,38 +32,33 @@ export default function Footer() {
     },
     {
       label: "medicina estética",
-      href: "/",
+      href: "/medicina-estetica",
       childrens: [
-        { label: "rellenos de arrugas" },
-        { label: "mesoterapia facial" },
-        { label: "peelings" },
-        { label: "lifting con microcánulas" },
-        { label: "tratamiento para quitar manchas" },
-        { label: "plasma rico en plaquetas" },
+        { label: "rellenos", href: "/medicina-estetica/rellenos" },
+        { label: "mesoterapia", href: "/medicina-estetica/mesoterapia" },
+        { label: "peelings", href: "/medicina-estetica/peelings" },
+        { label: "lifting con microcánulas", href: "/medicina-estetica/lifting-microcanulas" },
+        { label: "tratamiento de manchas", href: "/medicina-estetica/tratamiento-manchas" },
+        { label: "injerto capilar", href: "/medicina-estetica/injerto-capilar" },
       ]
     },
     {
       label: "cirugía plástica",
-      href: "/",
+      href: "/cirugia-plastica",
       childrens: [
-        { label: "rinoplastia" },
-        { label: "mentoplastia" },
-        { label: "aumento de pómulos" },
-        { label: "otoplastia" },
-        { label: "blefaropastia" },
-        { label: "estiramiento facial" },
-        { label: "cirugía de mama" },
-        { label: "aumento de mamas" },
-        { label: "elevación mamaria" },
-        { label: "reducción de mamas" },
-        { label: "ginecomastia" },
-        { label: "reconstrucción de mamas" },
-        { label: "abdominoplastia" },
-        { label: "liposucción" },
-        { label: "brazos y muslos" },
-        { label: "post bariátrica" },
-        { label: "lipofilling" },
-        { label: "injerto capilar" },
+        { label: "rinoplastia", href: "/cirugia-plastica/rinoplastia" },
+        { label: "mentoplastia", href: "/cirugia-plastica/mentoplastia" },
+        { label: "aumento de pómulos", href: "/cirugia-plastica/pomulos" },
+        { label: "otoplastia", href: "/cirugia-plastica/orejas" },
+        { label: "blefaroplastia", href: "/cirugia-plastica/parpados" },
+        { label: "estiramiento facial", href: "/cirugia-plastica/estiramiento-facial" },
+        { label: "aumento de mamas", href: "/cirugia-plastica/aumento-mamas" },
+        { label: "reconstrucción de mamas", href: "/cirugia-plastica/reconstruccion-mamas" },
+        { label: "reducción de mamas", href: "/cirugia-plastica/reduccion-mamas" },
+        { label: "lifting de brazos y muslos", href: "/cirugia-plastica/brazos-muslos" },
+        { label: "liposucción", href: "/cirugia-plastica/liposuccion" },
+        { label: "abdominoplastia", href: "/cirugia-plastica/abdominoplastia" },
+        { label: "cirugía post bariátrica", href: "/cirugia-plastica/cirugia-post-bariatrica" },
       ]
     },
   ]
@@ -141,14 +135,16 @@ export default function Footer() {
               </ChakraLink>
 
               {link?.childrens && link?.childrens.map((children, iChildrens) => (
-                <Text
+                <ChakraLink
                   key={iChildrens}
+                  as={Link}
+                  href={children?.href || "#"}
                   color={"purewhite"}
                   fontWeight="400"
                   fontSize={{ base: "12px", sm: "13px", md: "14px" }}
                 >
                   {children?.label}
-                </Text>
+                </ChakraLink>
               ))}
             </Flex>
           ))}

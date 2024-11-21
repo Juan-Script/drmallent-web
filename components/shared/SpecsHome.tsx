@@ -7,16 +7,15 @@ export default function SpecsHome() {
     {
       number: "01.",
       titulo: "Cirugía plástica",
-      text: "Posuere urna nec tincidunt praesent egestas maecenas pharetra convallis posuere ipsum nunc aliquet bibendum enim consectetur adipiscing.",
+      text: "Procedimientos quirúrgicos especializados para remodelar y mejorar la forma y función de diferentes áreas del cuerpo. Nuestros cirujanos expertos combinan técnicas avanzadas con un enfoque personalizado para lograr resultados naturales y armoniosos.",
       href: "/cirugia-plastica"
     },
     {
       number: "02.",
       titulo: "Medicina estética",
-      text: "Posuere urna nec tincidunt praesent egestas maecenas pharetra convallis posuere ipsum nunc aliquet bibendum enim consectetur adipiscing.",
+      text: "Tratamientos no quirúrgicos y mínimamente invasivos para realzar tu belleza natural. Ofrecemos las últimas tecnologías y procedimientos para el rejuvenecimiento facial, cuidado de la piel y mejoras estéticas, con resultados visibles y tiempo mínimo de recuperación.",
       href: "/medicina-estetica"
     },
-
   ]
   return (
     <Flex
