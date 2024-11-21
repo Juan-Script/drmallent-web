@@ -32,25 +32,26 @@ export const MenuDrawer = ({ isOpen, onClose, Links }: Props) => {
                 <DrawerHeader color="black">Menú</DrawerHeader>
                 <DrawerBody>
                     <VStack
-                        spacing={3}
+                        spacing={4}
                         align="stretch"
                     >
                         {Links.map((link, index) => (
                             <Box key={index}>
-                                {(link.href === '/cirugia-plastica' || link.href === '/medicina-estetica') ? (
+                                {(link.href === '/cirugia-plastica' || link.href === '/medicina-estetica' || link.text.toLowerCase() === 'equipo') ? (
                                     <>
                                         <Flex
                                             cursor="pointer"
                                             onClick={() => toggleMenu(link.href)}
-                                            pb={1}
+                                            pb={2}
                                             align="center"
                                             justify="space-between"
                                         >
-                                            <Text color="black" fontWeight="normal">
+                                            <Text color="black" fontWeight="medium">
                                                 {link.text}
                                             </Text>
                                             <Icon
                                                 as={IoChevronDown}
+                                                color="black"
                                                 transform={expandedMenu === link.href ? "rotate(180deg)" : "rotate(0deg)"}
                                                 transition="all 0.2s"
                                                 w={5}
@@ -137,6 +138,20 @@ export const MenuDrawer = ({ isOpen, onClose, Links }: Props) => {
                                                         </Link>
                                                     </>
                                                 )}
+                                                {link.text.toLowerCase() === 'equipo' && (
+                                                    <Flex
+                                                        my="10px"
+                                                        direction="column"
+                                                        gap="10px"
+                                                    >
+                                                        <Link href="/especialistas" onClick={onClose}>
+                                                            <Text fontSize="sm" color="gray.700">Equipo</Text>
+                                                        </Link>
+                                                        <Link href="/instalaciones" onClick={onClose}>
+                                                            <Text fontSize="sm" color="gray.700">Instalaciones</Text>
+                                                        </Link>
+                                                    </Flex>
+                                                )}
                                             </VStack>
                                         </Collapse>
                                     </>
@@ -145,7 +160,7 @@ export const MenuDrawer = ({ isOpen, onClose, Links }: Props) => {
                                         href={link.href}
                                         onClick={onClose}
                                     >
-                                        <Text color="black">{link.text}</Text>
+                                        <Text color="black" mt="-6px">{link.text}</Text>
                                     </Link>
                                 )}
                             </Box>
