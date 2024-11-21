@@ -61,7 +61,7 @@ export const MenuDrawer = ({ isOpen, onClose, Links }: Props) => {
                                             <VStack align="stretch" pl={4} spacing={2}>
                                                 {link.href === '/cirugia-plastica' && (
                                                     <>
-                                                        <Text fontWeight="medium" fontSize="sm" color="black">CIRUGÍA MAMARIA</Text>
+                                                        <Text fontWeight="medium" fontSize="sm" color="black" mt="15px">CIRUGÍA MAMARIA</Text>
                                                         <Link href="/cirugia-plastica/aumento-mamas" onClick={onClose}>
                                                             <Text fontSize="sm" color="gray.700">Aumento de mamas</Text>
                                                         </Link>
@@ -103,7 +103,7 @@ export const MenuDrawer = ({ isOpen, onClose, Links }: Props) => {
                                                 )}
                                                 {link.href === '/medicina-estetica' && (
                                                     <>
-                                                        <Text fontWeight="medium" fontSize="sm" color="black">TRATAMIENTOS FACIALES</Text>
+                                                        <Text fontWeight="medium" fontSize="sm" color="black" mt="15px">TRATAMIENTOS FACIALES</Text>
                                                         <Link href="/medicina-estetica/botox" onClick={onClose}>
                                                             <Text fontSize="sm" color="gray.700">Botox</Text>
                                                         </Link>

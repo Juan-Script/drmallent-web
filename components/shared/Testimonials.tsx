@@ -25,6 +25,7 @@ export default function Testimonials() {
       gap={{ base: "60px" }}
       direction={{ base: "column", md: "row" }}
       align={{ base: "center", md: "flex-start" }}
+      bg="#F3F3F3"
     >
       {
         testimonios.map((testimonio, index) => (
@@ -34,6 +35,7 @@ export default function Testimonials() {
             gap="20px"
             w={{ base: "100%", md: "300px" }}
             maxW="400px"
+            mx="auto"
           >
             <Text
               fontSize={{ base: "16px", md: "14px" }}
