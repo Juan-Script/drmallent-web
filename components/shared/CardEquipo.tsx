@@ -33,7 +33,6 @@ export default function CardEquipo({
             display={"flex"}
             flexDirection="column"
             gap="30px"
-            minW={"485px"}
             _hover={{}}
         >
             <ImageChakra
@@ -85,7 +84,7 @@ export default function CardEquipo({
                 fontSize="12px"
                 fontWeight="400"
                 lineHeight="20px"
-                letterSpacing="0.267px"
+                w="fit-content"
             >
                 {items.map((item, index) => (
                     <ListItem
