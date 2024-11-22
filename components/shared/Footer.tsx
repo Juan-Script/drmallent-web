@@ -32,7 +32,7 @@ export default function Footer() {
     },
     {
       label: "medicina estética",
-      href: "/medicina-estetica",
+      href: "/medicina-estetica/rellenos",
       childrens: [
         { label: "rellenos", href: "/medicina-estetica/rellenos" },
         { label: "mesoterapia", href: "/medicina-estetica/mesoterapia" },
@@ -44,7 +44,7 @@ export default function Footer() {
     },
     {
       label: "cirugía plástica",
-      href: "/cirugia-plastica",
+      href: "/cirugia-plastica/rinoplastia",
       childrens: [
         { label: "rinoplastia", href: "/cirugia-plastica/rinoplastia" },
         { label: "mentoplastia", href: "/cirugia-plastica/mentoplastia" },

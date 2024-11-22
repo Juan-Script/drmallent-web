@@ -5,20 +5,20 @@ import Link from 'next/link'
 export default function Posts() {
     const posts = [
         {
-            image: "/img/Instagram1.png",
-            text: "Posuere urna nec tincidunt praesent egestas maecenas.",
-            href: ""
-        },
-        {
-            image: "/img/Instagram2.png",
-            text: "Posuere urna nec tincidunt praesent egestas maecenas.",
-            href: ""
+            image: "/img/PostRecibidor.jpg",
+            text: "Nuestra clínica también es un espacio que transmite serenidad.",
+            href: "https://www.instagram.com/reel/CxI-f2rtCzA/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
         },
         {
             image: "/img/Instagram3.png",
-            text: "Posuere urna nec tincidunt praesent egestas maecenas.",
-            href: ""
+            text: "Depende de la anatomía y necesidades de cada paciente, el aumento de mama puede realizarse por encima o por debajo del músculo.",
+            href: "https://www.instagram.com/p/C2SORzlty4J/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
         },
+        {
+            image: "/img/FirmaPost.jpg",
+            text: "Estaremos encantados de asesorarte para que estas navidades el mejor regalo sea cuidar de ti.",
+            href: "https://www.instagram.com/p/C0bDdDSN9GD/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+        }
     ]
     return (
         <Flex
@@ -59,7 +59,7 @@ export default function Posts() {
                 {posts?.map((post, index) => (
                     <Link
                         key={index}
-                        href="https://www.instagram.com/dr.mallent?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                        href={post.href}
                         target='_blank'
                     >
                         <Flex
@@ -80,6 +80,7 @@ export default function Posts() {
                                 fontSize={{ base: "14px", md: "16px" }}
                                 color="secondary_font"
                                 mt="20px"
+                                h="100px"
                             >
                                 {post.text}
                             </Text>

@@ -8,13 +8,13 @@ export default function SpecsHome() {
       number: "01.",
       titulo: "Cirugía plástica",
       text: "Procedimientos quirúrgicos especializados para remodelar y mejorar la forma y función de diferentes áreas del cuerpo. Nuestros cirujanos expertos combinan técnicas avanzadas con un enfoque personalizado para lograr resultados naturales y armoniosos.",
-      href: "/cirugia-plastica"
+      href: "/cirugia-plastica/rinoplastia"
     },
     {
       number: "02.",
       titulo: "Medicina estética",
       text: "Tratamientos no quirúrgicos y mínimamente invasivos para realzar tu belleza natural. Ofrecemos las últimas tecnologías y procedimientos para el rejuvenecimiento facial, cuidado de la piel y mejoras estéticas, con resultados visibles y tiempo mínimo de recuperación.",
-      href: "/medicina-estetica"
+      href: "/medicina-estetica/rellenos"
     },
   ]
   return (
@@ -30,7 +30,7 @@ export default function SpecsHome() {
           w="full"
           direction={{ base: "column", md: "row" }}
           justifyContent="space-between"
-          gap={{ base: "20px", md: "20px" }}
+          gap="50px"
         >
           <Text
             fontSize={{ base: "24px", sm: "32px", md: "40px" }}
@@ -42,7 +42,7 @@ export default function SpecsHome() {
           </Text>
 
           <Flex
-            maxW={{ base: "100%", md: "700px" }}
+            maxW="500px"
             direction="column"
             gap="20px"
           >

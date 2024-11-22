@@ -1,4 +1,5 @@
 "use client"
+
 import React, { useState, useEffect } from 'react'
 import { CardEquipoInt, cardEquipo } from '@/data/cardEquipo'
 import { Box, Flex, Text } from '@chakra-ui/react'

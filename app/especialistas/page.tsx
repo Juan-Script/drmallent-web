@@ -37,7 +37,7 @@ export default function page() {
                 px={{ base: "30px", sm: "100px", md: "150px", lg: "200px", xl: "200px", "2xl": "300px" }}
                 w="full"
                 justifyContent={{ base: "flex-start", md: "space-between" }}
-                gap={{ base: "30px", md: "0" }}
+                gap={{ base: "30px", md: "20px" }}
                 initial="hidden"
                 animate="visible"
                 variants={{

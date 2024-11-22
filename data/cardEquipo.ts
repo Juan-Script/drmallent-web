@@ -24,7 +24,7 @@ export const cardEquipo: CardEquipoInt[] = [
     },
     {
         src: "/img/PerfilPepeSanta.png",
-        slug: "rj-santamaria",
+        slug: "dr-santamaria",
         nombre: "Dr. José Santamaría",
         especialidad: "Anestesiología",
         locacion: "Valencia",
@@ -36,16 +36,15 @@ export const cardEquipo: CardEquipoInt[] = [
     },
     {
         src: "/img/PerfilAfrica.jpg",
-        slug: "especialista-tres",
-        nombre: "Africa",
-        especialidad: "Cirugía plástica, estética y reparadora",
-        locacion: "Valencia y Denia",
+        slug: "africa",
+        nombre: "África",
+        especialidad: "Enfermería Quirúrgica",
+        locacion: "Valencia",
         items: [
-            "Especialista en Cirugía Plástica, Estética y Reparadora",
-            "Jefe del Servicio de Cirugía Plástica y Reparadora del Hospital La Ribera",
-            "Jefe del Servicio de Cirugía Plástica y Reparadora del Hospital Marina Salud",
-            "Presidente de la Sociedad de Cirugía",
-            "Plástica, Reconstructiva y Estética de la Comunidad Valenciana"
+            "Especialista en instrumentación de cirugía laparoscópica avanzada",
+            "Experiencia en coordinación y gestión de equipos quirúrgicos",
+            "Enfermera referente en Neurología",
+            "Coordinadora de implantes y explantes de hueso"
         ]
     },
     {
