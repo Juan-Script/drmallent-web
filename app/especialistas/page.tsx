@@ -8,7 +8,6 @@ import Navbar from "@/components/shared/Navbar";
 import { Flex, Text } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 
-// Definimos motion components
 const MotionFlex = motion(Flex);
 const MotionText = motion(Text);
 
@@ -25,12 +24,10 @@ export default function page() {
         >
             <Navbar />
 
-            {/* Animación para el Hero */}
             <Hero
                 title="Equipo profesional clínica Dr.Mallent"
             />
 
-            {/* Sección de texto con animaciones */}
             <MotionFlex
                 direction={{ base: "column", md: "row" }}
                 py={{ base: "50px", md: "75px", lg: "100px" }}
@@ -45,7 +42,7 @@ export default function page() {
                     visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
                 }}
             >
-                {/* Título con deslizamiento desde arriba */}
+
                 <MotionText
                     color="pureblack"
                     fontSize={{ base: "24px", sm: "28px", md: "32px" }}
@@ -59,7 +56,6 @@ export default function page() {
                     UN EQUIPO EXPERTO
                 </MotionText>
 
-                {/* Texto principal con desvanecimiento */}
                 <MotionFlex
                     direction="column"
                     gap="20px"
@@ -69,7 +65,7 @@ export default function page() {
                     textAlign="justify"
                     maxW={{ base: "100%", md: "65%", lg: "750px" }}
                     variants={{
-                        hidden: { opacity: 0, y: 50 }, // Aparece desde abajo
+                        hidden: { opacity: 0, y: 50 }, 
                         visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
                     }}
                 >
