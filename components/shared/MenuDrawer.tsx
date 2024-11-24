@@ -64,7 +64,7 @@ export const MenuDrawer = ({ isOpen, onClose, Links }: Props) => {
                                                     <>
                                                         <Text fontWeight="medium" fontSize="sm" color="black" mt="15px">CIRUGÍA MAMARIA</Text>
                                                         <Link href="/cirugia-plastica/aumento-mamas" onClick={onClose}>
-                                                            <Text fontSize="sm" color="gray.700">Aumento de mamas</Text>
+                                                            <Text fontSize="sm" color="gray.700">Aumento de mamas. Prótesis. Injertos de grasa</Text>
                                                         </Link>
                                                         <Link href="/cirugia-plastica/reduccion-mamas" onClick={onClose}>
                                                             <Text fontSize="sm" color="gray.700">Reducción de mamas</Text>
@@ -72,69 +72,85 @@ export const MenuDrawer = ({ isOpen, onClose, Links }: Props) => {
                                                         <Link href="/cirugia-plastica/elevacion-mamas" onClick={onClose}>
                                                             <Text fontSize="sm" color="gray.700">Elevación de mamas</Text>
                                                         </Link>
-                                                        
-                                                        <Text fontWeight="medium" fontSize="sm" color="black" mt={2}>CIRUGÍA FACIAL</Text>
-                                                        <Link href="/cirugia-plastica/rinoplastia" onClick={onClose}>
-                                                            <Text fontSize="sm" color="gray.700">Rinoplastia</Text>
+                                                        <Link href="/cirugia-plastica/reconstruccion-mama" onClick={onClose}>
+                                                            <Text fontSize="sm" color="gray.700">Reconstrucción de mamas</Text>
                                                         </Link>
-                                                        <Link href="/cirugia-plastica/blefaroplastia" onClick={onClose}>
-                                                            <Text fontSize="sm" color="gray.700">Blefaroplastia</Text>
+                                                        <Link href="/cirugia-plastica/ginecomastia" onClick={onClose}>
+                                                            <Text fontSize="sm" color="gray.700">Cirugía de mamas en el varón. Ginecomastia</Text>
                                                         </Link>
-                                                        <Link href="/cirugia-plastica/lifting-facial" onClick={onClose}>
-                                                            <Text fontSize="sm" color="gray.700">Lifting facial</Text>
-                                                        </Link>
-                                                        <Link href="/cirugia-plastica/otoplastia" onClick={onClose}>
-                                                            <Text fontSize="sm" color="gray.700">Otoplastia</Text>
+                                                        <Link href="/cirugia-plastica/reasignacion-genero" onClick={onClose}>
+                                                            <Text fontSize="sm" color="gray.700">Cirugía de reasignación de género</Text>
                                                         </Link>
 
-                                                        <Text fontWeight="medium" fontSize="sm" color="black" mt={2}>CIRUGÍA CORPORAL</Text>
+                                                        <Text fontWeight="medium" fontSize="sm" color="black" mt={2}>CIRUGÍA CONTORNO CORPORAL</Text>
                                                         <Link href="/cirugia-plastica/abdominoplastia" onClick={onClose}>
-                                                            <Text fontSize="sm" color="gray.700">Abdominoplastia</Text>
+                                                            <Text fontSize="sm" color="gray.700">Abdominoplastia. Tummy Tuck</Text>
+                                                        </Link>
+                                                        <Link href="/cirugia-plastica/braquioplastia" onClick={onClose}>
+                                                            <Text fontSize="sm" color="gray.700">Brazos (braquioplastia). Muslos (cruroplastia)</Text>
                                                         </Link>
                                                         <Link href="/cirugia-plastica/liposuccion" onClick={onClose}>
-                                                            <Text fontSize="sm" color="gray.700">Liposucción</Text>
+                                                            <Text fontSize="sm" color="gray.700">Liposucción. Lipedema</Text>
                                                         </Link>
                                                         <Link href="/cirugia-plastica/gluteoplastia" onClick={onClose}>
                                                             <Text fontSize="sm" color="gray.700">Gluteoplastia</Text>
                                                         </Link>
-                                                        <Link href="/cirugia-plastica/braquioplastia" onClick={onClose}>
-                                                            <Text fontSize="sm" color="gray.700">Braquioplastia</Text>
+
+                                                        <Text fontWeight="medium" fontSize="sm" color="black" mt={2}>CIRUGÍA FACIAL</Text>
+                                                        <Link href="/cirugia-plastica/blefaroplastia" onClick={onClose}>
+                                                            <Text fontSize="sm" color="gray.700">Blefaroplastia (superior e inferior)</Text>
+                                                        </Link>
+                                                        <Link href="/cirugia-plastica/otoplastia" onClick={onClose}>
+                                                            <Text fontSize="sm" color="gray.700">Otoplastia. Orejas en soplillo. Lóbulos rasgados.</Text>
+                                                        </Link>
+                                                        <Link href="/cirugia-plastica/rinoplastia" onClick={onClose}>
+                                                            <Text fontSize="sm" color="gray.700">Rinoplastia</Text>
+                                                        </Link>
+                                                        <Link href="/cirugia-plastica/mentoplastia" onClick={onClose}>
+                                                            <Text fontSize="sm" color="gray.700">Mentoplastia</Text>
+                                                        </Link>
+                                                        <Link href="/cirugia-plastica/lifting-facial" onClick={onClose}>
+                                                            <Text fontSize="sm" color="gray.700">Lifting cervicofacial</Text>
+                                                        </Link>
+                                                        <Link href="/cirugia-plastica/bichectomia" onClick={onClose}>
+                                                            <Text fontSize="sm" color="gray.700">Bichectomía</Text>
+                                                        </Link>
+                                                        <Link href="/cirugia-plastica/lip-lift" onClick={onClose}>
+                                                            <Text fontSize="sm" color="gray.700">Cirugía de labios. Lip lift</Text>
+                                                        </Link>
+
+                                                        <Text fontWeight="medium" fontSize="sm" color="black" mt={2}>CIRUGÍA GENITAL</Text>
+                                                        <Link href="#" onClick={onClose}>
+                                                            <Text fontSize="sm" color="gray.700">Ninfoplastia</Text>
+                                                        </Link>
+
+                                                        <Text fontWeight="medium" fontSize="sm" color="black" mt={2}>CIRUGÍA RECONSTRUCTIVA</Text>
+
+                                                        <Text fontWeight="medium" fontSize="sm" color="black" mt={2}>CIRUGÍA DE LA PIEL</Text>
+                                                        <Link href="#" onClick={onClose}>
+                                                            <Text fontSize="sm" color="gray.700">Extirpación de lesiones cutáneas</Text>
                                                         </Link>
                                                     </>
                                                 )}
                                                 {link.href === '/medicina-estetica' && (
                                                     <>
-                                                        <Text fontWeight="medium" fontSize="sm" color="black" mt="15px">TRATAMIENTOS FACIALES</Text>
-                                                        <Link href="/medicina-estetica/botox" onClick={onClose}>
-                                                            <Text fontSize="sm" color="gray.700">Botox</Text>
-                                                        </Link>
                                                         <Link href="/medicina-estetica/rellenos" onClick={onClose}>
-                                                            <Text fontSize="sm" color="gray.700">Rellenos faciales</Text>
+                                                            <Text fontSize="sm" color="gray.700">Rellenos</Text>
                                                         </Link>
-                                                        <Link href="/medicina-estetica/hilos-tensores" onClick={onClose}>
-                                                            <Text fontSize="sm" color="gray.700">Hilos tensores</Text>
-                                                        </Link>
-                                                        <Link href="/medicina-estetica/peeling" onClick={onClose}>
-                                                            <Text fontSize="sm" color="gray.700">Peeling</Text>
-                                                        </Link>
-
-                                                        <Text fontWeight="medium" fontSize="sm" color="black" mt={2}>TRATAMIENTOS CORPORALES</Text>
-                                                        <Link href="/medicina-estetica/mesoterapia" onClick={onClose}>
-                                                            <Text fontSize="sm" color="gray.700">Mesoterapia</Text>
-                                                        </Link>
-                                                        <Link href="/medicina-estetica/hidrolipoclasia" onClick={onClose}>
-                                                            <Text fontSize="sm" color="gray.700">Hidrolipoclasia</Text>
-                                                        </Link>
-                                                        <Link href="/medicina-estetica/carboxiterapia" onClick={onClose}>
-                                                            <Text fontSize="sm" color="gray.700">Carboxiterapia</Text>
-                                                        </Link>
-
-                                                        <Text fontWeight="medium" fontSize="sm" color="black" mt={2}>OTROS TRATAMIENTOS</Text>
                                                         <Link href="/medicina-estetica/injerto-capilar" onClick={onClose}>
                                                             <Text fontSize="sm" color="gray.700">Injerto Capilar</Text>
                                                         </Link>
-                                                        <Link href="/medicina-estetica/depilacion-laser" onClick={onClose}>
-                                                            <Text fontSize="sm" color="gray.700">Depilación Láser</Text>
+                                                        <Link href="/medicina-estetica/mesoterapia" onClick={onClose}>
+                                                            <Text fontSize="sm" color="gray.700">Mesoterapia</Text>
+                                                        </Link>
+                                                        <Link href="/medicina-estetica/peelings" onClick={onClose}>
+                                                            <Text fontSize="sm" color="gray.700">Peelings</Text>
+                                                        </Link>
+                                                        <Link href="/medicina-estetica/lifting-microcanulas" onClick={onClose}>
+                                                            <Text fontSize="sm" color="gray.700">Lifting Microcánulas</Text>
+                                                        </Link>
+                                                        <Link href="/medicina-estetica/tratamiento-manchas" onClick={onClose}>
+                                                            <Text fontSize="sm" color="gray.700">Tratamiento para quitar manchas</Text>
                                                         </Link>
                                                     </>
                                                 )}
