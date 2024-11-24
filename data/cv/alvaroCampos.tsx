@@ -3,7 +3,7 @@ import { cvInt } from ".";
 
 export const alvaroCampos: cvInt = {
     slug: "alvaro-campos",
-    imagen: "/img/PerfilPepe.png",
+    imagen: "/img/FotoCampos.jpg",
     nombre: "Dr. Álvaro Campos Estellés",
     especialidad: "Cirugía Capilar ",
     locacion: "Valencia",

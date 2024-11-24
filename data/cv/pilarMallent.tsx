@@ -3,8 +3,8 @@ import { cvInt } from ".";
 
 export const pilarMallent: cvInt = {
     slug: "pilar-mallent",
-    imagen: "/img/PerfilPepeSanta.png",
-    nombre: "Dr. José Santamaría",
+    imagen: "/img/PerfilPilar.jpg",
+    nombre: "Pilar Mallent",
     especialidad: "Anestesiología ",
     locacion: "Valencia",
     items: [

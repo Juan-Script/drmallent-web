@@ -13,17 +13,24 @@ export default function Perfil({ profesional }: Porps) {
             direction={{ base: "column", lg: "row" }}
         >
             <Flex
-                direction={{ base: "column", sm: "row",lg: "column", xl: "column" }}
+                direction={{ base: "column", sm: "row", lg: "column", xl: "column" }}
                 alignItems={{ base: "center", lg: "flex-start" }}
                 mb={{ base: "40px", lg: "0" }}
-                gap={{ base: "0px", sm: "20px", lg: "0px"}}
+                gap={{ base: "0px", sm: "20px", lg: "0px" }}
             >
-                <Image
-                    src={profesional?.imagen}
-                    alt={profesional?.nombre}
-                    width={200}
-                    height={450}
-                />
+
+                <Flex
+                    w="300px"
+                >
+                    <Image
+                        src={profesional?.imagen}
+                        alt={profesional?.nombre}
+                        width={300}
+                        height={450}
+                        quality={100}
+                    />
+                </Flex>
+
 
                 <Flex
                     direction="column"
@@ -32,12 +39,12 @@ export default function Perfil({ profesional }: Porps) {
                     <Text
                         mt="35px"
                         mb="30px"
-                        fontSize={{ base: "14px", lg: "12px"}}
+                        fontSize={{ base: "14px", lg: "12px" }}
                         fontWeight="400"
                         lineHeight="13.2px"
                         letterSpacing="0.667px"
                         textAlign={{ base: "center", md: "left" }}
-                        pl={{ base: "0px", sm: "10px"}}
+                        pl={{ base: "0px", sm: "10px" }}
                     >
                         {profesional?.nombre}
                     </Text>
@@ -49,7 +56,7 @@ export default function Perfil({ profesional }: Porps) {
                         lineHeight="20px"
                         letterSpacing="0.267px"
                         textAlign={{ base: "center", md: "left" }}
-                        pl={{ base: "0px", sm: "10px"}}
+                        pl={{ base: "0px", sm: "10px" }}
                     >
                         {profesional?.especialidad}
                     </Text>
@@ -61,7 +68,7 @@ export default function Perfil({ profesional }: Porps) {
                         lineHeight="20px"
                         letterSpacing="0.267px"
                         textAlign={{ base: "center", md: "left" }}
-                        pl={{ base: "0px", sm: "10px"}}
+                        pl={{ base: "0px", sm: "10px" }}
                     >
                         {profesional?.locacion}
                     </Text>

@@ -3,8 +3,8 @@ import { cvInt } from ".";
 
 export const ana: cvInt = {
     slug: "ana",
-    imagen: "/img/PerfilPepeSanta.png",
-    nombre: "Dr. José Santamaría",
+    imagen: "/img/PerfilAna.jpg",
+    nombre: "Ana",
     especialidad: "Anestesiología ",
     locacion: "Valencia",
     items: [
