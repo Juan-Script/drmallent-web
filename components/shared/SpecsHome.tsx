@@ -23,6 +23,8 @@ export default function SpecsHome() {
       py={{ base: "50px", md: "100px" }}
       direction="column"
       gap={{ base: "40px", md: "70px" }}
+      maxW="2000px"
+      mx="auto"
     >
       {specs.map((spec, index) => (
         <Flex

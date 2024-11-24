@@ -21,6 +21,7 @@ export default function ContactHome() {
       initial={{ opacity: 0 }} // Empieza con opacidad 0
       animate={{ opacity: 1 }}  // Aparece con opacidad 1
       transition={{ duration: 1 }} // La animación durará 1 segundo
+      maxW="2000px"
     >
       <MotionText
         fontSize={{ base: "18px", md: "23px" }}

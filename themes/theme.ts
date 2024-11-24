@@ -11,7 +11,8 @@ const breakpoints = {
     md: '1024px',
     lg: '1228px',
     xl: '1440px',
-    '2xl': '1650px'
+    '2xl': '1650px',
+    '3xl': '2000px'
 };
 
 export const theme = extendTheme({

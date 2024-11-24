@@ -18,6 +18,8 @@ export default function AboutUs() {
             initial={{ opacity: 0 }} // Inicialmente invisible
             animate={{ opacity: 1 }}  // Animación completa
             transition={{ duration: 0.8 }} // Duración de la animación
+            maxW="2000px"
+            mx="auto"
         >
             {/* Animamos los textos de la sección de arriba */}
             <MotionFlex

@@ -20,12 +20,13 @@ export default function Testimonials() {
 
   return (
     <Flex
-      px={{ base: "30px", sm: "100px", md: "150px", lg: "200px", xl: "200px", "2xl": "300px" }}
+      px={{ base: "30px", sm: "100px", md: "150px", lg: "200px", xl: "200px", "2xl": "900px" }}
       py={{ base: "50px", md: "100px" }}
       gap={{ base: "60px" }}
       direction={{ base: "column", md: "row" }}
       align={{ base: "center", md: "flex-start" }}
       bg="#F3F3F3"
+      mx="auto"
     >
       {
         testimonios.map((testimonio, index) => (
