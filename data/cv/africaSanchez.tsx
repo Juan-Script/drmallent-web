@@ -1,6 +1,6 @@
 import { cvInt } from ".";
 
-export const especialistaTres: cvInt = {
+export const africaSanchez: cvInt = {
     slug: "africa-sanchez",
     imagen: "/img/PerfilAfrica.jpg",
     nombre: "África Sánchez Salas",

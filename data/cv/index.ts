@@ -1,9 +1,11 @@
-import { AlvaroCamposData } from "./AlvaroCamposData";
-import { especialistaCuatro } from "./especialista-cuatro";
-import { especialistaDos } from "./especialista-dos";
-import { especialistaSeis } from "./especialista-seis";
-import { especialistaTres } from "./especialista-tres";
-import { PepeMallentData } from "./PepeMallentData";
+import { africaSanchez } from "./africaSanchez";
+import { alvaroCampos } from "./alvaroCampos";
+import { drJoseSantamaria } from "./drJoseSantamaria";
+import { pilarMallent } from "./pilarMallent";
+import { vicky } from "./vicky";
+import { drPepeMallent } from "./drPepeMallent";
+import { ana } from "./ana";
+
 
 export interface cvInt {
     slug: string;
@@ -20,10 +22,11 @@ export interface cvInt {
 }
 
 export const cvData: cvInt[] = [
-    PepeMallentData,
-    especialistaDos,
-    especialistaTres,
-    especialistaCuatro,
-    AlvaroCamposData,
-    especialistaSeis,
+    drPepeMallent,
+    drJoseSantamaria,
+    africaSanchez,
+    ana,
+    pilarMallent,
+    vicky,
+    alvaroCampos
 ]

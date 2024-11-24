@@ -36,8 +36,8 @@ export const cardEquipo: CardEquipoInt[] = [
     },
     {
         src: "/img/PerfilAfrica.jpg",
-        slug: "africa",
-        nombre: "África",
+        slug: "africa-sanchez",
+        nombre: "África Sánchez",
         especialidad: "Enfermería Quirúrgica",
         locacion: "Valencia",
         items: [
@@ -49,7 +49,7 @@ export const cardEquipo: CardEquipoInt[] = [
     },
     {
         src: "/FotoAnax2.jpg",
-        slug: "especialista-cuatro",
+        slug: "ana",
         nombre: "Ana",
         especialidad: "Cirugía plástica, estética y reparadora",
         locacion: "Valencia y Denia",
@@ -63,7 +63,7 @@ export const cardEquipo: CardEquipoInt[] = [
     },
     {
         src: "/img/PerfilPilar.jpg",
-        slug: "especialista-cinco",
+        slug: "pilar-mallent",
         nombre: "Pilar Mallent",
         especialidad: "Cirugía plástica, estética y reparadora",
         locacion: "Valencia y Denia",
@@ -77,7 +77,7 @@ export const cardEquipo: CardEquipoInt[] = [
     },
     {
         src: "/img/PerfilVicky.jpg",
-        slug: "especialista-seis",
+        slug: "vicky",
         nombre: "Vicky",
         especialidad: "Cirugía plástica, estética y reparadora",
         locacion: "Valencia y Denia",
@@ -91,7 +91,7 @@ export const cardEquipo: CardEquipoInt[] = [
     },
     {
         src: "/img/FotoCampos.jpg",
-        slug: "especialista-siete",
+        slug: "alvaro-campos",
         nombre: "Dr. Álvaro Campos Estellés",
         especialidad: "Cirugía capilar y tricologia",
         locacion: "Valencia",

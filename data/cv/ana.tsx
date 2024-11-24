@@ -1,8 +1,8 @@
 import { cvInt } from ".";
 
 
-export const especialistaCuatro: cvInt = {
-    slug: "especialista-cuatro",
+export const ana: cvInt = {
+    slug: "ana",
     imagen: "/img/PerfilPepeSanta.png",
     nombre: "Dr. José Santamaría",
     especialidad: "Anestesiología ",

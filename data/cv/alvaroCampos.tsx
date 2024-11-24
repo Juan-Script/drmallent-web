@@ -1,8 +1,8 @@
 import { cvInt } from ".";
 
 
-export const AlvaroCamposData: cvInt = {
-    slug: "especialista-uno",
+export const alvaroCampos: cvInt = {
+    slug: "alvaro-campos",
     imagen: "/img/PerfilPepe.png",
     nombre: "Dr. Álvaro Campos Estellés",
     especialidad: "Cirugía Capilar ",

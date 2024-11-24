@@ -26,7 +26,7 @@ export const Hero = ({ title }: Props) => {
                 fontWeight="700"
                 fontSize={{ base: "40px", sm: "50px", md: "70px", lg: "90px" }}
                 w={{ base: "90%", sm: "80%"}}
-                lineHeight="95%"
+                lineHeight="100%"
                 initial={{ opacity: 0, x: -100 }}  // Empieza desplazado hacia la izquierda
                 animate={{ opacity: 1, x: 0 }}     // Llega al centro con opacidad total
                 transition={{ duration: 1 }}       // Animación de 1 segundo

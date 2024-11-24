@@ -1,6 +1,6 @@
 import { cvInt } from ".";
 
-export const PepeMallentData: cvInt = {
+export const drPepeMallent: cvInt = {
     slug: "dr-mallent",
     imagen: "/img/PerfilPepe.png",
     nombre: "Dr. José Mallent Añón",
