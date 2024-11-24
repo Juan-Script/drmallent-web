@@ -77,7 +77,7 @@ export const medicinaEsteticaData = {
             }
         ]
     },
-    liftingMicrocanulas: {
+    "lifting-microcanulas": {
         titulo: "Lifting con Microcánulas",
         descripcion: "El lifting con microcánulas es un nuevo concepto de rejuvenecimiento facial sin anestesia, dolor ni hematomas. Permite devolver a tu rostro un aspecto rejuvenecido sin necesidad de pasar por quirófano, experimentando una clara mejoría con una rápida recuperación.",
         preguntas: [
@@ -103,8 +103,8 @@ export const medicinaEsteticaData = {
             }
         ]
     },
-    tratamientoManchas: {
-        titulo: "Tratamiento de Manchas",
+    "tratamiento-manchas": {
+        titulo: "Tratamiento para quitar manchas",
         descripcion: "Las manchas en la piel pueden ser causadas por diferentes factores, incluyendo la exposición al sol, la edad, la genética y ciertos medicamentos. Aunque estas manchas no son peligrosas para la salud, pueden afectar la autoestima y la apariencia de la piel. Existen diversos tratamientos efectivos para su eliminación.",
         preguntas: [
             {
@@ -129,7 +129,7 @@ export const medicinaEsteticaData = {
             }
         ]
     },
-    injertoCapilar: {
+    "injerto-capilar": {
         titulo: "Injerto Capilar",
         descripcion: "El trasplante o cirugía capilar es un procedimiento seguro y efectivo para tratar la alopecia. Es considerada la solución más avanzada para recuperar el cabello perdido, logrando resultados naturales y menos invasivos.",
         preguntas: [

@@ -53,7 +53,7 @@ export default function Footer() {
         { label: "blefaroplastia", href: "/cirugia-plastica/parpados" },
         { label: "estiramiento facial", href: "/cirugia-plastica/estiramiento-facial" },
         { label: "aumento de mamas", href: "/cirugia-plastica/aumento-mamas" },
-        { label: "reconstrucción de mamas", href: "/cirugia-plastica/reconstruccion-mamas" },
+        { label: "reconstrucción de mamas", href: "/cirugia-plastica/reconstruccion-mama" },
         { label: "reducción de mamas", href: "/cirugia-plastica/reduccion-mamas" },
         { label: "lifting de brazos y muslos", href: "/cirugia-plastica/brazos-muslos" },
         { label: "liposucción", href: "/cirugia-plastica/liposuccion" },

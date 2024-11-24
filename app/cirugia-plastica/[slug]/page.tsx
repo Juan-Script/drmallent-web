@@ -22,7 +22,7 @@ export default function EspecialidadPage({ params }: Props) {
             <Navbar />
 
             <Hero
-                title="Plasma rico en plaquetas en Valencia"
+                title={tratamientoData?.titulo}
             />
 
             <AccordionComponent data={tratamientoData?.preguntas} />

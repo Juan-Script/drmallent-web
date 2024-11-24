@@ -1,5 +1,5 @@
 export const cirugiaPlasticaData = {
-    aumentoPecho: {
+    "aumento-mamas": {
         titulo: "Aumento de Pecho",
         descripcion: "El aumento de pecho o mamoplastia de aumento es una cirugía que soluciona los problemas de aquellas mujeres que consideran que el tamaño de sus pechos es demasiado pequeño o que la edad les ha restado atractivo. Se realiza bajo un criterio responsable, combinando lo atractivo, lo femenino y lo anatómico.",
         preguntas: [
@@ -25,7 +25,7 @@ export const cirugiaPlasticaData = {
             }
         ]
     },
-    reduccionPecho: {
+    "reduccion-mamas": {
         titulo: "Reducción de Pecho",
         descripcion: "El exceso de peso y volumen de las mamas origina molestias e impide en ocasiones determinadas actividades físicas. La reducción de las mamas es una cirugía muy agradecida por los pacientes, que apenas provoca dolor y permite la lactancia materna.",
         preguntas: [
@@ -51,7 +51,7 @@ export const cirugiaPlasticaData = {
             }
         ]
     },
-    reconstruccionMama: {
+    "reconstruccion-mama": {
         titulo: "Reconstrucción de Mama",
         descripcion: "Devolver lo perdido tras una mutilación, habitualmente por un proceso oncológico, representa una de las mayores satisfacciones tanto para el paciente como para el cirujano. La microcirugía y los injertos de grasa han hecho posible que la reconstrucción perfecta esté ya al alcance de nuestras pacientes.",
         preguntas: [
@@ -103,7 +103,7 @@ export const cirugiaPlasticaData = {
             }
         ]
     },
-    cirugiaBrazos: {
+    braquioplastia: {
         titulo: "Cirugía de Brazos y Muslos",
         descripcion: "Los excesos de piel y grasa localizados en la cara interna de brazos y muslos son incómodos y, en general, poco higiénicos. Una sencilla intervención permite eliminarlos, dejando unas cicatrices poco visibles.",
         preguntas: [
@@ -230,6 +230,266 @@ export const cirugiaPlasticaData = {
             {
                 pregunta: "¿Cuándo podré ver los resultados definitivos?",
                 respuesta: "Los resultados son visibles inmediatamente después de la cirugía. La mentoplastia proporciona definición a la mandíbula y equilibra el aspecto facial de forma permanente. Cuando se combina con otros procedimientos como rinoplastia o implantes de pómulos, se logra un equilibrio general en el rostro que mejora significativamente la armonía facial."
+            }
+        ]
+    },
+    "elevacion-mamas": {
+        titulo: "Elevación de Mamas",
+        descripcion: "La mastopexia o elevación de mamas es una intervención que permite corregir la caída o ptosis mamaria, devolviendo a los senos su posición natural y mejorando su forma y firmeza.",
+        preguntas: [
+            {
+                pregunta: "¿Qué es la elevación de mamas?",
+                respuesta: "La elevación de mamas o mastopexia es una cirugía que reposiciona el tejido mamario, eleva el complejo areola-pezón y elimina el exceso de piel para conseguir un pecho más firme y juvenil. Esta intervención no modifica el volumen del pecho, aunque puede combinarse con implantes si se desea aumentar el tamaño."
+            },
+            {
+                pregunta: "¿En qué consiste el procedimiento?",
+                respuesta: "La cirugía se realiza bajo anestesia general y dura entre 2-3 horas. Se realizan incisiones alrededor de la areola y verticalmente hasta el pliegue submamario, pudiendo ser necesaria una incisión horizontal en el surco. A través de estas incisiones, se remodela el tejido mamario, se reposiciona el complejo areola-pezón y se elimina el exceso de piel."
+            },
+            {
+                pregunta: "¿Quién requiere este tratamiento?",
+                respuesta: "Las candidatas ideales son mujeres con mamas caídas debido a embarazos, lactancia, pérdida de peso significativa o el proceso natural de envejecimiento. También es adecuada para corregir asimetrías en la posición de los pezones o areolas de gran tamaño."
+            },
+            {
+                pregunta: "¿Qué cabe esperar en el postoperatorio?",
+                respuesta: "La recuperación inicial dura entre 1-2 semanas. Se debe usar un sujetador especial durante 6 semanas. Los puntos se retiran entre 7-14 días después de la cirugía. Es normal experimentar hinchazón y molestias moderadas que mejoran progresivamente."
+            },
+            {
+                pregunta: "¿Cuándo podré ver los resultados definitivos?",
+                respuesta: "Los resultados son inmediatamente visibles, aunque la forma final se aprecia a los 3-6 meses cuando la inflamación desaparece por completo y las cicatrices maduran. Los resultados son duraderos, pero pueden verse afectados por futuros embarazos, cambios de peso significativos o el proceso natural de envejecimiento."
+            }
+        ]
+    },
+    "ginecomastia": {
+        titulo: "Cirugía de Mamas en el Varón",
+        descripcion: "La ginecomastia es el desarrollo excesivo de las glándulas mamarias en el hombre. Su tratamiento quirúrgico permite eliminar el exceso de tejido glandular y graso, logrando un tórax masculino y proporcionado.",
+        preguntas: [
+            {
+                pregunta: "¿Qué es la cirugía de ginecomastia?",
+                respuesta: "La cirugía de ginecomastia es un procedimiento que reduce el tamaño del pecho masculino eliminando el exceso de tejido glandular y graso. Esta condición puede afectar a uno o ambos pechos y suele aparecer durante la pubertad o en edad adulta por diversos factores hormonales o medicamentosos."
+            },
+            {
+                pregunta: "¿En qué consiste el procedimiento?",
+                respuesta: "La intervención se realiza bajo anestesia general o local con sedación. Se combina liposucción para eliminar el exceso de grasa con la extirpación del tejido glandular a través de una pequeña incisión en el borde de la areola. En casos severos, puede ser necesario eliminar el exceso de piel."
+            },
+            {
+                pregunta: "¿Quién requiere este tratamiento?",
+                respuesta: "Es ideal para hombres que presentan desarrollo mamario excesivo que no ha respondido a dieta y ejercicio. Los mejores candidatos son aquellos con buen tono de piel y sin sobrepeso excesivo. Es importante descartar causas médicas de la ginecomastia antes de la cirugía."
+            },
+            {
+                pregunta: "¿Qué cabe esperar en el postoperatorio?",
+                respuesta: "El postoperatorio requiere el uso de una prenda compresiva durante 4-6 semanas. La incorporación al trabajo puede realizarse en 3-4 días. Se debe evitar el ejercicio físico intenso durante 3-4 semanas. Los resultados son permanentes siempre que se mantenga un peso estable."
+            },
+            {
+                pregunta: "¿Cuándo podré ver los resultados definitivos?",
+                respuesta: "La mejoría es inmediata, aunque la inflamación puede persistir durante varias semanas. Los resultados definitivos se aprecian a los 3-6 meses cuando la inflamación desaparece por completo. Las pequeñas cicatrices suelen ser prácticamente imperceptibles."
+            }
+        ]
+    },
+    "reasignacion-genero": {
+        titulo: "Cirugía de Reasignación de Género",
+        descripcion: "La cirugía de reasignación de género es un paso fundamental en el proceso de transición para muchas personas trans. Incluye diversos procedimientos quirúrgicos que ayudan a alinear las características físicas con la identidad de género.",
+        preguntas: [
+            {
+                pregunta: "¿Qué es la cirugía de reasignación de género?",
+                respuesta: "La cirugía de reasignación de género engloba diferentes procedimientos quirúrgicos que modifican las características sexuales primarias y secundarias para alinearlas con la identidad de género de la persona. Incluye cirugías como mastectomía, aumento mamario, vaginoplastia, faloplastia, entre otras."
+            },
+            {
+                pregunta: "¿En qué consisten los procedimientos?",
+                respuesta: "Los procedimientos varían según el caso. Para personas trans femeninas pueden incluir aumento de pecho, feminización facial y vaginoplastia. Para personas trans masculinas pueden incluir mastectomía, histerectomía y faloplastia. Cada cirugía tiene sus propias técnicas y tiempos de recuperación específicos."
+            },
+            {
+                pregunta: "¿Quién requiere este tratamiento?",
+                respuesta: "Las personas candidatas son aquellas diagnosticadas con disforia de género que han completado el proceso de evaluación psicológica y han recibido terapia hormonal durante el tiempo requerido. Es fundamental cumplir con los protocolos establecidos y tener expectativas realistas sobre los resultados."
+            },
+            {
+                pregunta: "¿Qué cabe esperar en el postoperatorio?",
+                respuesta: "El postoperatorio varía según el procedimiento realizado. Puede requerir hospitalización de varios días y un período de recuperación de varias semanas. Es fundamental seguir todas las indicaciones médicas y mantener un seguimiento regular para asegurar una correcta cicatrización."
+            },
+            {
+                pregunta: "¿Cuándo podré ver los resultados definitivos?",
+                respuesta: "Los tiempos de recuperación y resultados finales varían según el procedimiento. Algunos resultados son inmediatos, mientras que otros pueden tardar meses en manifestarse completamente. Es importante mantener expectativas realistas y seguir todas las recomendaciones médicas durante el proceso de recuperación."
+            }
+        ]
+    },
+    "ninfoplastia": {
+        titulo: "Ninfoplastia",
+        descripcion: "La ninfoplastia es una cirugía íntima femenina que reduce o remodela los labios menores de la vulva, mejorando tanto el aspecto estético como la comodidad física de la paciente.",
+        preguntas: [
+            {
+                pregunta: "¿Qué es la ninfoplastia?",
+                respuesta: "La ninfoplastia es una cirugía que reduce o remodela los labios menores de la vulva cuando estos son demasiado grandes o asimétricos. Este procedimiento puede realizarse por motivos estéticos o funcionales, como molestias durante la actividad física o al usar ciertas prendas de vestir."
+            },
+            {
+                pregunta: "¿En qué consiste el procedimiento?",
+                respuesta: "La intervención se realiza con anestesia local o sedación y dura aproximadamente una hora. Se retira el exceso de tejido de los labios menores y se remodelan para conseguir un aspecto más estético y funcional. Las incisiones se realizan de forma que las cicatrices queden prácticamente imperceptibles."
+            },
+            {
+                pregunta: "¿Quién requiere este tratamiento?",
+                respuesta: "Las candidatas son mujeres que presentan hipertrofia o asimetría de los labios menores que les causa incomodidad física o psicológica. También puede estar indicada en casos de molestias durante las relaciones sexuales o la práctica deportiva."
+            },
+            {
+                pregunta: "¿Qué cabe esperar en el postoperatorio?",
+                respuesta: "La recuperación es relativamente rápida. Se recomienda reposo relativo durante 48-72 horas y abstinencia sexual durante 4-6 semanas. Puede haber cierta inflamación y molestias los primeros días que mejoran con analgésicos suaves. La higiene de la zona es fundamental para una correcta cicatrización."
+            },
+            {
+                pregunta: "¿Cuándo podré ver los resultados definitivos?",
+                respuesta: "Los resultados son apreciables inmediatamente después de la cirugía, aunque la inflamación puede persistir durante varias semanas. Los resultados definitivos se observan a los 2-3 meses cuando la cicatrización es completa. Los resultados son permanentes y naturales."
+            }
+        ]
+    },
+    "gluteoplastia": {
+        titulo: "Gluteoplastia",
+        descripcion: "La gluteoplastia es una cirugía que permite aumentar y remodelar los glúteos mediante implantes o transferencia de grasa propia, logrando una silueta más armoniosa y proporcionada.",
+        preguntas: [
+            {
+                pregunta: "¿Qué es la gluteoplastia?",
+                respuesta: "La gluteoplastia es una cirugía que aumenta y mejora la forma de los glúteos, ya sea mediante implantes o mediante la técnica de lipotransferencia (BBL - Brazilian Butt Lift). Esta intervención permite conseguir unos glúteos más voluminosos y definidos, mejorando la silueta corporal."
+            },
+            {
+                pregunta: "¿En qué consiste el procedimiento?",
+                respuesta: "Existen dos técnicas principales: la colocación de implantes a través de una incisión en el pliegue interglúteo, o la transferencia de grasa propia extraída mediante liposucción de otras zonas del cuerpo. La elección de la técnica dependerá de las características y preferencias de cada paciente."
+            },
+            {
+                pregunta: "¿Quién requiere este tratamiento?",
+                respuesta: "Es ideal para personas que desean aumentar el volumen de sus glúteos o mejorar su forma. En el caso del BBL, las candidatas deben tener suficiente grasa corporal para la transferencia. Para los implantes, es importante tener buena calidad de piel y expectativas realistas."
+            },
+            {
+                pregunta: "¿Qué cabe esperar en el postoperatorio?",
+                respuesta: "El postoperatorio requiere evitar sentarse directamente sobre los glúteos durante 2-3 semanas. Se debe usar una faja compresiva durante 6-8 semanas. La incorporación a la vida normal es gradual y se debe evitar el ejercicio físico intenso durante 6-8 semanas."
+            },
+            {
+                pregunta: "¿Cuándo podré ver los resultados definitivos?",
+                respuesta: "Los resultados son visibles inmediatamente, aunque la inflamación puede persistir varios meses. En el caso del BBL, el resultado final se aprecia a los 6 meses cuando se estabiliza la grasa transferida. Con implantes, los resultados son definitivos una vez que la inflamación desaparece completamente."
+            }
+        ]
+    },
+    "blefaroplastia": {
+        titulo: "Blefaroplastia",
+        descripcion: "La blefaroplastia es una cirugía que rejuvenece la mirada eliminando el exceso de piel y bolsas de los párpados superiores e inferiores, devolviendo un aspecto más juvenil y descansado al rostro.",
+        preguntas: [
+            {
+                pregunta: "¿Qué es la blefaroplastia?",
+                respuesta: "La blefaroplastia es una cirugía que corrige el exceso de piel y grasa en los párpados superiores e inferiores. Elimina las 'bolsas' de los ojos y el aspecto cansado de la mirada, proporcionando un aspecto más juvenil y descansado sin alterar la expresión natural del rostro."
+            },
+            {
+                pregunta: "¿En qué consiste el procedimiento?",
+                respuesta: "La cirugía se realiza bajo anestesia local con sedación. En los párpados superiores, se elimina el exceso de piel y grasa a través de una incisión en el pliegue natural. En los inferiores, se puede realizar por vía externa o transconjuntival (por el interior del párpado) para eliminar las bolsas sin cicatriz visible."
+            },
+            {
+                pregunta: "¿Quién requiere este tratamiento?",
+                respuesta: "Es ideal para personas con exceso de piel en los párpados superiores que puede incluso dificultar la visión, o con bolsas en los párpados inferiores que dan aspecto de cansancio. La edad habitual es a partir de los 40 años, aunque puede realizarse antes si existe predisposición genética."
+            },
+            {
+                pregunta: "¿Qué cabe esperar en el postoperatorio?",
+                respuesta: "La recuperación es rápida, con inflamación y hematomas que mejoran en 7-10 días. Se recomienda dormir con la cabeza elevada y aplicar frío local. Los puntos se retiran a los 5-7 días. Se puede reincorporar a la vida social en 10-15 días cuando la inflamación ha disminuido significativamente."
+            },
+            {
+                pregunta: "¿Cuándo podré ver los resultados definitivos?",
+                respuesta: "Los resultados son visibles inmediatamente aunque la inflamación puede persistir varias semanas. Los resultados definitivos se aprecian a los 3-6 meses. Las cicatrices, muy finas, quedan ocultas en el pliegue natural del párpado superior o en el borde de las pestañas en el inferior."
+            }
+        ]
+    },
+    "lifting-facial": {
+        titulo: "Lifting Cervicofacial",
+        descripcion: "El lifting facial es una cirugía que rejuvenece el rostro y el cuello, eliminando la flacidez y reposicionando los tejidos caídos, consiguiendo un aspecto más joven y natural sin alterar los rasgos faciales.",
+        preguntas: [
+            {
+                pregunta: "¿Qué es el lifting cervicofacial?",
+                respuesta: "El lifting cervicofacial es una cirugía que trata los signos del envejecimiento facial y cervical, reposicionando los tejidos caídos, eliminando el exceso de piel y redefiniendo el óvalo facial y el cuello. El objetivo es conseguir un rejuvenecimiento natural sin alterar la expresión facial."
+            },
+            {
+                pregunta: "¿En qué consiste el procedimiento?",
+                respuesta: "La cirugía se realiza bajo anestesia general y dura entre 3-4 horas. Se realizan incisiones ocultas en el cuero cabelludo y alrededor de las orejas, a través de las cuales se reposicionan los tejidos profundos y se elimina el exceso de piel. Puede combinarse con otros procedimientos como blefaroplastia o lipofilling."
+            },
+            {
+                pregunta: "¿Quién requiere este tratamiento?",
+                respuesta: "Es ideal para personas entre 45-65 años con signos moderados o severos de envejecimiento facial como flacidez en mejillas y cuello, pérdida de definición del óvalo facial o bandas platismales marcadas. Los mejores candidatos son personas con buen estado de salud y expectativas realistas."
+            },
+            {
+                pregunta: "¿Qué cabe esperar en el postoperatorio?",
+                respuesta: "La recuperación inicial requiere 2-3 semanas. Es normal presentar inflamación y hematomas que mejoran progresivamente. Se debe dormir con la cabeza elevada y evitar esfuerzos físicos durante 3-4 semanas. Los puntos se retiran entre 7-14 días después de la cirugía."
+            },
+            {
+                pregunta: "¿Cuándo podré ver los resultados definitivos?",
+                respuesta: "Los resultados son visibles inmediatamente aunque la inflamación puede persistir varios meses. Los resultados definitivos se aprecian a los 6-12 meses. El rejuvenecimiento conseguido es duradero, aunque el proceso natural de envejecimiento continúa su curso."
+            }
+        ]
+    },
+    "bichectomia": {
+        titulo: "Bichectomía",
+        descripcion: "La bichectomía es una cirugía que elimina las bolas de Bichat para afinar el rostro y definir los pómulos, consiguiendo un rostro más estilizado y armónico.",
+        preguntas: [
+            {
+                pregunta: "¿Qué es la bichectomía?",
+                respuesta: "La bichectomía es una cirugía que consiste en la extracción de las bolas de Bichat, unas acumulaciones de tejido graso ubicadas en las mejillas. Esta intervención permite afinar el rostro, definir los pómulos y conseguir un aspecto más estilizado sin alterar la expresividad facial."
+            },
+            {
+                pregunta: "¿En qué consiste el procedimiento?",
+                respuesta: "La cirugía se realiza bajo anestesia local con sedación y dura aproximadamente una hora. Se accede a las bolas de Bichat mediante una pequeña incisión en el interior de la boca, por lo que no deja cicatrices visibles. Se extraen de forma simétrica para mantener la armonía facial."
+            },
+            {
+                pregunta: "¿Quién requiere este tratamiento?",
+                respuesta: "Es ideal para personas que desean reducir el volumen de sus mejillas y definir más sus pómulos. Los mejores candidatos son aquellos con rostro redondeado debido al volumen de las bolas de Bichat, y que buscan un aspecto más angulado y definido."
+            },
+            {
+                pregunta: "¿Qué cabe esperar en el postoperatorio?",
+                respuesta: "La recuperación es rápida aunque puede haber inflamación durante 1-2 semanas. Se recomienda dieta blanda los primeros días y una higiene bucal rigurosa. Se puede reincorporar a la vida social en 3-4 días, aunque la inflamación puede persistir algunas semanas."
+            },
+            {
+                pregunta: "¿Cuándo podré ver los resultados definitivos?",
+                respuesta: "Los resultados comienzan a apreciarse a partir de la tercera semana cuando disminuye la inflamación. Los resultados definitivos se ven a los 3-4 meses. El resultado es permanente ya que el tejido extraído no se regenera."
+            }
+        ]
+    },
+    "lip-lift": {
+        titulo: "Cirugía de Labios. Lip Lift",
+        descripcion: "El lip lift es una cirugía que acorta la distancia entre la nariz y el labio superior, proporcionando un aspecto más juvenil y sensual a los labios sin necesidad de rellenos.",
+        preguntas: [
+            {
+                pregunta: "¿Qué es el lip lift?",
+                respuesta: "El lip lift es una cirugía que eleva el labio superior acortando la distancia entre la nariz y el labio, conocida como filtrum. Esta intervención permite conseguir unos labios más definidos y voluminosos de forma natural y permanente, mejorando la exposición del bermellón (parte rosada del labio)."
+            },
+            {
+                pregunta: "¿En qué consiste el procedimiento?",
+                respuesta: "La cirugía se realiza bajo anestesia local y dura aproximadamente una hora. Se realiza una incisión oculta en la base de la nariz, retirando una pequeña cantidad de piel para elevar el labio superior. La técnica permite personalizar el resultado según las características y deseos de cada paciente."
+            },
+            {
+                pregunta: "¿Quién requiere este tratamiento?",
+                respuesta: "Es ideal para personas con labio superior largo o caído, generalmente debido al envejecimiento, o para quienes desean un aspecto más definido y juvenil de sus labios sin depender de rellenos temporales. También es adecuado para corregir asimetrías labiales."
+            },
+            {
+                pregunta: "¿Qué cabe esperar en el postoperatorio?",
+                respuesta: "La recuperación es rápida con inflamación moderada durante 1-2 semanas. Los puntos se retiran a los 5-7 días. Puede haber cierta tirantez al sonreír durante las primeras semanas. La cicatriz, ubicada en la base de la nariz, se vuelve prácticamente imperceptible con el tiempo."
+            },
+            {
+                pregunta: "¿Cuándo podré ver los resultados definitivos?",
+                respuesta: "Los resultados son visibles inmediatamente aunque la inflamación puede modificar temporalmente el aspecto final. Los resultados definitivos se aprecian a los 2-3 meses cuando la cicatriz madura y la inflamación desaparece por completo. El resultado es permanente."
+            }
+        ]
+    },
+    "extirpacion-lesiones-cutaneas": {
+        titulo: "Extirpación de Lesiones Cutáneas",
+        descripcion: "La extirpación de lesiones cutáneas es un procedimiento que elimina diferentes tipos de lesiones de la piel, tanto por motivos estéticos como preventivos, dejando cicatrices mínimas.",
+        preguntas: [
+            {
+                pregunta: "¿Qué es la extirpación de lesiones cutáneas?",
+                respuesta: "Es un procedimiento quirúrgico que permite eliminar diferentes tipos de lesiones de la piel como lunares, quistes, lipomas, verrugas o tumores cutáneos. La intervención se realiza tanto por motivos estéticos como preventivos, siguiendo siempre criterios de seguridad oncológica."
+            },
+            {
+                pregunta: "¿En qué consiste el procedimiento?",
+                respuesta: "La cirugía se realiza habitualmente con anestesia local y dura entre 15-45 minutos dependiendo del tipo y tamaño de la lesión. Se extirpa la lesión completamente y se cierra la herida con sutura muy fina para minimizar la cicatriz. En casos necesarios, se envía la muestra para análisis anatomopatológico."
+            },
+            {
+                pregunta: "¿Quién requiere este tratamiento?",
+                respuesta: "Está indicado para cualquier persona que presente lesiones cutáneas que desee eliminar, ya sea por motivos estéticos o médicos. Es especialmente importante en lesiones que han cambiado de tamaño, color o forma, o que producen molestias o sangrado."
+            },
+            {
+                pregunta: "¿Qué cabe esperar en el postoperatorio?",
+                respuesta: "La recuperación es muy rápida y el paciente puede hacer vida normal inmediatamente, evitando ejercicio intenso durante una semana. Los puntos se retiran entre 7-14 días según la localización. Es importante proteger la cicatriz del sol durante varios meses."
+            },
+            {
+                pregunta: "¿Cuándo podré ver los resultados definitivos?",
+                respuesta: "La lesión se elimina inmediatamente, pero la cicatriz evoluciona durante varios meses. Inicialmente puede estar rojiza y algo engrosada, pero con el tiempo se vuelve más clara y plana. El resultado final de la cicatriz se aprecia a los 6-12 meses."
             }
         ]
     }

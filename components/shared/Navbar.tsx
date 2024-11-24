@@ -1,6 +1,6 @@
 "use client";
 
-import { Button, Flex, IconButton, useDisclosure, Link as ChakraLink, Box } from '@chakra-ui/react';
+import { Button, Flex, IconButton, useDisclosure, Link as ChakraLink, Box, Text } from '@chakra-ui/react';
 import { usePathname } from 'next/navigation';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
@@ -80,14 +80,12 @@ export default function Navbar() {
                             position="relative"
                             _hover={{ '.dropdown': { visibility: 'visible', opacity: 1, maxHeight: '500px' } }}
                         >
-                            <ChakraLink
-                                as={Link}
-                                href={link.href}
+                            <Text
                                 fontSize="14px"
-                                _hover={{ color: "#878787" }}
+                                cursor="pointer"
                             >
                                 {link.text}
-                            </ChakraLink>
+                            </Text>
 
                             <Box
                                 className="dropdown"
@@ -118,7 +116,7 @@ export default function Navbar() {
                                             <Box as="a" href="/cirugia-plastica/aumento-mamas" display="block" p="5px" _hover={{ color: "#878787" }}>Aumento de mamas. Prótesis. Injertos de grasa</Box>
                                             <Box as="a" href="/cirugia-plastica/reduccion-mamas" display="block" p="5px" _hover={{ color: "#878787" }}>Reducción de mamas</Box>
                                             <Box as="a" href="/cirugia-plastica/elevacion-mamas" display="block" p="5px" _hover={{ color: "#878787" }}>Elevación de mamas</Box>
-                                            <Box as="a" href="/cirugia-plastica/reconstruccion-mamas" display="block" p="5px" _hover={{ color: "#878787" }}>Reconstrucción de mamas</Box>
+                                            <Box as="a" href="/cirugia-plastica/reconstruccion-mama" display="block" p="5px" _hover={{ color: "#878787" }}>Reconstrucción de mamas</Box>
                                             <Box as="a" href="/cirugia-plastica/ginecomastia" display="block" p="5px" _hover={{ color: "#878787" }}>Cirugía de mamas en el varón. Ginecomastia</Box>
                                             <Box as="a" href="/cirugia-plastica/reasignacion-genero" display="block" p="5px" _hover={{ color: "#878787" }}>Cirugía de reasignación de género</Box>
                                         </Flex>
@@ -183,7 +181,6 @@ export default function Navbar() {
                             href={link.href}
                             fontSize="14px"
                             _hover={{ color: "#878787" }}
-                            mt="2px"
                         >
                             {link.text}
                         </ChakraLink>
