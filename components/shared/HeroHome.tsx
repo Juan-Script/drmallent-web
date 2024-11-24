@@ -28,7 +28,7 @@ export default function HeroHome() {
                 gap={{ base: "20px", md: "30px", lg: "40px" }}
                 pos="absolute"
                 top={{ base: "100px", sm: "150px", md: "200px" }}
-                right={{ base: "60px", sm: "50px", md: "100px", lg: "300px", xl: "400px", '2xl': "500px", "3xl": "600px" }}
+                right={{ base: "60px", sm: "50px", md: "100px", lg: "300px", xl: "300px", '2xl': "500px", "3xl": "600px" }}
                 maxW={{ base: "300px", sm: "350px", md: "400px", lg: "400px", xl: "500px", "2xl": "500px" }}
                 initial={{ opacity: 0, x: 100 }}
                 animate={{ opacity: 1, x: 0 }}
@@ -47,7 +47,7 @@ export default function HeroHome() {
                 <MotionText
                     fontSize={{ base: "18px", sm: "15px", md: "16px" }}
                     fontWeight={400}
-                    initial={{ opacity: 0, x: 100 }}
+                    initial={{ opacity: 0, x: -100 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 1, delay: 0.5 }}
                 >
