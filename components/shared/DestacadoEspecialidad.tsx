@@ -4,19 +4,16 @@ import React from 'react'
 import Image from 'next/image'
 import { Flex, Text } from '@chakra-ui/react'
 import { motion } from 'framer-motion'
+import { usePathname } from 'next/navigation'
 
 // Definimos el motion component
 const MotionFlex = motion(Flex)
 
-interface Especialidad {
-    titulo: string;
-    descripcion: string;
-    imagen: string;
-    slug: string;
-}
+
 
 export default function DestacadoEspecialidad() {
-    const especialidadesCirugiaPlastica: Especialidad[] = [
+    const pathname = usePathname();
+    const especialidadesCirugiaPlastica = [
         {
             titulo: "Reducción mamaria",
             descripcion: "Descubre nuestros tratamientos faciales personalizados para rejuvenecer y revitalizar tu piel de forma natural y efectiva.",
@@ -37,7 +34,7 @@ export default function DestacadoEspecialidad() {
         }
     ];
 
-    const especialidadesMedicinaEstetica: Especialidad[] = [
+    const especialidadesMedicinaEstetica = [
         {
             titulo: "Rellenos",
             descripcion: "Tratamientos con rellenos dérmicos para restaurar volumen y mejorar los contornos faciales de manera natural.",
@@ -58,7 +55,6 @@ export default function DestacadoEspecialidad() {
         }
     ];
 
-    const pathname = window.location.pathname;
     const especialidades = pathname.includes('cirugia-plastica') 
         ? especialidadesCirugiaPlastica 
         : pathname.includes('medicina-estetica')

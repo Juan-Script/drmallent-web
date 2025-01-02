@@ -61,6 +61,14 @@ export default function Footer() {
         { label: "cirugía post bariátrica", href: "/cirugia-plastica/cirugia-post-bariatrica" },
       ]
     },
+    {
+      label: "centros",
+      href: "/",
+      childrens: [
+        { label: "Imske", href: "https://www.imske.com/" },
+        { label: "IMED Colon", href: "https://www.imedhospitales.com/es/valencia-colon/" },
+      ]
+    },
   ]
 
   const socials = [
@@ -86,7 +94,7 @@ export default function Footer() {
       >
         <Flex
           flexWrap="wrap"
-          gap={{ base: "20px", sm: "30px", md: "40px" }}
+          gap={{ base: "20px", sm: "30px", md: "30px" }}
           justifyContent={{ base: "flex-start", md: "center" }}
           width={{ base: "100%", md: "auto" }}
         >
