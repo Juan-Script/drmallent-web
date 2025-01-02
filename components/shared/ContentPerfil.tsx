@@ -13,7 +13,7 @@ const MotionButton = motion(Button);
 export default function ContentPerfil() {
     return (
         <MotionFlex
-            px={{ base: "30px", sm: "100px", md: "150px", lg: "200px", xl: "200px", "2xl": "300px" }}
+            px={{ base: "0px", sm: "100px", md: "150px", lg: "200px", xl: "200px", "2xl": "300px" }}
             direction="column"
             gap={{ base: "50px", md: "100px" }}
             w="full"
@@ -35,7 +35,7 @@ export default function ContentPerfil() {
             >
                 {/* Imagen con animación */}
                 <MotionFlex
-                    h={{ base: "250px", sm: "367px" }}
+                    h={{ base: "350px", sm: "367px" }}
                     w={{ base: "100%", md: "50%", lg: "622px" }}
                     position="relative"
                     variants={{
@@ -53,6 +53,7 @@ export default function ContentPerfil() {
 
                 {/* Texto con animación desde la derecha */}
                 <MotionFlex
+                    px={{ base: "30px"}}
                     direction="column"
                     justifyContent="space-between"
                     gap="20px"
@@ -62,7 +63,7 @@ export default function ContentPerfil() {
                         visible: { opacity: 1, x: 0, transition: { duration: 1, ease: "easeOut" } },
                     }}
                 >
-                    <Text fontSize={{ base: "12px", md: "14px" }} fontWeight="400">
+                    <Text fontSize={{ base: "14px", md: "16px" }} fontWeight="400">
                         El Dr. José Mallent es una reconocida autoridad en la especialidad de Cirugía Plástica, Estética y Reparadora.
                         Su manera de entender la cirugía como una profesión que debe poner en valor los conceptos de armonía, equilibrio y naturalidad,
                         y una técnica innovadora y dedicada al estudio de los últimos avances científicos, lo han consagrado como uno de los cirujanos más relevantes.
@@ -98,6 +99,7 @@ export default function ContentPerfil() {
 
             {/* Segunda sección con dos columnas de texto */}
             <MotionFlex
+                px={{ base: "30px"}}
                 w="full"
                 direction={{ base: "column", md: "row" }}
                 gap={{ base: "40px", md: "80px" }}
@@ -121,7 +123,7 @@ export default function ContentPerfil() {
                     <Text fontSize={{ base: "18px", md: "21px" }} fontWeight="600">
                         ENTRE CIENCIA Y ARTE. UNA FIRMA QUE HUYE DE LOS CÁNONES
                     </Text>
-                    <Text fontSize={{ base: "12px", md: "14px" }} fontWeight="400" color="secondary_font">
+                    <Text fontSize={{ base: "14px", md: "16px" }} fontWeight="400" color="secondary_font">
                         Hablar del Dr. José Mallent es hablar de una filosofía de vida marcada por el gusto por la belleza,
                         la proporción y el arte… un sutil equilibrio que refleja con prestigio en el ejercicio de su profesión,
                         desde hace más de 20 años.<br /><br />

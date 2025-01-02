@@ -3,6 +3,9 @@
 import { Flex, Text } from '@chakra-ui/react'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
+import Slider from 'react-slick';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 // Definimos motion para Flex y Text
 const MotionFlex = motion(Flex)
@@ -52,144 +55,200 @@ export default function AboutUs() {
                     fontSize="14px"
                     textColor="black"
                 >
-                    En nuestra Clínica de Estética Plástica, tanto en Valencia como en Dénia contamos con una larga trayectoria y un equipo de especialistas con amplia formación en todo tipo de tratamientos estéticos, tanto quirúrgicos como no quirúrgicos. Las excelentes opiniones de nuestros pacientes son nuestra mejor carta de presentación y nos ha posicionado como una de las clínicas de cirugía estética de referencia.
+                    En nuestra Clínica de Cirugía Estética Plástica, contamos con una larga trayectoria y un equipo de especialistas con amplia formación en todo tipo de tratamientos estéticos, tanto quirúrgicos como no quirúrgicos. Las excelentes opiniones de nuestros pacientes son nuestra mejor carta de presentación y nos ha posicionado como una de las clínicas de cirugía estética de referencia.
                 </MotionText>
             </MotionFlex>
 
-            {/* Animamos la galería de imágenes */}
+            {/* Reemplazamos la galería de imágenes con un diseño responsive */}
             <MotionFlex
-                gap="20px"
+                gap={{ base: "0", md: "20px" }}
                 mx="auto"
-                initial={{ opacity: 0, y: 100 }} // Sale desde abajo
-                animate={{ opacity: 1, y: 0 }}  // Llega a su posición original
+                initial={{ opacity: 0, y: 100 }}
+                animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1.2 }}
+                w="full"
             >
+                {/* Carrusel para móvil */}
                 <Flex
-                    h="full"
+                    display={{ base: 'block', md: 'none' }}
                     w="full"
-                    maxH="442px"
-                    maxW="243px"
                 >
-                    <Image
-                        src={'/img/AboutUs1.jpg'}
-                        alt='imgAboutUs'
-                        height={442}
-                        width={243}
-                        objectFit="cover"
-                    />
+                    <Slider
+                        dots={true}
+                        infinite={true}
+                        speed={500}
+                        slidesToShow={1}
+                        slidesToScroll={1}
+                        arrows={false}
+                        autoplay={true}
+                    >
+                        <Flex h="442px" w="full">
+                            <Image
+                                src={'/img/AboutUs1.jpg'}
+                                alt='imgAboutUs'
+                                height={442}
+                                width={243}
+                                objectFit="cover"
+                                style={{ width: '100%' }}
+                            />
+                        </Flex>
+                        <Flex h="442px" w="full">
+                            <Image
+                                src={'/img/AboutUs2.jpg'}
+                                alt='imgAboutUs'
+                                height={442}
+                                width={243}
+                                objectFit="cover"
+                                style={{ width: '100%' }}
+                            />
+                        </Flex>
+                        <Flex h="442px" w="full">
+                            <Image
+                                src={'/img/AboutUs3.jpg'}
+                                alt='imgAboutUs'
+                                height={442}
+                                width={243}
+                                objectFit="cover"
+                                style={{ width: '100%' }}
+                            />
+                        </Flex>
+                    </Slider>
                 </Flex>
 
+                {/* Vista de escritorio - mantener el diseño original */}
                 <Flex
-                    h="full"
+                    display={{ base: 'none', md: 'flex' }}
+                    gap="20px"
                     w="full"
-                    maxH="442px"
-                    maxW="243px"
-                >
-                    <Image
-                        src={'/img/AboutUs2.jpg'}
-                        alt='imgAboutUs'
-                        height={440}
-                        width={240}
-                        objectFit="cover"
-                    />
-                </Flex>
-
-                <Flex
-                    maxH="240px"
-                    direction="column"
                 >
                     <Flex
-                        h="243px"
-                        w="243px"
-                        display={{ md: "flex", base: "none" }}
+                        h="full"
+                        w="full"
+                        maxH="442px"
+                        maxW="243px"
                     >
                         <Image
-                            src={'/img/AboutUs3.jpg'}
+                            src={'/img/AboutUs1.jpg'}
                             alt='imgAboutUs'
-                            height={240}
-                            width={240}
-                            objectFit='cover'
+                            height={442}
+                            width={243}
+                            objectFit="cover"
                         />
                     </Flex>
 
-                    {/* Animamos los números y el texto */}
-                    <MotionFlex
-                        mt="50px"
-                        ml="30px"
-                        gap="60px"
-                        initial={{ opacity: 0 }} // Inicialmente invisible
-                        animate={{ opacity: 1 }}  // Aparece con opacidad completa
-                        transition={{ duration: 1, delay: 0.3 }} // Ligero retraso
-                        display={{ md: "flex", base: "none" }}
+                    <Flex
+                        h="full"
+                        w="full"
+                        maxH="442px"
+                        maxW="243px"
                     >
-                        <MotionFlex
-                            direction="column"
-                            maxW="163px"
-                            initial={{ opacity: 0, y: -50 }} // Empieza desde arriba
-                            animate={{ opacity: 1, y: 0 }}   // Llega a su lugar
-                            transition={{ duration: 1, delay: 0.6 }}
+                        <Image
+                            src={'/img/AboutUs2.jpg'}
+                            alt='imgAboutUs'
+                            height={440}
+                            width={240}
+                            objectFit="cover"
+                        />
+                    </Flex>
+
+                    <Flex
+                        maxH="240px"
+                        direction="column"
+                    >
+                        <Flex
+                            h="243px"
+                            w="243px"
+                            display={{ md: "flex", base: "none" }}
                         >
-                            <Text
-                                fontSize="40px"
-                                color="font_variant"
-                            >
-                                2K+
-                            </Text>
+                            <Image
+                                src={'/img/AboutUs3.jpg'}
+                                alt='imgAboutUs'
+                                height={240}
+                                width={240}
+                                objectFit='cover'
+                            />
+                        </Flex>
 
-                            <Text
-                                fontSize="16px"
-                                letterSpacing={4}
-                            >
-                                CIRUGÍAS CON ÉXITO
-                            </Text>
-                        </MotionFlex>
-
+                        {/* Animamos los números y el texto */}
                         <MotionFlex
-                            direction="column"
-                            maxW="163px"
-                            initial={{ opacity: 0, y: -50 }} // Empieza desde arriba
-                            animate={{ opacity: 1, y: 0 }}   // Llega a su lugar
-                            transition={{ duration: 1, delay: 0.9 }}
+                            mt="50px"
+                            ml="30px"
+                            gap="60px"
+                            initial={{ opacity: 0 }} // Inicialmente invisible
+                            animate={{ opacity: 1 }}  // Aparece con opacidad completa
+                            transition={{ duration: 1, delay: 0.3 }} // Ligero retraso
+                            display={{ md: "flex", base: "none" }}
                         >
-                            <Text
-                                fontSize="40px"
-                                color="font_variant"
+                            <MotionFlex
+                                direction="column"
+                                maxW="163px"
+                                initial={{ opacity: 0, y: -50 }} // Empieza desde arriba
+                                animate={{ opacity: 1, y: 0 }}   // Llega a su lugar
+                                transition={{ duration: 1, delay: 0.6 }}
                             >
-                                8+
-                            </Text>
+                                <Text
+                                    fontSize="40px"
+                                    color="font_variant"
+                                >
+                                    2K+
+                                </Text>
 
-                            <Text
-                                fontSize="16px"
-                                letterSpacing={4}
-                                whiteSpace="nowrap"
+                                <Text
+                                    fontSize="16px"
+                                    letterSpacing={4}
+                                >
+                                    CIRUGÍAS CON ÉXITO
+                                </Text>
+                            </MotionFlex>
+
+                            <MotionFlex
+                                direction="column"
+                                maxW="163px"
+                                initial={{ opacity: 0, y: -50 }} // Empieza desde arriba
+                                animate={{ opacity: 1, y: 0 }}   // Llega a su lugar
+                                transition={{ duration: 1, delay: 0.9 }}
                             >
-                                TRABAJADORES
-                            </Text>
+                                <Text
+                                    fontSize="40px"
+                                    color="font_variant"
+                                >
+                                    8+
+                                </Text>
+
+                                <Text
+                                    fontSize="16px"
+                                    letterSpacing={4}
+                                    whiteSpace="nowrap"
+                                >
+                                    TRABAJADORES
+                                </Text>
+                            </MotionFlex>
+
+                            <MotionFlex
+                                direction="column"
+                                maxW="163px"
+                                initial={{ opacity: 0, y: -50 }} // Empieza desde arriba
+                                animate={{ opacity: 1, y: 0 }}   // Llega a su lugar
+                                transition={{ duration: 1, delay: 1.2 }}
+                            >
+                                <Text
+                                    fontSize="40px"
+                                    color="font_variant"
+                                >
+                                    300+
+                                </Text>
+
+                                <Text
+                                    fontSize="16px"
+                                    letterSpacing={4}
+                                >
+                                    CLIENTES
+                                </Text>
+                            </MotionFlex>
+
                         </MotionFlex>
+                    </Flex>
 
-                        <MotionFlex
-                            direction="column"
-                            maxW="163px"
-                            initial={{ opacity: 0, y: -50 }} // Empieza desde arriba
-                            animate={{ opacity: 1, y: 0 }}   // Llega a su lugar
-                            transition={{ duration: 1, delay: 1.2 }}
-                        >
-                            <Text
-                                fontSize="40px"
-                                color="font_variant"
-                            >
-                                300+
-                            </Text>
-
-                            <Text
-                                fontSize="16px"
-                                letterSpacing={4}
-                            >
-                                CLIENTES
-                            </Text>
-                        </MotionFlex>
-
-                    </MotionFlex>
                 </Flex>
 
             </MotionFlex>
