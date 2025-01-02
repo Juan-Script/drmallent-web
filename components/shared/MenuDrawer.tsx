@@ -39,24 +39,26 @@ export const MenuDrawer = ({ isOpen, onClose, Links }: Props) => {
                             <Box key={index}>
                                 {(link.href === '/cirugia-plastica' || link.href === '/medicina-estetica' || link.text.toLowerCase() === 'equipo') ? (
                                     <>
-                                        <Flex
-                                            cursor="pointer"
-                                            onClick={() => toggleMenu(link.href)}
-                                            pb={2}
-                                            align="center"
-                                            justify="space-between"
-                                        >
-                                            <Text color="black" fontWeight="medium">
-                                                {link.text}
-                                            </Text>
-                                            <Icon
-                                                as={IoChevronDown}
-                                                color="black"
-                                                transform={expandedMenu === link.href ? "rotate(180deg)" : "rotate(0deg)"}
-                                                transition="all 0.2s"
-                                                w={5}
-                                                h={5}
-                                            />
+                                        <Flex align="center">
+                                            <Link href={link.href} onClick={onClose} style={{ flex: 1 }}>
+                                                <Text color="black" fontWeight="medium">
+                                                    {link.text}
+                                                </Text>
+                                            </Link>
+                                            <Box 
+                                                onClick={() => toggleMenu(link.href)}
+                                                cursor="pointer"
+                                                p={2}
+                                            >
+                                                <Icon
+                                                    as={IoChevronDown}
+                                                    color="black"
+                                                    transform={expandedMenu === link.href ? "rotate(180deg)" : "rotate(0deg)"}
+                                                    transition="all 0.2s"
+                                                    w={5}
+                                                    h={5}
+                                                />
+                                            </Box>
                                         </Flex>
                                         <Collapse in={expandedMenu === link.href}>
                                             <VStack align="stretch" pl={4} spacing={2}>
@@ -151,6 +153,9 @@ export const MenuDrawer = ({ isOpen, onClose, Links }: Props) => {
                                                         </Link>
                                                         <Link href="/medicina-estetica/tratamiento-manchas" onClick={onClose}>
                                                             <Text fontSize="sm" color="gray.700">Tratamiento para quitar manchas</Text>
+                                                        </Link>
+                                                        <Link href="/medicina-estetica/toxina-botulinica" onClick={onClose}>
+                                                            <Text fontSize="sm" color="gray.700">Toxina botulínica</Text>
                                                         </Link>
                                                     </>
                                                 )}

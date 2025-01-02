@@ -129,6 +129,16 @@ export const medicinaEsteticaData = {
             }
         ]
     },
+    "toxina-botulinica": {
+        titulo: "Toxina botulínica",
+        descripcion: "La toxina botulínica es un tratamiento que utiliza la toxina botulínica para rejuvenecer la piel y reducir arrugas.",
+        preguntas: [
+            {
+                pregunta: "¿Qué es la toxina botulínica?",
+                respuesta: "La toxina botulínica es una toxina producida por el microorganismo Clostridium botulinum. Se utiliza en medicina para tratar la arrugas y reducir la flacidez de la piel."
+            }
+        ]
+    },
     "injerto-capilar": {
         titulo: "Injerto Capilar",
         descripcion: "El trasplante o cirugía capilar es un procedimiento seguro y efectivo para tratar la alopecia. Es considerada la solución más avanzada para recuperar el cabello perdido, logrando resultados naturales y menos invasivos.",

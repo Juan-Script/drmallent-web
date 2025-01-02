@@ -83,6 +83,10 @@ export default function Navbar() {
                             <Text
                                 fontSize="14px"
                                 cursor="pointer"
+                                as="a" 
+                                href={link.href} 
+                                display="block" 
+                                _hover={{ color: "#878787" }}
                             >
                                 {link.text}
                             </Text>
@@ -112,7 +116,7 @@ export default function Navbar() {
                                         <Flex
                                             direction="column"
                                         >
-                                            <Box fontWeight="bold">CIRUGÍA MAMARIA</Box>
+                                            <Box as="a" href="/cirugia-plastica/aumento-mamas" display="block" p="5px" _hover={{ color: "#878787" }} fontWeight="bold">CIRUGÍA MAMARIA</Box>
                                             <Box as="a" href="/cirugia-plastica/aumento-mamas" display="block" p="5px" _hover={{ color: "#878787" }}>Aumento de mamas. Prótesis. Injertos de grasa</Box>
                                             <Box as="a" href="/cirugia-plastica/reduccion-mamas" display="block" p="5px" _hover={{ color: "#878787" }}>Reducción de mamas</Box>
                                             <Box as="a" href="/cirugia-plastica/elevacion-mamas" display="block" p="5px" _hover={{ color: "#878787" }}>Elevación de mamas</Box>
@@ -164,6 +168,7 @@ export default function Navbar() {
                                         <Box as="a" href="/medicina-estetica/peelings" display="block" p="5px" _hover={{ color: "#878787" }}>Peelings</Box>
                                         <Box as="a" href="/medicina-estetica/lifting-microcanulas" display="block" p="5px" _hover={{ color: "#878787" }}>Lifting Microcánulas</Box>
                                         <Box as="a" href="/medicina-estetica/tratamiento-manchas" display="block" p="5px" _hover={{ color: "#878787" }}>Tratamiento para quitar manchas</Box>
+                                        <Box as="a" href="/medicina-estetica/toxina-botulinica" display="block" p="5px" _hover={{ color: "#878787" }}>Toxina botulínica</Box>
                                     </>
                                 )}
                                 {link.href === '/especialistas' && (
