@@ -130,12 +130,28 @@ export const medicinaEsteticaData = {
         ]
     },
     "toxina-botulinica": {
-        titulo: "Toxina botulínica",
-        descripcion: "La toxina botulínica es un tratamiento que utiliza la toxina botulínica para rejuvenecer la piel y reducir arrugas.",
+        titulo: "Toxina botulínica / Botox Azzalure",
+        descripcion: "Azzalure es un neuromodulador que contiene toxina botulínica A, que actúa relajando los músculos para reducir las arrugas de expresión y tratar otras condiciones como el bruxismo o la hiperhidrosis.",
         preguntas: [
             {
-                pregunta: "¿Qué es la toxina botulínica?",
-                respuesta: "La toxina botulínica es una toxina producida por el microorganismo Clostridium botulinum. Se utiliza en medicina para tratar la arrugas y reducir la flacidez de la piel."
+                pregunta: "¿Qué es Botox Azzalure y para qué se utiliza?",
+                respuesta: "Azzalure contiene toxina botulínica A, que actúa como neuromodulador relajando los músculos. Funciona bloqueando la liberación de acetilcolina en las terminaciones nerviosas, impidiendo la contracción muscular y reduciendo las arrugas de expresión. Se puede utilizar en adultos menores de 65 años para mejorar temporalmente las líneas glabelares, patas de gallo, sonrisa gingival, bruxismo e hiperhidrosis."
+            },
+            {
+                pregunta: "¿Cuánto dura el Botox Azzalure?",
+                respuesta: "Los estudios clínicos muestran que el efecto óptimo en las líneas glabelares se mantiene hasta 4 meses después de la inyección, con algunos pacientes respondiendo hasta los 5 meses. La dosis recomendada es de 30 unidades Speywood de Azzalure por cada lado, administrada en 3 lugares de inyección."
+            },
+            {
+                pregunta: "¿Qué diferencia hay entre el Botox Azzalure y los rellenos?",
+                respuesta: "El Botox Azzalure no es un relleno. Mientras que los rellenos como el ácido hialurónico aportan volumen, la toxina botulínica actúa como neuromodulador impidiendo la contracción muscular que causa las arrugas de expresión. Ambos tratamientos pueden combinarse para lograr una corrección más natural y prevenir la aparición de arrugas."
+            },
+            {
+                pregunta: "¿Desde qué edad y hasta qué edad puede utilizarse?",
+                respuesta: "Puede utilizarse a partir de los 18 años para prevenir la aparición de arrugas de expresión. Normalmente, no se recomienda su administración en personas mayores de 65 años."
+            },
+            {
+                pregunta: "¿Debe realizarse un mantenimiento?",
+                respuesta: "Sí, se requiere una revisión a los 10-15 días de la primera inyección para corregir posibles desajustes y alcanzar la máxima simetría. Posteriormente, se recomienda una nueva revisión a los 4-5 meses, cuando comienza a desaparecer el efecto del neuromodulador."
             }
         ]
     },

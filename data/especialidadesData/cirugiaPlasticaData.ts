@@ -1,6 +1,6 @@
 export const cirugiaPlasticaData = {
     "aumento-mamas": {
-        titulo: "Aumento de Pecho",
+        titulo: "Aumento de Pecho / Prótesis de mama /Aumento de pecho/ Aumento de senos",
         descripcion: "El aumento de pecho o mamoplastia de aumento es una cirugía que soluciona los problemas de aquellas mujeres que consideran que el tamaño de sus pechos es demasiado pequeño o que la edad les ha restado atractivo. Se realiza bajo un criterio responsable, combinando lo atractivo, lo femenino y lo anatómico.",
         preguntas: [
             {
@@ -26,42 +26,50 @@ export const cirugiaPlasticaData = {
         ]
     },
     "reduccion-mamas": {
-        titulo: "Reducción de Pecho",
-        descripcion: "El exceso de peso y volumen de las mamas origina molestias e impide en ocasiones determinadas actividades físicas. La reducción de las mamas es una cirugía muy agradecida por los pacientes, que apenas provoca dolor y permite la lactancia materna.",
+        titulo: "Mamoplastia de reducción / Reducción mamaria / Reducción de pechos",
+        descripcion: "Se trata de una de las técnicas quirúrgicas más realizadas en la clínica DRJM y con un mayor grado de satisfacción según refieren nuestras pacientes.",
         preguntas: [
             {
                 pregunta: "¿Qué es la mamoplastia de reducción?",
-                respuesta: "La reducción de pecho o mamoplastia de reducción es una técnica quirúrgica que modifica la forma y tamaño de la mama para adecuarla a los requerimientos estéticos y funcionales de la paciente. Esta cirugía ayuda a solucionar la hipertrofia mamaria, una afección caracterizada por un aumento del volumen de los senos que puede causar dolores de espalda y alteraciones en la posición de la columna vertebral."
+                respuesta: "La reducción de pechos o mamoplastia de reducción es una técnica quirúrgica que modifica la forma y tamaño de la mama para adecuarla a los requerimientos estéticos y funcionales de la mujer, reduciendo su volumen y elevando las areolas y los pezones. Esta cirugía se realiza para tratar la hipertrofia mamaria, una afección caracterizada por un aumento del volumen de los senos que suele causar dolores de espalda y alteraciones en la posición de la columna vertebral, así como incomodidad a la hora de vestir determinadas prendas y realizar ejercicio físico."
             },
             {
                 pregunta: "¿En qué consiste el procedimiento?",
-                respuesta: "La cirugía se realiza con anestesia general y dura entre 2 y 3 horas. El procedimiento busca elevar la areola y el pezón y reducir el tamaño de las mamas. Dependiendo del caso, las cicatrices pueden ser: alrededor del complejo areola-pezón, una cicatriz vertical adicional hasta el pliegue submamario, o una cicatriz en forma de T invertida que incluye una línea horizontal en el surco submamario."
+                respuesta: "La cirugía se realiza con anestesia general y su duración oscila entre 2 y 3 horas. El procedimiento busca reducir el tamaño de las mamas y elevar y reducir el diámetro de la areola y del pezón. Dependiendo del caso, las cicatrices varian alrededor del complejo areola-pezón, una cicatriz vertical adicional hasta el pliegue submamario, o una cicatriz en forma de T invertida que incluye una línea horizontal en el surco submamario. En la clínica DRJM procuramos evitar las cicatrices, especialmente aquellas ubicadas en el surco submamario y especialmente en mujeres más jóvenes."
             },
             {
                 pregunta: "¿Quién requiere este tratamiento?",
-                respuesta: "Este tratamiento es ideal para pacientes que buscan solucionar problemas funcionales causados por el exceso de volumen mamario, como problemas posturales y dolores de cuello y espalda. También es adecuado para quienes buscan una mejora estética para conseguir un pecho con una forma más armónica y natural."
+                respuesta: "El exceso de volumen y peso en las mamas produce incomodidad y dolor en espalda y hombros. Suele ser habitual la aparición de marcas del sujetador producidas a modo de escotaduras en la zona comprendida entre los hombros y las clavículas, así como heridas y eritema en los surcos submamarios, especialmente durante el período estival. Cada vez son más las mujeres que realizan ejercicio físico de forma habitual, por lo que la mamoplastia de reducción es ideal para este tipo de pacientes. Este tratamiento es ideal para pacientes que buscan solucionar problemas funcionales causados por el exceso de volumen mamario, como problemas posturales y dolores de cuello y espalda. También es adecuado para aquellas mujeres que buscan mayor comodidad a la hora de realizar ejercicio físico."
             },
             {
                 pregunta: "¿Qué cabe esperar en el postoperatorio?",
-                respuesta: "La estancia postoperatoria es de 24 horas. Se colocan drenajes y un vendaje compresivo que se llevará 1-2 días, seguido por un sujetador especial durante dos meses. El postoperatorio no es muy doloroso, aunque se prescriben analgésicos. Es normal experimentar insensibilidad en la zona del pezón y areola. Los puntos se retiran entre una y dos semanas después."
+                respuesta: "La estancia hospitalaria postoperatoria suele ser de 24 horas. Se colocan drenajes y un vendaje elástico y se retiran al día siguiente de la cirugía antes del alta hospitalaria, y se sustituye por un sujetador sin aros tipo deportivo durante dos meses. El postoperatorio es apenas doloroso, y la paciente puede reanudar su vida cotidiana en un breve período. Es normal experimentar alteraciones transitorias en la sensibilidad. Las suturas son reabsorbibles, por lo que no es necesario retirar."
             },
             {
                 pregunta: "¿Cuándo podré ver los resultados definitivos?",
-                respuesta: "Aunque los cambios son visibles inmediatamente, puede tardar unos meses en adquirir el tamaño y forma definitiva. Las cicatrices van desvaneciéndose con el tiempo, aunque serán permanentes. El resultado puede variar posteriormente por embarazos, cambios de peso o alteraciones hormonales, pero nunca volverá a la situación prequirúrgica."
+                respuesta: "Aunque los cambios son visibles inmediatamente, puede tardar unos meses en adquirir el tamaño y forma definitiva. Las cicatrices van disimulandose con el tiempo, aunque serán permanentes. El resultado puede variar posteriormente por embarazos, cambios de peso o alteraciones hormonales."
+            },
+            {
+                pregunta: "¿Son necesarias las prótesis en este tipo de cirugías?",
+                respuesta: "No, siempre que exista tejido suficiente, se realiza una 'autoprótesis' (es decir, empleamos el tejido propio de la paciente sin necesidad de añadir implante alguno). En determinados casos, pueden combinarse las dos técnicas."
+            },
+            {
+                pregunta: "¿Se pierde la capacidad de lactancia?",
+                respuesta: "Salvo en casos muy severos donde se emplee la técnica de injertos de areolas, no se pierde la conexión entre la glándula y las areolas/pezones, por lo que se preserva la capacidad de lactancia materna."
             }
         ]
     },
     "reconstruccion-mama": {
-        titulo: "Reconstrucción de Mama",
+        titulo: "Reconstrucción mamaria (con o sin prótesis) / DIEP / Latissimus Dorsi o Dorsal Ancho",
         descripcion: "Devolver lo perdido tras una mutilación, habitualmente por un proceso oncológico, representa una de las mayores satisfacciones tanto para el paciente como para el cirujano. La microcirugía y los injertos de grasa han hecho posible que la reconstrucción perfecta esté ya al alcance de nuestras pacientes.",
         preguntas: [
             {
                 pregunta: "¿Qué es la reconstrucción de mama?",
-                respuesta: "La reconstrucción mamaria o mamoplastia reconstructiva es un procedimiento esencial para mujeres que han sufrido una mastectomía. La técnica más novedosa es el DIEP, que emplea únicamente la piel y grasa del abdomen, sin destruir ningún músculo y sin utilizar implantes mamarios. Este procedimiento no solo restituye el órgano perdido, sino que ayuda a recobrar la feminidad, la propia imagen y el equilibrio psicológico."
+                respuesta: "La reconstrucción mamaria es un procedimiento esencial para mujeres que han sufrido una mastectomía, normalmente tras un proceso oncológico o por susceptibilidad genética a desarrollarlo. La reconstrucción mamaria puede hacerse en el mismo acto quirúrgico de la mastectomía o de forma retardada o diferida. Estos procedimientos no sólo restituyen el órgano perdido, sino que ayuda a recobrar la feminidad, la propia imagen y el equilibrio psicológico."
             },
             {
                 pregunta: "¿En qué consiste el procedimiento?",
-                respuesta: "El DIEP aprovecha el exceso de piel y grasa del abdomen, que por sus características físicas es idónea para la reconstrucción. El tejido se extrae como en una abdominoplastia y se lleva hasta el tórax, donde se une a una arteria y una vena mediante microcirugía para tener vascularización propia. Esta técnica permite conservar los nervios y el músculo recto abdominal en su totalidad, sin dejar secuelas, a diferencia de otras técnicas tradicionales."
+                respuesta: "La técnica puede realizarse generalmente de 3 maneras distintas: Con prótesis, Con tejido de la paciente sin prótesis (técnica denominada DIEP), empleando únicamente la piel y grasa del abdomen a modo de abdominoplastia, sin destruir ningún músculo y sin utilizar implantes mamarios, o Combinando el uso de prótesis con tejido propio (técnica denominada Latissimus Dorsi o Dorsal Ancho). El Dr. José Mallent ha dedicado gran parte de su actividad laboral al desarrollo de estas técinas, buscando siempre el mejor resultado para cada mujer en función de sus características. El DIEP aprovecha el exceso de piel y grasa del abdomen, que por sus características físicas es idónea para la reconstrucción. El tejido se extrae como en una abdominoplastia y se lleva hasta el tórax, donde se une a una arteria y una vena mediante microcirugía para tener vascularización propia. Esta técnica permite conservar los nervios y el músculo recto abdominal en su totalidad, sin dejar secuelas, a diferencia de otras técnicas tradicionales."
             },
             {
                 pregunta: "¿Quién requiere este tratamiento?",
@@ -69,11 +77,11 @@ export const cirugiaPlasticaData = {
             },
             {
                 pregunta: "¿Qué cabe esperar en el postoperatorio?",
-                respuesta: "La paciente debe permanecer en el hospital durante 4-5 días. Las primeras 48 horas son esenciales para un correcto seguimiento y control, detectando posibles infecciones y problemas con la curación de las heridas. La sensación de fatiga o cansancio extremo desaparece gradualmente con el tratamiento adecuado."
+                respuesta: "Dependiendo de la técnica utilizada, la paciente debe permanecer ingresada en el hospital desde 24 horas a 3-4 días. Las primeras 48 horas son esenciales para un correcto seguimiento y control, detectando posibles infecciones y problemas con la curación de las heridas. La sensación de fatiga o cansancio desaparece gradualmente con el tratamiento adecuado."
             },
             {
                 pregunta: "¿Cuándo podré ver los resultados definitivos?",
-                respuesta: "Los resultados son definitivos y permiten hacer una vida absolutamente normal. Aunque la mama reconstruida puede tener un aspecto más firme y parecer más redonda que la otra mama, y pueden existir algunas diferencias de simetría, para la inmensa mayoría de las pacientes supone una mejoría de imagen absoluta, permitiéndoles verse con un cuerpo completo y proporcionando equilibrio psicológico."
+                respuesta: "Los resultados son definitivos y permiten hacer una vida absolutamente normal. Para obtener el mejor resultado, el proceso se completa cuando se reconstruye y peigmenta el complejo areola-pezón, procedimiento muy sencillo y satisfactorio. En ocasiones, es precisa una simetrización y/o la transferencia de tejido adiposo mediante Lipofilling para la obtención de un rasultado muy natural."
             }
         ]
     },
@@ -234,8 +242,8 @@ export const cirugiaPlasticaData = {
         ]
     },
     "elevacion-mamas": {
-        titulo: "Elevación de Mamas",
-        descripcion: "La mastopexia o elevación de mamas es una intervención que permite corregir la caída o ptosis mamaria, devolviendo a los senos su posición natural y mejorando su forma y firmeza.",
+        titulo: "Elevación de mamas",
+        descripcion: "Elevación de mamas / Mastopexia / Elevación del pecho / Lifting de mamas / Breast Lift es una intervención que permite corregir la caída o ptosis mamaria, devolviendo a los senos su posición natural y mejorando su forma y firmeza.",
         preguntas: [
             {
                 pregunta: "¿Qué es la elevación de mamas?",
@@ -243,25 +251,25 @@ export const cirugiaPlasticaData = {
             },
             {
                 pregunta: "¿En qué consiste el procedimiento?",
-                respuesta: "La cirugía se realiza bajo anestesia general y dura entre 2-3 horas. Se realizan incisiones alrededor de la areola y verticalmente hasta el pliegue submamario, pudiendo ser necesaria una incisión horizontal en el surco. A través de estas incisiones, se remodela el tejido mamario, se reposiciona el complejo areola-pezón y se elimina el exceso de piel."
+                respuesta: "La cirugía se realiza bajo anestesia general y su duración oscila entre 2 y 3 horas. Se realizan incisiones alrededor de la areola y verticalmente hasta el pliegue submamario, pudiendo ser necesaria una incisión horizontal en el surco. A través de estas incisiones, se remodela el tejido mamario, se reposiciona el complejo areola-pezón y se elimina el exceso de piel."
             },
             {
                 pregunta: "¿Quién requiere este tratamiento?",
-                respuesta: "Las candidatas ideales son mujeres con mamas caídas debido a embarazos, lactancia, pérdida de peso significativa o el proceso natural de envejecimiento. También es adecuada para corregir asimetrías en la posición de los pezones o areolas de gran tamaño."
+                respuesta: "Las candidatas ideales son mujeres con mamas caídas debido a embarazos, lactancia, pérdida de peso significativa o el proceso natural de envejecimiento. También es adecuada para corregir asimetrías en la posición de los pezones o areolas de gran tamaño.\n\nCada vez son más las mujeres que deciden explantar las prótesis, bien sea por volumen excesivo, molestias, deterioro de los implantes por el paso del tiempo o, simplemente, para adoptar un aspecto más juvenil. En estos casos, y por el exceso de piel secundario, se realiza una mastopexia asociada a la retirada de las prótesis siguiendo la misma técnica, es decir, mediante un patrón de incisión periareolar y vertical. Para compensar la disminución de volumen, puede efectuarse una transferencia de grasa (lipofilling) en el mismo acto quirúrgico. Los resultados son excelentes como demuestran el alto grado de satisfacción de las mujeres sometidas a este tratamiento."
             },
             {
                 pregunta: "¿Qué cabe esperar en el postoperatorio?",
-                respuesta: "La recuperación inicial dura entre 1-2 semanas. Se debe usar un sujetador especial durante 6 semanas. Los puntos se retiran entre 7-14 días después de la cirugía. Es normal experimentar hinchazón y molestias moderadas que mejoran progresivamente."
+                respuesta: "La recuperación es rápida. Se debe usar un sujetador especial durante 6 semanas. Los puntos se reabsorben por lo que no es necesaria su retirada. Es normal experimentar hinchazón y molestias moderadas que mejoran progresivamente, y suele ser un procedimiento poco doloroso. Pueden existir alteraciones temporales en la sensibilidad o en la cicatrización que suelen resolverse espontáneamente."
             },
             {
                 pregunta: "¿Cuándo podré ver los resultados definitivos?",
-                respuesta: "Los resultados son inmediatamente visibles, aunque la forma final se aprecia a los 3-6 meses cuando la inflamación desaparece por completo y las cicatrices maduran. Los resultados son duraderos, pero pueden verse afectados por futuros embarazos, cambios de peso significativos o el proceso natural de envejecimiento."
+                respuesta: "Los resultados son inmediatamente visibles, aunque la forma final se aprecia a los 3-6 meses cuando la inflamación desaparece por completo se completa el proceso cicatricial. Los resultados son duraderos, pero pueden verse afectados por futuros embarazos, cambios de peso significativos o el proceso natural de envejecimiento."
             }
         ]
     },
     "ginecomastia": {
-        titulo: "Cirugía de Mamas en el Varón",
-        descripcion: "La ginecomastia es el desarrollo excesivo de las glándulas mamarias en el hombre. Su tratamiento quirúrgico permite eliminar el exceso de tejido glandular y graso, logrando un tórax masculino y proporcionado.",
+        titulo: "Cirugía de mamas en el varón / Ginecomastia",
+        descripcion: "La cirugía de ginecomastia es un procedimiento que reduce el tamaño del pecho masculino eliminando el exceso de tejido glandular y graso. Esta condición puede afectar a uno o ambos pechos y suele aparecer durante la pubertad o en edad adulta por diversos factores constitucionales, hormonales o medicamentosos.",
         preguntas: [
             {
                 pregunta: "¿Qué es la cirugía de ginecomastia?",
