@@ -35,7 +35,7 @@ export default function HeroHome() {
                 transition={{ duration: 1 }}
             >
                 <MotionText
-                    fontSize={{ base: "28px", sm: "32px", md: "36px", lg: "60px" }}
+                    fontSize={{ base: "38px", sm: "32px", md: "36px", lg: "60px" }}
                     fontWeight={700}
                     initial={{ opacity: 0, x: -100 }}
                     animate={{ opacity: 1, x: 0 }}
