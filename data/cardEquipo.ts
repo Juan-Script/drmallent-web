@@ -35,38 +35,11 @@ export const cardEquipo: CardEquipoInt[] = [
         ]
     },
     {
-        src: "/img/PerfilAfrica.jpg",
-        slug: "africa-sanchez",
-        nombre: "África Sánchez",
-        especialidad: "Enfermería Quirúrgica",
+        src: "/img/FotoCampos.jpg",
+        slug: "alvaro-campos",
+        nombre: "Dr. Álvaro Campos Estellés",
+        especialidad: "Cirugía capilar y tricologia",
         locacion: "Valencia",
-        items: [
-            "Especialista en instrumentación de cirugía laparoscópica avanzada",
-            "Experiencia en coordinación y gestión de equipos quirúrgicos",
-            "Enfermera referente en Neurología",
-            "Coordinadora de implantes y explantes de hueso"
-        ]
-    },
-    {
-        src: "/FotoAnax2.jpg",
-        slug: "ana",
-        nombre: "Ana",
-        especialidad: "Cirugía plástica, estética y reparadora",
-        locacion: "Valencia y Denia",
-        items: [
-            "Especialista en Cirugía Plástica, Estética y Reparadora",
-            "Jefe del Servicio de Cirugía Plástica y Reparadora del Hospital La Ribera",
-            "Jefe del Servicio de Cirugía Plástica y Reparadora del Hospital Marina Salud",
-            "Presidente de la Sociedad de Cirugía",
-            "Plástica, Reconstructiva y Estética de la Comunidad Valenciana"
-        ]
-    },
-    {
-        src: "/img/PerfilPilar.jpg",
-        slug: "pilar-mallent",
-        nombre: "Pilar Mallent",
-        especialidad: "Cirugía plástica, estética y reparadora",
-        locacion: "Valencia y Denia",
         items: [
             "Especialista en Cirugía Plástica, Estética y Reparadora",
             "Jefe del Servicio de Cirugía Plástica y Reparadora del Hospital La Ribera",
@@ -90,11 +63,38 @@ export const cardEquipo: CardEquipoInt[] = [
         ]
     },
     {
-        src: "/img/FotoCampos.jpg",
-        slug: "alvaro-campos",
-        nombre: "Dr. Álvaro Campos Estellés",
-        especialidad: "Cirugía capilar y tricologia",
+        src: "/FotoAnax2.jpg",
+        slug: "ana",
+        nombre: "Ana",
+        especialidad: "Cirugía plástica, estética y reparadora",
+        locacion: "Valencia y Denia",
+        items: [
+            "Especialista en Cirugía Plástica, Estética y Reparadora",
+            "Jefe del Servicio de Cirugía Plástica y Reparadora del Hospital La Ribera",
+            "Jefe del Servicio de Cirugía Plástica y Reparadora del Hospital Marina Salud",
+            "Presidente de la Sociedad de Cirugía",
+            "Plástica, Reconstructiva y Estética de la Comunidad Valenciana"
+        ]
+    },
+    {
+        src: "/img/PerfilAfrica.jpg",
+        slug: "africa-sanchez",
+        nombre: "África Sánchez",
+        especialidad: "Enfermería Quirúrgica",
         locacion: "Valencia",
+        items: [
+            "Especialista en instrumentación de cirugía laparoscópica avanzada",
+            "Experiencia en coordinación y gestión de equipos quirúrgicos",
+            "Enfermera referente en Neurología",
+            "Coordinadora de implantes y explantes de hueso"
+        ]
+    },
+    {
+        src: "/img/PerfilPilar.jpg",
+        slug: "pilar-mallent",
+        nombre: "Pilar Mallent",
+        especialidad: "Cirugía plástica, estética y reparadora",
+        locacion: "Valencia y Denia",
         items: [
             "Especialista en Cirugía Plástica, Estética y Reparadora",
             "Jefe del Servicio de Cirugía Plástica y Reparadora del Hospital La Ribera",
