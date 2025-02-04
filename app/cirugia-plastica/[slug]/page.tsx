@@ -33,9 +33,18 @@ export default function EspecialidadPage({ params }: Props) {
                 subtitle={tratamientoData.subtitulo}
             />
 
-            {slug === "cirugia-mamaria" && tratamientoData.especialidades && (
-                <div
-                    className="flex flex-row"
+            {tratamientoData.especialidades && (
+                <Flex
+                    gap="20px"
+                    direction="column"
+                    px={{
+                        base: "0px",
+                        md: "50px",
+                        lg: "100px",
+                        xl: "200px"
+                    }}
+                    py="20px"
+                    pb="100px"
                 >
                     {tratamientoData.especialidades.map((especialidad, index) => (
                         <CardEspecialidad
@@ -44,7 +53,7 @@ export default function EspecialidadPage({ params }: Props) {
                             index={index}
                         />
                     ))}
-                </div>
+                </Flex>
             )}
 
             {tratamientoData.preguntas && (

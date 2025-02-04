@@ -147,14 +147,14 @@ export default function Navbar() {
                                         <Flex
                                             direction="column"
                                         >
-                                            <Box fontWeight="bold" mt="10px">CIRUGÍA GENITAL</Box>
+                                            <Box as='a' href="/cirugia-plastica/cirugia-genital" _hover={{ color: "#878787" }} fontWeight="bold" mt="10px">CIRUGÍA GENITAL</Box>
                                             <Box as="a" href="#" display="block" p="5px" _hover={{ color: "#878787" }}>Ninfoplastia</Box>
                                         </Flex>
                                         <Box as="a" href="/cirugia-plastica/cirugia-reconstructiva" display="block" p="5px" _hover={{ color: "#878787" }} fontWeight="bold">CIRUGÍA RECONSTRUCTIVA</Box>
                                         <Flex
                                             direction="column"
                                         >
-                                            <Box fontWeight="bold" mt="10px">CIRUGÍA DE LA PIEL</Box>
+                                            <Box as='a' href="/cirugia-plastica/cirugia-piel" _hover={{ color: "#878787" }} fontWeight="bold" mt="10px">CIRUGÍA DE LA PIEL</Box>
                                             <Box as="a" href="#" display="block" p="5px" _hover={{ color: "#878787" }}>Extirpación de lesiones cutáneas</Box>
                                         </Flex>
                                     </>

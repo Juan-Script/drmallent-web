@@ -1,24 +1,27 @@
 "use client"
 
-import { Box, Flex, Text } from "@chakra-ui/react";
-import { motion } from "framer-motion";
+import { Flex, Text } from "@chakra-ui/react";
+import { motion, useInView } from "framer-motion";
 import Image from "next/image";
-import Link from "next/link";
 import { Especialidad } from "@/types/especialidades";
+import { useRef } from "react";
 
 interface Props {
     especialidad: Especialidad;
     index: number;
 }
 
-const MotionBox = motion(Box);
-const MotionFlex = motion(Flex);
 
 export default function CardEspecialidad({ especialidad, index }: Props) {
+    const ref = useRef(null);
+    const isInView = useInView(ref, { once: true });
+
     return (
         <motion.div
+            ref={ref}
+            initial="hidden"
+            animate={isInView ? "visible" : "hidden"}
             onClick={() => window.location.href = especialidad.slug}
-            className="bg-white overflow-hidden transition-all duration-300 ease-in-out hover:scale-105 cursor-pointer"
             variants={{
                 hidden: { opacity: 0, y: 50 },
                 visible: { opacity: 1, y: 0, transition: { duration: 0.5 } }
@@ -30,11 +33,12 @@ export default function CardEspecialidad({ especialidad, index }: Props) {
             style={{
                 width: '100%',
                 border: '1px solid #E2E8F0',
-                boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)'
+                boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)',
+                cursor: 'pointer'
             }}
         >
             <Flex
-                direction={{ base: "column", md: index === 1 ? "row-reverse" : "row" }}
+                direction={{ base: "column", md: index % 2 !== 0 ? "row-reverse" : "row" }}
                 gap="6"
                 height="100%"
             >
@@ -47,12 +51,12 @@ export default function CardEspecialidad({ especialidad, index }: Props) {
                         width: '400px',
                         height: '300px',
                         objectFit: 'cover',
-                        transform: (index === 0 || index === 2) ? 'scaleX(-1)' : 'none'
+                        transform: index % 2 === 0 ? 'scaleX(-1)' : 'none'
                     }}
                 />
-                <Flex 
-                    direction="column" 
-                    justify="center" 
+                <Flex
+                    direction="column"
+                    justify="center"
                     gap="4"
                     flex="1"
                     p="6"
