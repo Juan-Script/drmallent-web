@@ -5,13 +5,14 @@ import { motion } from "framer-motion";
 
 interface Props {
     title: string;
+    subtitle?: string;
 }
 
 // Definimos motion para Flex y Text
 const MotionFlex = motion(Flex);
 const MotionText = motion(Text);
 
-export const Hero = ({ title }: Props) => {
+export const Hero = ({ title, subtitle }: Props) => {
     return (
         <MotionFlex
             py={{ base: "100px", sm: "150px" }}
@@ -33,6 +34,20 @@ export const Hero = ({ title }: Props) => {
             >
                 {title}
             </MotionText>
+            {subtitle && (
+                <MotionText
+                    color="gray.600"
+                    fontWeight="500"
+                    fontSize={{ base: "14px", sm: "16px", md: "20px", lg: "24px" }}
+                    w={{ base: "90%", sm: "80%"}}
+                    mt={4}
+                    initial={{ opacity: 0, x: -100 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 1, delay: 0.3 }}
+                >
+                    {subtitle}
+                </MotionText>
+            )}
         </MotionFlex>
     );
 };

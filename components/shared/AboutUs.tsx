@@ -47,7 +47,7 @@ export default function AboutUs() {
                         fontSize="40px"
                         textColor="black"
                     >
-                        CLÍNICA DR. MALLENT – CIRUGÍA ESTÉTICA EN VALENCIA
+                        CLÍNICA DRJM – CIRUGÍA PLÁSTICA ESTÉTICA EN VALENCIA
                     </MotionText>
                 </MotionFlex>
 
@@ -55,7 +55,7 @@ export default function AboutUs() {
                     fontSize="14px"
                     textColor="black"
                 >
-                    En nuestra Clínica de Cirugía Estética Plástica, contamos con una larga trayectoria y un equipo de especialistas con amplia formación en todo tipo de tratamientos estéticos, tanto quirúrgicos como no quirúrgicos. Las excelentes opiniones de nuestros pacientes son nuestra mejor carta de presentación y nos ha posicionado como una de las clínicas de cirugía estética de referencia.
+                    En nuestra clínica de Cirugía Plástica Estética, contamos con una larga trayectoria y un equipo de especialistas con amplia formación en todo tipo de tratamientos estéticos, tanto quirúrgicos como no quirúrgicos. Las excelentes opiniones de nuestros pacientes son nuestra mejor carta de presentación y nos ha posicionado como una de las clínicas de cirugía estética de referencia.
                 </MotionText>
             </MotionFlex>
 

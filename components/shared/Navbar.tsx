@@ -83,10 +83,9 @@ export default function Navbar() {
                             <Text
                                 fontSize="14px"
                                 cursor="pointer"
-                                as="a" 
-                                href={link.href} 
                                 display="block" 
                                 _hover={{ color: "#878787" }}
+                                {...(link.href === '/especialistas' ? { as: "a", href: link.href } : {})}
                             >
                                 {link.text}
                             </Text>
@@ -116,7 +115,7 @@ export default function Navbar() {
                                         <Flex
                                             direction="column"
                                         >
-                                            <Box as="a" href="/cirugia-plastica/aumento-mamas" display="block" p="5px" _hover={{ color: "#878787" }} fontWeight="bold">CIRUGÍA MAMARIA</Box>
+                                            <Box as="a" href="/cirugia-plastica/cirugia-mamaria" display="block" p="5px" _hover={{ color: "#878787" }} fontWeight="bold">CIRUGÍA MAMARIA</Box>
                                             <Box as="a" href="/cirugia-plastica/aumento-mamas" display="block" p="5px" _hover={{ color: "#878787" }}>Aumento de mamas. Prótesis. Injertos de grasa</Box>
                                             <Box as="a" href="/cirugia-plastica/reduccion-mamas" display="block" p="5px" _hover={{ color: "#878787" }}>Reducción de mamas</Box>
                                             <Box as="a" href="/cirugia-plastica/elevacion-mamas" display="block" p="5px" _hover={{ color: "#878787" }}>Elevación de mamas</Box>
@@ -127,7 +126,7 @@ export default function Navbar() {
                                         <Flex
                                             direction="column"
                                         >
-                                            <Box fontWeight="bold" mt="10px">CIRUGÍA CONTORNO CORPORAL</Box>
+                                            <Box as="a" href="/cirugia-plastica/cirugia-contorno-corporal" display="block" p="5px" _hover={{ color: "#878787" }} fontWeight="bold">CIRUGÍA CONTORNO CORPORAL</Box>
                                             <Box as="a" href="/cirugia-plastica/abdominoplastia" display="block" p="5px" _hover={{ color: "#878787" }}>Abdominoplastia. Tummy Tuck</Box>
                                             <Box as="a" href="/cirugia-plastica/braquioplastia" display="block" p="5px" _hover={{ color: "#878787" }}>Brazos (braquioplastia). Muslos (cruroplastia)</Box>
                                             <Box as="a" href="/cirugia-plastica/liposuccion" display="block" p="5px" _hover={{ color: "#878787" }}>Liposucción. Lipedema</Box>
@@ -136,7 +135,7 @@ export default function Navbar() {
                                         <Flex
                                             direction="column"
                                         >
-                                            <Box fontWeight="bold" mt="10px">CIRUGÍA FACIAL</Box>
+                                            <Box as="a" href="/cirugia-plastica/cirugia-facial" display="block" p="5px" _hover={{ color: "#878787" }} fontWeight="bold">CIRUGÍA FACIAL</Box>
                                             <Box as="a" href="/cirugia-plastica/blefaroplastia" display="block" p="5px" _hover={{ color: "#878787" }}>Blefaroplastia (superior e inferior)</Box>
                                             <Box as="a" href="/cirugia-plastica/otoplastia" display="block" p="5px" _hover={{ color: "#878787" }}>Otoplastia. Orejas en soplillo. Lóbulos rasgados.</Box>
                                             <Box as="a" href="/cirugia-plastica/rinoplastia" display="block" p="5px" _hover={{ color: "#878787" }}>Rinoplastia</Box>
@@ -151,7 +150,7 @@ export default function Navbar() {
                                             <Box fontWeight="bold" mt="10px">CIRUGÍA GENITAL</Box>
                                             <Box as="a" href="#" display="block" p="5px" _hover={{ color: "#878787" }}>Ninfoplastia</Box>
                                         </Flex>
-                                        <Box fontWeight="bold" mt="10px">CIRUGÍA RECONSTRUCTIVA</Box>
+                                        <Box as="a" href="/cirugia-plastica/cirugia-reconstructiva" display="block" p="5px" _hover={{ color: "#878787" }} fontWeight="bold">CIRUGÍA RECONSTRUCTIVA</Box>
                                         <Flex
                                             direction="column"
                                         >

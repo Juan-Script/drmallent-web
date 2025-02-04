@@ -11,7 +11,7 @@ export default function HeroHome() {
     return (
         <Flex
             // bgImage={'url(/img/Despacho1.jpg)'}
-            bgImage={'url(/img/Bg1.png)'}
+            bgImage={{ base: 'url(/img/imgx2MobileHero.jpg)', md: 'url(/img/imgHeroDRJM.jpg)' }}
             // bgImage={'url(/img/Bg2.png)'}
             // bgImage={'url(/img/Bg3.png)'}
             // bgImage={'url(/img/Bg4.jpg)'}
@@ -35,13 +35,13 @@ export default function HeroHome() {
                 transition={{ duration: 1 }}
             >
                 <MotionText
-                    fontSize={{ base: "38px", sm: "32px", md: "36px", lg: "60px" }}
+                    fontSize={{ base: "0px", sm: "32px", md: "36px", lg: "60px" }}
                     fontWeight={700}
                     initial={{ opacity: 0, x: -100 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 1 }}
                 >
-                    Cirugía estética plástica
+                    Cirugía Plástica Estética
                 </MotionText>
 
                 {/* <MotionText

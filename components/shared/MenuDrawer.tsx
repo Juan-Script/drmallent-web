@@ -181,7 +181,7 @@ export const MenuDrawer = ({ isOpen, onClose, Links }: Props) => {
                                         href={link.href}
                                         onClick={onClose}
                                     >
-                                        <Text color="black" mt="-6px">{link.text}</Text>
+                                        <Text color="black" fontWeight="medium">{link.text}</Text>
                                     </Link>
                                 )}
                             </Box>

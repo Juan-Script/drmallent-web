@@ -25,7 +25,7 @@ export default function page() {
             <Navbar />
 
             <Hero
-                title="Equipo profesional clínica Dr.Mallent"
+                title="Equipo profesional clínica DRJM"
             />
 
             <MotionFlex

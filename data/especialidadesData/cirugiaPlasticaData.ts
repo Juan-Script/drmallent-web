@@ -1,6 +1,9 @@
-export const cirugiaPlasticaData = {
+import { CirugiaPlasticaData } from "@/types/especialidades";
+
+export const cirugiaPlasticaData: CirugiaPlasticaData = {
     "aumento-mamas": {
-        titulo: "Aumento de Pecho / Prótesis de mama /Aumento de pecho/ Aumento de senos",
+        titulo: "Aumento de Pecho",
+        subtitulo: "Prótesis de mama / Aumento de pecho / Aumento de senos",
         descripcion: "El aumento de pecho o mamoplastia de aumento es una cirugía que soluciona los problemas de aquellas mujeres que consideran que el tamaño de sus pechos es demasiado pequeño o que la edad les ha restado atractivo. Se realiza bajo un criterio responsable, combinando lo atractivo, lo femenino y lo anatómico.",
         preguntas: [
             {
@@ -60,7 +63,8 @@ export const cirugiaPlasticaData = {
         ]
     },
     "reconstruccion-mama": {
-        titulo: "Reconstrucción mamaria (con o sin prótesis) / DIEP / Latissimus Dorsi o Dorsal Ancho",
+        titulo: "Reconstrucción mamaria",
+        subtitulo: "DIEP / Latissimus Dorsi o Dorsal Ancho / Con o sin prótesis",
         descripcion: "Devolver lo perdido tras una mutilación, habitualmente por un proceso oncológico, representa una de las mayores satisfacciones tanto para el paciente como para el cirujano. La microcirugía y los injertos de grasa han hecho posible que la reconstrucción perfecta esté ya al alcance de nuestras pacientes.",
         preguntas: [
             {
@@ -243,6 +247,7 @@ export const cirugiaPlasticaData = {
     },
     "elevacion-mamas": {
         titulo: "Elevación de mamas",
+        subtitulo: "Mastopexia / Elevación del pecho / Lifting de mamas / Breast Lift",
         descripcion: "Elevación de mamas / Mastopexia / Elevación del pecho / Lifting de mamas / Breast Lift es una intervención que permite corregir la caída o ptosis mamaria, devolviendo a los senos su posición natural y mejorando su forma y firmeza.",
         preguntas: [
             {
@@ -268,7 +273,8 @@ export const cirugiaPlasticaData = {
         ]
     },
     "ginecomastia": {
-        titulo: "Cirugía de mamas en el varón / Ginecomastia",
+        titulo: "Cirugía de mamas en el varón",
+        subtitulo: "Ginecomastia",
         descripcion: "La cirugía de ginecomastia es un procedimiento que reduce el tamaño del pecho masculino eliminando el exceso de tejido glandular y graso. Esta condición puede afectar a uno o ambos pechos y suele aparecer durante la pubertad o en edad adulta por diversos factores constitucionales, hormonales o medicamentosos.",
         preguntas: [
             {
@@ -450,7 +456,8 @@ export const cirugiaPlasticaData = {
         ]
     },
     "lip-lift": {
-        titulo: "Cirugía de Labios. Lip Lift",
+        titulo: "Cirugía de Labios",
+        subtitulo: "Lip Lift",
         descripcion: "El lip lift es una cirugía que acorta la distancia entre la nariz y el labio superior, proporcionando un aspecto más juvenil y sensual a los labios sin necesidad de rellenos.",
         preguntas: [
             {

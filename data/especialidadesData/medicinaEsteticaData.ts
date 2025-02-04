@@ -1,4 +1,6 @@
-export const medicinaEsteticaData = {
+import { MedicinaEsteticaData } from "@/types/especialidades";
+
+export const medicinaEsteticaData: MedicinaEsteticaData = {
     rellenos: {
         titulo: "Rellenos",
         descripcion: "Los rellenos inyectables son uno de los procedimientos cosméticos más usados en la actualidad, con un efecto temporal, pero con una gran versatilidad. Pueden usarse para dar volumen a los labios o para suavizar las arrugas.",
@@ -130,7 +132,8 @@ export const medicinaEsteticaData = {
         ]
     },
     "toxina-botulinica": {
-        titulo: "Toxina botulínica / Botox Azzalure",
+        titulo: "Toxina botulínica",
+        subtitulo: "Botox Azzalure",
         descripcion: "Azzalure es un neuromodulador que contiene toxina botulínica A, que actúa relajando los músculos para reducir las arrugas de expresión y tratar otras condiciones como el bruxismo o la hiperhidrosis.",
         preguntas: [
             {

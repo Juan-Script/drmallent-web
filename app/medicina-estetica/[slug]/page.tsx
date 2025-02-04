@@ -23,6 +23,7 @@ export default function EspecialidadPage({ params }: Props) {
 
             <Hero
                 title={tratamientoData?.titulo}
+                subtitle={tratamientoData?.subtitulo}
             />
 
             <AccordionComponent data={tratamientoData?.preguntas} />

@@ -10,7 +10,7 @@ export async function POST(request: NextRequest) {
         const { nombre, apellido, email, telefono } = body;
 
         const { data, error } = await resend.emails.send({
-            from: 'Dr Mallent <dr.mallent@mail.juan-reig.com>',
+            from: 'DRJM <info@drmallent.com>',
             to: [email],
             subject: 'Confirmación de formulario',
             react: FormularioTemplate({ nombre, apellido, email, telefono }),
