@@ -17,7 +17,7 @@ export default function AboutUs() {
             direction="column"
             gap="30px"
             px={{ base: "30px", sm: "100px", md: "150px", lg: "200px", xl: "200px", "2xl": "300px" }}
-            py="100px"
+            py={{base: "50px", md: "100px"}}
             initial={{ opacity: 0 }} // Inicialmente invisible
             animate={{ opacity: 1 }}  // Animación completa
             transition={{ duration: 0.8 }} // Duración de la animación

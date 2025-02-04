@@ -507,5 +507,28 @@ export const cirugiaPlasticaData: CirugiaPlasticaData = {
                 respuesta: "La lesión se elimina inmediatamente, pero la cicatriz evoluciona durante varios meses. Inicialmente puede estar rojiza y algo engrosada, pero con el tiempo se vuelve más clara y plana. El resultado final de la cicatriz se aprecia a los 6-12 meses."
             }
         ]
+    },
+    "cirugia-mamaria": {
+        titulo: "Cirugía de mamas",
+        especialidades: [
+            {
+                titulo: "Reducción mamaria",
+                descripcion: "Descubre nuestros tratamientos faciales personalizados para rejuvenecer y revitalizar tu piel de forma natural y efectiva.",
+                imagen: "/img/narizxd.png",
+                slug: "/especialidades/reduccion-mamaria"
+            },
+            {
+                titulo: "Reconstrucción de mama",
+                descripcion: "Tratamientos corporales diseñados para mejorar la apariencia de tu piel y contornear tu figura con las últimas tecnologías.",
+                imagen: "/img/microcanulas.png",
+                slug: "/especialidades/reconstruccion-mama"
+            },
+            {
+                titulo: "Rinoplastia",
+                descripcion: "Procedimientos médico-estéticos de última generación para resultados naturales y duraderos.",
+                imagen: "/img/estiramiento_facial.png",
+                slug: "/especialidades/rinoplastia"
+            }
+        ]
     }
 }

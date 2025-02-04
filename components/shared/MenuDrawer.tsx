@@ -40,11 +40,23 @@ export const MenuDrawer = ({ isOpen, onClose, Links }: Props) => {
                                 {(link.href === '/cirugia-plastica' || link.href === '/medicina-estetica' || link.text.toLowerCase() === 'equipo') ? (
                                     <>
                                         <Flex align="center">
-                                            <Link href={link.href} onClick={onClose} style={{ flex: 1 }}>
-                                                <Text color="black" fontWeight="medium">
+                                            {(link.href === '/cirugia-plastica' || link.href === '/medicina-estetica') ? (
+                                                <Text 
+                                                    color="black" 
+                                                    fontWeight="medium" 
+                                                    flex={1}
+                                                    cursor="pointer"
+                                                    onClick={() => toggleMenu(link.href)}
+                                                >
                                                     {link.text}
                                                 </Text>
-                                            </Link>
+                                            ) : (
+                                                <Link href={link.href} onClick={onClose} style={{ flex: 1 }}>
+                                                    <Text color="black" fontWeight="medium">
+                                                        {link.text}
+                                                    </Text>
+                                                </Link>
+                                            )}
                                             <Box 
                                                 onClick={() => toggleMenu(link.href)}
                                                 cursor="pointer"
