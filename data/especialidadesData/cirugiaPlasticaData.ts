@@ -29,7 +29,8 @@ export const cirugiaPlasticaData: CirugiaPlasticaData = {
         ]
     },
     "reduccion-mamas": {
-        titulo: "Mamoplastia de reducción / Reducción mamaria / Reducción de pechos",
+        titulo: "Mamoplastia de reducción",
+        subtitulo: "Reducción de pechos / Reducción de senos",
         descripcion: "Se trata de una de las técnicas quirúrgicas más realizadas en la clínica DRJM y con un mayor grado de satisfacción según refieren nuestras pacientes.",
         preguntas: [
             {
@@ -515,37 +516,37 @@ export const cirugiaPlasticaData: CirugiaPlasticaData = {
                 titulo: "Aumento de mamas",
                 descripcion: "Aumento de mamas mediante prótesis o injertos de grasa para mejorar el volumen y la forma del pecho.",
                 imagen: "/img/abdominoplastia.png",
-                slug: "/especialidades/aumento-mamas"
+                slug: "/cirugia-plastica/aumento-mamas"
             },
             {
                 titulo: "Reducción de mamas",
                 descripcion: "Procedimiento para reducir el tamaño del pecho y mejorar su forma, aliviando molestias físicas.",
                 imagen: "/img/cirugia-de-mamas.png",
-                slug: "/especialidades/reduccion-mamas"
+                slug: "/cirugia-plastica/reduccion-mamas"
             },
             {
                 titulo: "Elevación de mamas",
                 descripcion: "Técnica para elevar y remodelar el pecho caído, mejorando su posición y firmeza.",
-                imagen: "/img/estiramiento_facial.png",
-                slug: "/especialidades/elevacion-mamas"
+                imagen: "/img/liposuccion.png",
+                slug: "/cirugia-plastica/elevacion-mamas"
             },
             {
                 titulo: "Reconstrucción de mamas",
                 descripcion: "Reconstrucción mamaria tras mastectomía u otras cirugías.",
-                imagen: "/img/cirugia-de-mamas.png",
-                slug: "/especialidades/reconstruccion-mama"
+                imagen: "/img/peeling.png",
+                slug: "/cirugia-plastica/reconstruccion-mama"
             },
             {
                 titulo: "Cirugía de mamas en el varón",
                 descripcion: "Tratamiento de la ginecomastia mediante técnicas específicas para el pecho masculino.",
-                imagen: "/img/cirugia-de-mamas.png",
-                slug: "/especialidades/ginecomastia"
+                imagen: "/img/microcanulasImg.png",
+                slug: "/cirugia-plastica/ginecomastia"
             },
             {
                 titulo: "Cirugía de reasignación de género",
                 descripcion: "Procedimientos específicos para la transición de género y adaptación corporal.",
-                imagen: "/img/cirugia-de-mamas.png",
-                slug: "/especialidades/reasignacion-genero"
+                imagen: "/img/abdominoplastiaImg.png",
+                slug: "/cirugia-plastica/reasignacion-genero"
             }
         ]
     },
@@ -555,26 +556,26 @@ export const cirugiaPlasticaData: CirugiaPlasticaData = {
             {
                 titulo: "Abdominoplastia",
                 descripcion: "Remodelación del abdomen eliminando exceso de piel y grasa para un vientre más plano.",
-                imagen: "/img/cirugia-de-mamas.png",
-                slug: "/especialidades/abdominoplastia"
+                imagen: "/img/abdominoplastiaImg.png",
+                slug: "/cirugia-plastica/abdominoplastia"
             },
             {
                 titulo: "Braquioplastia y Cruroplastia",
                 descripcion: "Cirugía de brazos y muslos para eliminar flacidez y exceso de piel.",
-                imagen: "/img/cirugia-de-mamas.png",
-                slug: "/especialidades/braquioplastia"
+                imagen: "/img/liposuccion.png",
+                slug: "/cirugia-plastica/braquioplastia"
             },
             {
                 titulo: "Liposucción",
                 descripcion: "Eliminación de depósitos de grasa localizada para mejorar el contorno corporal.",
                 imagen: "/img/cirugia-de-mamas.png",
-                slug: "/especialidades/liposuccion"
+                slug: "/cirugia-plastica/liposuccion"
             },
             {
                 titulo: "Gluteoplastia",
                 descripcion: "Aumento y remodelación de glúteos mediante implantes o grasa propia.",
                 imagen: "/img/cirugia-de-mamas.png",
-                slug: "/especialidades/gluteoplastia"
+                slug: "/cirugia-plastica/gluteoplastia"
             }
         ]
     },
@@ -584,44 +585,44 @@ export const cirugiaPlasticaData: CirugiaPlasticaData = {
             {
                 titulo: "Blefaroplastia",
                 descripcion: "Rejuvenecimiento de párpados superiores e inferiores eliminando exceso de piel y bolsas.",
-                imagen: "/img/cirugia-de-mamas.png",
-                slug: "/especialidades/blefaroplastia"
+                imagen: "/img/parpados.png",
+                slug: "/cirugia-plastica/blefaroplastia"
             },
             {
                 titulo: "Otoplastia",
                 descripcion: "Corrección de orejas prominentes y lóbulos rasgados para una mejor armonía facial.",
-                imagen: "/img/cirugia-de-mamas.png",
-                slug: "/especialidades/otoplastia"
+                imagen: "/img/microcanulasImg.png",
+                slug: "/cirugia-plastica/otoplastia"
             },
             {
                 titulo: "Rinoplastia",
                 descripcion: "Remodelación de la nariz mejorando su forma y función respiratoria.",
-                imagen: "/img/cirugia-de-mamas.png",
-                slug: "/especialidades/rinoplastia"
+                imagen: "/img/estiramiento_facial.png",
+                slug: "/cirugia-plastica/rinoplastia"
             },
             {
                 titulo: "Mentoplastia",
                 descripcion: "Mejora del perfil facial mediante el aumento o reducción del mentón.",
-                imagen: "/img/cirugia-de-mamas.png",
-                slug: "/especialidades/mentoplastia"
+                imagen: "/img/narizxd.png",
+                slug: "/cirugia-plastica/mentoplastia"
             },
             {
                 titulo: "Lifting cervicofacial",
                 descripcion: "Rejuvenecimiento facial y del cuello eliminando flacidez y signos de envejecimiento.",
-                imagen: "/img/cirugia-de-mamas.png",
-                slug: "/especialidades/lifting-facial"
+                imagen: "/img/peeling.png",
+                slug: "/cirugia-plastica/lifting-facial"
             },
             {
                 titulo: "Bichectomía",
                 descripcion: "Reducción de mejillas mediante la extracción de las bolas de Bichat.",
-                imagen: "/img/cirugia-de-mamas.png",
-                slug: "/especialidades/bichectomia"
+                imagen: "/img/rellenos.png",
+                slug: "/cirugia-plastica/bichectomia"
             },
             {
                 titulo: "Cirugía de labios",
                 descripcion: "Mejora de la forma y proporción de los labios mediante técnicas quirúrgicas.",
-                imagen: "/img/cirugia-de-mamas.png",
-                slug: "/especialidades/lip-lift"
+                imagen: "/img/pomulo.png",
+                slug: "/cirugia-plastica/lip-lift"
             }
         ]
     },
@@ -631,8 +632,8 @@ export const cirugiaPlasticaData: CirugiaPlasticaData = {
             {
                 titulo: "Ninfoplastia",
                 descripcion: "Remodelación de los labios menores para mejorar la estética y funcionalidad.",
-                imagen: "/img/cirugia-de-mamas.png",
-                slug: "/especialidades/ninfoplastia"
+                imagen: "/img/estiramiento_facial.png",
+                slug: "/cirugia-plastica/ninfoplastia"
             }
         ]
     },
@@ -643,7 +644,7 @@ export const cirugiaPlasticaData: CirugiaPlasticaData = {
                 titulo: "Reconstrucción mamaria",
                 descripcion: "Reconstrucción del pecho tras mastectomía u otras cirugías.",
                 imagen: "/img/cirugia-de-mamas.png",
-                slug: "/especialidades/reconstruccion-mama"
+                slug: "/cirugia-plastica/reconstruccion-mama"
             }
         ]
     },
@@ -653,8 +654,8 @@ export const cirugiaPlasticaData: CirugiaPlasticaData = {
             {
                 titulo: "Extirpación de lesiones cutáneas",
                 descripcion: "Eliminación de diferentes tipos de lesiones en la piel.",
-                imagen: "/img/cirugia-de-mamas.png",
-                slug: "/especialidades/extirpacion-lesiones-cutaneas"
+                imagen: "/img/peeling.png",
+                slug: "/cirugia-plastica/extirpacion-lesiones-cutaneas"
             }
         ]
     }
