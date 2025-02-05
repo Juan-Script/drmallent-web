@@ -41,9 +41,9 @@ export const MenuDrawer = ({ isOpen, onClose, Links }: Props) => {
                                     <>
                                         <Flex align="center">
                                             {(link.href === '/cirugia-plastica' || link.href === '/medicina-estetica') ? (
-                                                <Text 
-                                                    color="black" 
-                                                    fontWeight="medium" 
+                                                <Text
+                                                    color="black"
+                                                    fontWeight="medium"
                                                     flex={1}
                                                     cursor="pointer"
                                                     onClick={() => toggleMenu(link.href)}
@@ -57,7 +57,7 @@ export const MenuDrawer = ({ isOpen, onClose, Links }: Props) => {
                                                     </Text>
                                                 </Link>
                                             )}
-                                            <Box 
+                                            <Box
                                                 onClick={() => toggleMenu(link.href)}
                                                 cursor="pointer"
                                                 p={2}
@@ -76,7 +76,9 @@ export const MenuDrawer = ({ isOpen, onClose, Links }: Props) => {
                                             <VStack align="stretch" pl={4} spacing={2}>
                                                 {link.href === '/cirugia-plastica' && (
                                                     <>
-                                                        <Text fontWeight="medium" fontSize="sm" color="black" mt="15px">CIRUGÍA MAMARIA</Text>
+                                                        <Link href="/cirugia-plastica/cirugia-mamaria">
+                                                            <Text fontWeight="medium" fontSize="sm" color="black" mt="15px">CIRUGÍA MAMARIA</Text>
+                                                        </Link>
                                                         <Link href="/cirugia-plastica/aumento-mamas" onClick={onClose}>
                                                             <Text fontSize="sm" color="gray.700">Aumento de mamas. Prótesis. Injertos de grasa</Text>
                                                         </Link>
@@ -96,7 +98,9 @@ export const MenuDrawer = ({ isOpen, onClose, Links }: Props) => {
                                                             <Text fontSize="sm" color="gray.700">Cirugía de reasignación de género</Text>
                                                         </Link>
 
-                                                        <Text fontWeight="medium" fontSize="sm" color="black" mt={2}>CIRUGÍA CONTORNO CORPORAL</Text>
+                                                        <Link href="/cirugia-plastica/cirugia-contorno-corporal">
+                                                            <Text fontWeight="medium" fontSize="sm" color="black" mt={2}>CIRUGÍA CONTORNO CORPORAL</Text>
+                                                        </Link>
                                                         <Link href="/cirugia-plastica/abdominoplastia" onClick={onClose}>
                                                             <Text fontSize="sm" color="gray.700">Abdominoplastia. Tummy Tuck</Text>
                                                         </Link>
@@ -109,8 +113,9 @@ export const MenuDrawer = ({ isOpen, onClose, Links }: Props) => {
                                                         <Link href="/cirugia-plastica/gluteoplastia" onClick={onClose}>
                                                             <Text fontSize="sm" color="gray.700">Gluteoplastia</Text>
                                                         </Link>
-
-                                                        <Text fontWeight="medium" fontSize="sm" color="black" mt={2}>CIRUGÍA FACIAL</Text>
+                                                        <Link href="/cirugia-plastica/cirugia-facial">
+                                                            <Text fontWeight="medium" fontSize="sm" color="black" mt={2}>CIRUGÍA FACIAL</Text>
+                                                        </Link>
                                                         <Link href="/cirugia-plastica/blefaroplastia" onClick={onClose}>
                                                             <Text fontSize="sm" color="gray.700">Blefaroplastia (superior e inferior)</Text>
                                                         </Link>
@@ -132,16 +137,20 @@ export const MenuDrawer = ({ isOpen, onClose, Links }: Props) => {
                                                         <Link href="/cirugia-plastica/lip-lift" onClick={onClose}>
                                                             <Text fontSize="sm" color="gray.700">Cirugía de labios. Lip lift</Text>
                                                         </Link>
-
-                                                        <Text fontWeight="medium" fontSize="sm" color="black" mt={2}>CIRUGÍA GENITAL</Text>
-                                                        <Link href="#" onClick={onClose}>
+                                                        <Link href="/cirugia-plastica/cirugia-genital">
+                                                            <Text fontWeight="medium" fontSize="sm" color="black" mt={2}>CIRUGÍA GENITAL</Text>
+                                                        </Link>
+                                                        <Link href="/cirugia-plastica/ninfoplastia" onClick={onClose}>
                                                             <Text fontSize="sm" color="gray.700">Ninfoplastia</Text>
                                                         </Link>
 
-                                                        <Text fontWeight="medium" fontSize="sm" color="black" mt={2}>CIRUGÍA RECONSTRUCTIVA</Text>
-
-                                                        <Text fontWeight="medium" fontSize="sm" color="black" mt={2}>CIRUGÍA DE LA PIEL</Text>
-                                                        <Link href="#" onClick={onClose}>
+                                                        <Link href="/cirugia-plastica/cirugia-reconstructiva">
+                                                            <Text fontWeight="medium" fontSize="sm" color="black" mt={2}>CIRUGÍA RECONSTRUCTIVA</Text>
+                                                        </Link>
+                                                        <Link href="/cirugia-plastica/cirugia-piel">
+                                                            <Text fontWeight="medium" fontSize="sm" color="black" mt={2}>CIRUGÍA DE LA PIEL</Text>
+                                                        </Link>
+                                                        <Link href="/cirugia-plastica/extirpacion-lesiones-cutaneas" onClick={onClose}>
                                                             <Text fontSize="sm" color="gray.700">Extirpación de lesiones cutáneas</Text>
                                                         </Link>
                                                     </>
