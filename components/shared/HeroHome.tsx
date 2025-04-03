@@ -44,6 +44,13 @@ export default function HeroHome() {
                 >
                     Cirugía Plástica Estética DRJM
                 </MotionText>
+                
+                <Text
+                    opacity={0}
+                    as={'h2'}
+                >
+                    Tú Clínica Estética Valencia de confianza
+                </Text>
 
                 {/* <MotionText
                     fontSize={{ base: "18px", sm: "15px", md: "16px" }}
