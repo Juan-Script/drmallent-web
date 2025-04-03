@@ -30,6 +30,7 @@ export default function ContactHome() {
         initial={{ opacity: 0, x: -100 }} // Sale desde la izquierda
         animate={{ opacity: 1, x: 0 }}  // Llega a la posición original
         transition={{ duration: 1 }}  // Duración de la animación
+        as={"h2"}
       >
         Solicite una consulta
       </MotionText>

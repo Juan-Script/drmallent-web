@@ -39,6 +39,7 @@ export default function SpecsHome() {
             fontWeight={700}
             w={{ base: "full", md: "auto" }}
             mb={{ base: "10px", md: "0" }}
+            as={"h2"}
           >
             {spec.number} {spec.titulo}
           </Text>

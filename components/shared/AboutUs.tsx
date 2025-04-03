@@ -46,6 +46,7 @@ export default function AboutUs() {
                     <MotionText
                         fontSize="40px"
                         textColor="black"
+                        as={"h2"}
                     >
                         CLÍNICA DRJM – CIRUGÍA PLÁSTICA ESTÉTICA EN VALENCIA
                     </MotionText>

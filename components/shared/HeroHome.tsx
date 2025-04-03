@@ -40,8 +40,9 @@ export default function HeroHome() {
                     initial={{ opacity: 0, x: -100 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 1 }}
+                    as={'h1'}
                 >
-                    Cirugía Plástica Estética
+                    Cirugía Plástica Estética DRJM
                 </MotionText>
 
                 {/* <MotionText
